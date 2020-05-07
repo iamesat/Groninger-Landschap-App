@@ -4,6 +4,7 @@ body
     font-family: 'Poppins', sans-serif;
 }
 
+/* Navbar section */
 .navbar {
     border-radius: 18px 18px 0px 0px;
 }
@@ -18,3 +19,32 @@ body
     height: 27px; 
     float: center;
 }
+/* End navbar selection  */
+
+
+/* Homepage selection  */
+.jumbotron.homepage {
+    background-color: #092B75;
+    color: white;
+}
+
+.col.card-button {
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-bottom: 18px;
+    text-align: center;
+}
+
+.col.card-button .card {
+    border: 0px;
+    border-radius: 15px;
+}
+
+.col.card-button img {
+    height: 58px;
+    width: auto;
+    margin: 10px 0px 14px 0;
+}
+
+/* End homepagina selection */
+
