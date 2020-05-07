@@ -1,23 +1,6 @@
-
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-
-    <title>Groninger Landschap</title>
-
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/navbar-bottom/">
-
-    <!-- Bootstrap core CSS -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/css/style.css" rel="stylesheet">
-  </head>
-
+<?php include "include/head.php"; ?>
   <body>
     <div class="container">
       <div class="jumbotron homepage mt-3">
@@ -121,40 +104,7 @@
         </div>
       </div>
     </div>
-
-    <nav class="navbar navbar-home fixed-bottom d-flex justify-content-center">
-      <div class="navbar">
-        <div class="container">
-            <div class="row row-cols-5">
-              <div class="col">
-                <img src="assets/images/icons/home.svg" class="navbar-bottom-icons" alt="home" />
-
-                Home
-              </div>
-              <div class="col">
-                &nbsp;
-              </div>
-              <div class="col">
-                <img src="assets/images/icons/gps.svg" class="navbar-bottom-icons" alt="home" />
-                Route
-              </div>
-              <div class="col">
-                &nbsp;
-              </div>
-              <div class="col">
-                <img src="assets/images/icons/chatten.svg" class="navbar-bottom-icons" alt="home" />
-                Chats
-              </div>
-      </div>
-      </div>
-      </div>
-    </nav>
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-    <script src="assets/js/bootstrap.min.js"></script>
+    <?php include "include/bottom_navbar.php"; ?>
+    <?php include "include/scripts.php"; ?>
   </body>
 </html>
