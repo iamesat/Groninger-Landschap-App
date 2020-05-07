@@ -26,7 +26,39 @@ body
 .jumbotron.homepage {
     background-color: #092B75;
     color: white;
+    border-radius: 30px;
+    padding: 1rem 1rem;
+
 }
+.jumbo-img-top {
+    height: 25px;
+    filter: brightness(0) invert(1);
+}
+
+.profile-picture {
+    height: 80px;
+    border-radius: 33%;
+}
+
+.progress {
+    background-color: #082668;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.progress-bar {
+    background-color: #FFFFFF;
+    color: black;
+}
+
+.speur-button {
+    border-radius: 1rem;
+}
+
+.speur-button.btn-outline-light
+{
+    border-color: #ffffff61;
+}
+
 
 .col.card-button {
     padding-left: 18px;
