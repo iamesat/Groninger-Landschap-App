@@ -1,0 +1,20 @@
+body 
+{
+    background-color: #F5F5F5;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    border-radius: 18px 18px 0px 0px;
+}
+
+.navbar.navbar-home {
+    background: white;
+    height: 87px;
+    text-align: center;
+}
+
+.navbar.navbar-home img {
+    height: 27px; 
+    float: center;
+}

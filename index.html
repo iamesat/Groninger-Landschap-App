@@ -7,13 +7,15 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
-    <title>Start Groninger Landschap</title>
+    <title>Groninger Landschap</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/navbar-bottom/">
 
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
   </head>
 
   <body>
@@ -21,34 +23,34 @@
       <div class="jumbotron mt-3">
         <h1>Groninger Landschap is niet cool</h1>
         <p class="lead">This example is a quick exercise to illustrate how the bottom navbar works.</p>
-        <a class="btn btn-lg btn-primary" href="../../components/navbar/" role="button">View Corné's Cockx &raquo;</a>
       </div>
     </div>
-    <nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">Bottom navbar</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
-          </li>
-          <li class="nav-item dropup">
-            <a class="nav-link dropdown-toggle" href="https://getbootstrap.com/" id="dropdown10" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropup</a>
-            <div class="dropdown-menu" aria-labelledby="dropdown10">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </li>
-        </ul>
+    <nav class="navbar navbar-home fixed-bottom d-flex justify-content-center">
+      <div class="navbar">
+        <div class="container">
+            <div class="row row-cols-5">
+              <div class="col">
+                <img src="assets/images/icons/home.svg" class="navbar-bottom-icons" alt="home" />
+                <br>
+                Home
+              </div>
+              <div class="col">
+                &nbsp;
+              </div>
+              <div class="col">
+                <img src="assets/images/icons/gps.svg" class="navbar-bottom-icons" alt="home" />
+                <br>
+                Route
+              </div>
+              <div class="col">
+                &nbsp;
+              </div>
+              <div class="col">
+                <img src="assets/images/icons/chatten.svg" class="navbar-bottom-icons" alt="home" />
+                Chats
+              </div>
+      </div>
+      </div>
       </div>
     </nav>
 
