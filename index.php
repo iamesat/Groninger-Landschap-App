@@ -98,7 +98,7 @@
           <div class="card"> 
             <div class="card-body">
               <img src="assets/images/home-icons/gallery.png" class="card-img-top" alt="...">
-              <h5 class="card-title">Foto's</h5>
+              <h5 class="card-title">Fotorollen</h5>
             </div>
           </div>
         </div>
