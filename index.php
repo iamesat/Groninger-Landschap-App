@@ -7,7 +7,7 @@
         <div class="row justify-content-md-center">
           <div class="col">
             <img src="assets/images/icons/bell.svg" class="jumbo-img-top" alt="...">
-            <!-- <img src="assets/images/icons/photo.svg" class="jumbo-img-top" alt="..."> -->
+            <img src="assets/images/icons/photo.svg" class="jumbo-img-top" alt="...">
           </div>
           <div class="col-6">
 
@@ -81,7 +81,7 @@
         <div class="col card-button">
           <div class="card">
             <div class="card-body">
-              <img src="assets/images/home-icons/podium.png" class="card-img-top" alt="...">
+            <a href="mijn-score.php" class="stretched-link" data-transition="slide" rel="external"><img src="assets/images/home-icons/podium.png" class="card-img-top" alt="..."></a>
               <h5 class="card-title">Mijn score</h5>
             </div>
           </div>
@@ -89,7 +89,7 @@
         <div class="col card-button">
           <div class="card">
             <div class="card-body">
-              <img src="assets/images/home-icons/team.png" class="card-img-top" alt="...">
+              <a href="groep.php" class="stretched-link" data-transition="slide" rel="external"><img src="assets/images/home-icons/team.png" class="card-img-top" alt="..."></a>
               <h5 class="card-title">Groepen</h5>
             </div>
           </div>
@@ -97,7 +97,7 @@
         <div class="col card-button">
           <div class="card">
             <div class="card-body">
-              <img src="assets/images/home-icons/gallery.png" class="card-img-top" alt="...">
+              <a href="fotorollen.php" class="stretched-link" data-transition="slide" rel="external"><img src="assets/images/home-icons/gallery.png" class="card-img-top" alt="..."></a>
               <h5 class="card-title">Fotorollen</h5>
             </div>
           </div>

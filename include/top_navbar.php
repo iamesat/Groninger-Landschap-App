@@ -2,7 +2,8 @@
         <div class="container">
           <div class="row">
             <div class="col-auto">
-              <i class="fas fa-arrow-left"></i>
+            <a onclick="goBack()">
+              <i class="fas fa-arrow-left"></i></a>
             </div>
             <div class="col-auto left">
               <strong id="paginatitel"></strong>
