@@ -12,10 +12,16 @@
 
 .meldingengroep{
   color: #3A58FC;
-  margin-top: 20px;
+  padding-top: 20px;
 }
 
 .groepinfo{
   font-size: 20px;
+}
 
+.bekijkenbutton{
+  border-style: solid;
+  border-radius: 25px;
+  color: #3A58FC;
+  border-color: #C7C7C7;
 }
