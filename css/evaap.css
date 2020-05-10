@@ -13,10 +13,18 @@
 .meldingengroep{
   color: #3A58FC;
   padding-top: 20px;
+  font-weight: bold;
+}
+
+.groepbutton{
+  margin-top: 57px;
 }
 
 .groepinfo{
-  font-size: 20px;
+  font-size: 15px;
+  color: #898A8F;
+  margin-top: 20px;
+
 }
 
 .bekijkenbutton{
@@ -27,6 +35,16 @@
   padding-top: 10px;
   padding-bottom: 10px;
   text-align: center;
-  width: 200px;
+  width: 160px;
   font-weight: bold;
+margin-left: auto;
+margin-right: auto;
+}
+
+.groepaantal{
+  text-align: center;
+}
+.card-groep-title{
+  font-size: 20px;
+  margin-left: 15px;
 }
