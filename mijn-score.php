@@ -4,7 +4,7 @@
 <title>Mijn Score</title>
 
 <body>
-<div class="container">
+<div class="container text-center my-3">
     <div class="row justify-content-center">
    <div class="col routes-buttons">
   <button type="button" class="btn btn-outline-dark route-page-button active">Mijn Score</button>
@@ -42,6 +42,19 @@
             </div>
         </div>
 
+    </div>
+</div>
+
+<div class="container groepruimte">
+    <div class="row justify-content-md-center">
+        <div class="col-12">
+            <div class="card scoreborder">
+                <div class="card-body">
+
+                    <h6 class="ml-4 my-3"><b>Wandelaar LVL 2</b></h6>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
