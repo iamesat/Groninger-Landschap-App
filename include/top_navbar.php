@@ -1,16 +1,21 @@
-<nav class="navbar navbar-top-home fixed-top d-flex justify-content-center">
-      <div class="navbar">
+<nav class="navbar navbar-top-home fixed-top">
         <div class="container">
-            <div class="row row-cols-3">
-              <div class="col-2">
-                  <i class="fas fa-arrow-left"></i>
-              </div>
-              <div class="col-4">
-                  <script> javascript:$('title').text(); </script>
-              </div>
-              <div class="col-2">
-                  <i class="fas fa-arrow-left"></i>
-              </div>
-      </div>
-      </div>
+          <div class="row">
+            <div class="col-auto">
+              <i class="fas fa-arrow-left"></i>
+            </div>
+            <div class="col-auto left">
+              <strong id="paginatitel"></strong>
+            </div>
+            <div class="col-auto">
+            </div>
+            <div class="col-auto">
+            </div>
+            <div class="col-auto">
+            </div>
+            <div class="col-auto">
+              <img src="assets/images/icons/winkel.svg" class="jumbo-img-top" alt="...">
+              <img src="assets/images/icons/bell.svg" class="jumbo-img-top" alt="...">
+            </div>
+            </div>
     </nav>

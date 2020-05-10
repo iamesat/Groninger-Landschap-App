@@ -1,26 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php include "include/head.php"; ?>
+<?php include "include/top_navbar.php"; ?>
+<title>Mijn Routes</title>
 <body>
-<div class="container">
-    <div class="jumbotron homepage mt-3">
-        <div class="row justify-content-between">
-            <div class="col">
-                <i class="fas fa-arrow-left"></i>
-            </div>
-            
-            <div class="col-6">
-                <p class="fotorollen-head-title">Fotorollen</p>
-            </div>
-            
-            <div class="col">
-                <img src="assets/images/icons/winkel.svg" class="jumbo-img-top" alt="...">
-                <img src="assets/images/icons/bell.svg" class="jumbo-img-top" alt="...">
-            </div>
-        </div>
-    </div>
-</div>
-
 <div class="container">
     <div class="row justify-content-md-center">
         <div class="col-12">
