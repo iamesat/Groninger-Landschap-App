@@ -24,4 +24,9 @@
   border-radius: 25px;
   color: #3A58FC;
   border-color: #C7C7C7;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  width: 200px;
+  font-weight: bold;
 }
