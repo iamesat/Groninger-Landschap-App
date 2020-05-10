@@ -1,26 +1,29 @@
-body 
+body
 {
     background-color: #F5F5F5;
     font-family: 'Poppins', sans-serif;
 }
 
 /* Navbar section */
-.navbar {
-    border-radius: 18px 18px 0px 0px;
-}
 
 .navbar.navbar-home {
     background: white;
     height: 87px;
     text-align: center;
+    border-radius: 18px 18px 0px 0px;
 }
 
 .navbar.navbar-home img {
-    height: 27px; 
-    float: center;
+    height: 27px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 /* End navbar selection  */
 
+.navbar-top-home {
+  background-color: #092B75;
+  border-radius: 0 0 18px 18px;
+}
 
 /* Homepage selection  */
 .jumbotron.homepage {
@@ -54,6 +57,15 @@ body
     border-radius: 1rem;
 }
 
+.route-page-button {
+    font-size: 12px;
+    border-radius: 1rem;
+}
+
+.col.routes-buttons {
+  max-width: 33%;
+}
+
 .speur-button.btn-outline-light
 {
     border-color: #ffffff61;
@@ -79,4 +91,3 @@ body
 }
 
 /* End homepagina selection */
-

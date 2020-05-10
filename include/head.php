@@ -10,11 +10,9 @@
 
     <title>Groninger Landschap</title>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/navbar-bottom/">
-
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="css/niek.css" rel="stylesheet">
-      <link href="css/evaap.css" rel="stylesheet">
+    <link href="css/evaap.css" rel="stylesheet">
   </head>

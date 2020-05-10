@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<?php include "include/head.php"; ?>
+<?php include ($_SERVER['DOCUMENT_ROOT']. "/Groninger-Landschap-App/include/head.php"); ?>
   <body>
     <div class="container">
       <div class="jumbotron homepage mt-3">
@@ -10,7 +10,7 @@
             <!-- <img src="assets/images/icons/photo.svg" class="jumbo-img-top" alt="..."> -->
           </div>
           <div class="col-6">
-            
+
           </div>
           <div class="col">
             <img src="assets/images/icons/winkel.svg" class="jumbo-img-top" alt="...">
@@ -71,15 +71,15 @@
     <div class="container">
       <div class="row row-cols-2">
         <div class="col card-button">
-          <div class="card"> 
+          <div class="card">
             <div class="card-body">
-              <img src="assets/images/home-icons/track.png" class="card-img-top" alt="...">
+              <a href="mijn-routes.php" class="stretched-link" data-transition="slide" rel="external"><img src="assets/images/home-icons/track.png" class="card-img-top" alt="..."></a>
               <h5 class="card-title">Routes</h5>
             </div>
           </div>
         </div>
         <div class="col card-button">
-          <div class="card"> 
+          <div class="card">
             <div class="card-body">
               <img src="assets/images/home-icons/podium.png" class="card-img-top" alt="...">
               <h5 class="card-title">Mijn score</h5>
@@ -87,7 +87,7 @@
           </div>
         </div>
         <div class="col card-button">
-          <div class="card"> 
+          <div class="card">
             <div class="card-body">
               <img src="assets/images/home-icons/team.png" class="card-img-top" alt="...">
               <h5 class="card-title">Groepen</h5>
@@ -95,7 +95,7 @@
           </div>
         </div>
         <div class="col card-button">
-          <div class="card"> 
+          <div class="card">
             <div class="card-body">
               <img src="assets/images/home-icons/gallery.png" class="card-img-top" alt="...">
               <h5 class="card-title">Fotorollen</h5>
