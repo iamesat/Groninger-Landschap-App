@@ -4,7 +4,7 @@
 <title>Mijn Score</title>
 
 <body>
-<div class="container">
+<div class="container mx-auto">
     <div class="row justify-content-center">
    <div class="col routes-buttons">
   <button type="button" class="btn btn-outline-dark route-page-button active">Mijn Score</button>
