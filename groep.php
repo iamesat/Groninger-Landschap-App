@@ -28,8 +28,8 @@
                 <div class="card-body">
                     <h3 class="card-fotorollen-title">Groep bosmannen</h3>
                     <br>
-                    <p class="fotorollen-nummer">Besloten groep</p>
-                    <p class="fotorollen-nummer">Status: Aanvraag verstuurd</hp>
+                    <p class="groepinfo">Besloten groep</p>
+                    <p class="groepinfo">Status: Aanvraag verstuurd</hp>
                     <br>
 
                   <p class="meldingengroep"> Geen nieuwe meldingen </p>
