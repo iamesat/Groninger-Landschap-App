@@ -21,7 +21,25 @@
     </div>
 </div>
 
-<div class="container">
+<div class="container groepruimte">
+    <div class="row justify-content-md-center">
+        <div class="col-12">
+            <div class="card groepborder">
+                <div class="card-body">
+                    <h3 class="card-fotorollen-title">Groep bosmannen</h3>
+                    <br>
+                    <p class="fotorollen-nummer">Besloten groep</p>
+                    <p class="fotorollen-nummer">Status: Aanvraag verstuurd</hp>
+                    <br>
+
+                  <p class="meldingengroep"> Geen nieuwe meldingen </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container twee">
     <div class="row justify-content-md-center">
         <div class="col-12">
             <div class="card">
@@ -34,6 +52,26 @@
         </div>
     </div>
 </div>
+
+<div class="container twee">
+    <div class="row justify-content-md-center">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-fotorollen-title">Aantal fotorollen</h5>
+                    <br>
+                    <h3 class="fotorollen-nummer">3</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
 <?php include "include/bottom_navbar.php"; ?>
 <?php include "include/scripts.php"; ?>
 </body>
