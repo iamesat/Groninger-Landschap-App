@@ -28,12 +28,18 @@
                 <div class="card-body">
                     <h3 class="card-fotorollen-title">Groep bosmannen</h3>
                     <br>
-                    <p class="fotorollen-nummer">Besloten groep</p>
-                    <p class="fotorollen-nummer">Status: Aanvraag verstuurd</hp>
+                    <div class="groepinformatie">
+                    <p class="groepinfo">Besloten groep</p>
+                    <p class="groepinfo">Status: Aanvraag verstuurd</hp>
                     <br>
+<div class="groepbutton">
+  <p class ="groepaantal"> 2/10 </p>
+  <p class="bekijkenbutton"> bekijken </p>
+</div>
 
                   <p class="meldingengroep"> Geen nieuwe meldingen </p>
                 </div>
+              </div>
             </div>
         </div>
     </div>
