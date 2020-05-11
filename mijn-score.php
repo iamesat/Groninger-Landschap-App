@@ -18,9 +18,9 @@
 
 <div class="container">
     <div class="row justify-content-center mx-4">
-    <div class="col-sm">
+        <div class="col-sm">
             <div class="card text-white bg-primary mb-3 mx-2" style="max-width: 18rem;">
-                <div class="card-body text-center">
+                <div class="text-center my-scores">
                     <p class="card-text">Level</p>
                     <h3 class="card-title">2</h3>
                 </div>
@@ -42,11 +42,10 @@
                 </div>
             </div>
         </div>
-
     </div>
 </div>
 
-<div class="container groepruimte mt-4">
+<div class="container groepruimte my-4">
     <div class="row justify-content-md-center">
         <div class="col-12">
             <div class="card scoreborder">
