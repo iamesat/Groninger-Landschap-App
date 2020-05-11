@@ -13,7 +13,7 @@
   <button type="button" class="btn btn-outline-dark route-page-button active">Mijn Score</button>
    </div>
    <div class="col routes-buttons">
-  <button type="button" class="btn btn-outline-dark route-page-button">Scorebord</button>
+   <a href="scorebord.php" class="stretched-link" data-transition="slide" rel="external"><button type="button" class="btn btn-outline-dark route-page-button">Scorebord</button></a>
    </div>
  </div>
 </div>
@@ -47,7 +47,7 @@
     </div>
 </div>
 
-<div class="container groepruimte my-4">
+<div class="container my-4">
     <div class="row justify-content-md-center">
         <div class="col-12">
             <div class="card scoreborder">
@@ -84,7 +84,7 @@
     </div>
 </div>
 
-    <?php include "include/bottom_navbar.php"; ?>
-    <?php include "include/scripts.php"; ?>
+<?php include "include/bottom_navbar.php"; ?>
+<?php include "include/scripts.php"; ?>
 </body>
 </html>
