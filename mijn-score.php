@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php include "include/head.php"; ?>
-<?php include "include/top_navbar.php"; ?>
+
 <title>Mijn Score</title>
 
 <body>
+<?php include "include/top_navbar.php"; ?>
+
 <div class="container text-center my-3">
     <div class="row justify-content-center">
    <div class="col routes-buttons">
@@ -17,28 +19,28 @@
 </div>
 
 <div class="container">
-    <div class="row justify-content-center mx-4">
-        <div class="col-sm">
-            <div class="card text-white bg-primary mb-3 mx-2" style="max-width: 18rem;">
-                <div class="text-center my-scores">
-                    <p class="card-text">Level</p>
-                    <h3 class="card-title">2</h3>
+    <div class="row justify-content-center">
+        <div>
+            <div class="card text-white bg-primary mx-2" style="width: 96px; height: 98px; border: none;" >
+                <div class="card-body text-center my-scores">
+                    <p class="card-text" style="font-size: 12px;">Level</p>
+                    <h3 class="card-title" style="font-size: 24px;">2</h3>
                 </div>
             </div>
         </div>
-        <div class="col-sm">
-            <div class="card text-white bg-warning mb-3" style="max-width: 18rem;">
+        <div >
+            <div class="card text-white bg-warning mx-2" style="width: 96px; height: 98px; border: none;">
                 <div class="card-body text-center">
-                    <p class="card-text">Plaats</p>
-                    <h3 class="card-title">1e</h3>
+                    <p class="card-text" style="font-size: 12px;">Plaats</p>
+                    <h3 class="card-title" style="font-size: 24px;">1e</h3>
                 </div>
             </div>
         </div>
-        <div class="col-sm">
-            <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+        <div>
+            <div class="card text-white bg-danger mx-2" style="width: 96px; height: 98px; border: none;">
                 <div class="card-body text-center">
-                    <p class="card-text">Aantal quizen goed</p>
-                    <h3 class="card-title">14</h3>
+                    <p class="card-text" style="font-size: 12px;">Quizen</p>
+                    <h3 class="card-title" style="font-size: 24px;">14</h3>
                 </div>
             </div>
         </div>
