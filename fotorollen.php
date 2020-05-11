@@ -2,7 +2,7 @@
 <html lang="en">
 <?php include "include/head.php"; ?>
 <?php include "include/top_navbar.php"; ?>
-<title>Mijn Routes</title>
+<title>Fotorollen</title>
 <body>
 <br><br><br><br>
 <div class="container">
