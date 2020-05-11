@@ -21,25 +21,25 @@
 <div class="container">
     <div class="row justify-content-center">
         <div>
-            <div class="card text-white bg-primary mx-2" style="width: 96px; height: 98px; border: none;" >
+            <div class="card text-white bg-primary mx-2" style="width: 96px; height: 100px; border: none; border-radius: 20%;" >
                 <div class="card-body text-center my-scores">
-                    <p class="card-text" style="font-size: 12px;">Level</p>
+                    <p class="card-text" style="font-size: 14px;">Level</p>
                     <h3 class="card-title" style="font-size: 24px;">2</h3>
                 </div>
             </div>
         </div>
         <div >
-            <div class="card text-white bg-warning mx-2" style="width: 96px; height: 98px; border: none;">
+            <div class="card text-white bg-warning mx-2" style="width: 96px; height: 100px; border: none; border-radius: 20%;">
                 <div class="card-body text-center">
-                    <p class="card-text" style="font-size: 12px;">Plaats</p>
+                    <p class="card-text" style="font-size: 14px;">Plaats</p>
                     <h3 class="card-title" style="font-size: 24px;">1e</h3>
                 </div>
             </div>
         </div>
         <div>
-            <div class="card text-white bg-danger mx-2" style="width: 96px; height: 98px; border: none;">
+            <div class="card text-white bg-danger mx-2" style="width: 96px; height: 100px; border: none; border-radius: 20%;">
                 <div class="card-body text-center">
-                    <p class="card-text" style="font-size: 12px;">Quizen</p>
+                    <p class="card-text" style="font-size: 14px;">Quizen</p>
                     <h3 class="card-title" style="font-size: 24px;">14</h3>
                 </div>
             </div>
