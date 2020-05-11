@@ -4,24 +4,27 @@
   <body>
     <div class="container">
       <div class="jumbotron homepage mt-3">
+        <div class="container">
         <div class="row justify-content-md-center">
           <div class="col">
-            <img src="assets/images/icons/bell.svg" class="jumbo-img-top" alt="...">
-            <img src="assets/images/icons/photo.svg" class="jumbo-img-top" alt="...">
-          </div>
-          <div class="col-6">
-
+              <i class="fa fa-bell jumbo-icons"></i>
           </div>
           <div class="col">
-            <img src="assets/images/icons/winkel.svg" class="jumbo-img-top" alt="...">
-            <img src="assets/images/icons/settings.svg" class="jumbo-img-top" alt="...">
+          </div>
+          <div class="col icons-right-align">
+            <i class="fa fa-shopping-cart jumbo-icons"></i>
           </div>
         </div>
+      </div>
         <div class="row justify-content-between">
           <div class="col-4">
           </div>
-
-          <img src="assets/images/profile-picture.png" class="profile-picture" alt="...">
+          <div class="item">
+        		<a href="settings.php">
+      			<span class="notify-badge"><i class="fa fa-cog jumbo-icons"></i></span>
+              <img src="assets/images/profile-picture.png" class="profile-picture" alt="...">
+        		</a>
+        	</div>
           <div class="col-4">
           </div>
         </div>
@@ -44,7 +47,7 @@
 
         <div class="row justify-content-md-center">
           <div class="col">
-<b>LVL 2</b>
+            <b>LVL 2</b>
           </div>
           <div class="col-6">
           </div>
@@ -68,7 +71,7 @@
       </div>
     </div>
 
-    <div class="container">
+    <div class="container home">
       <div class="row row-cols-2">
         <div class="col card-button">
           <div class="card">
