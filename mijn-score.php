@@ -51,28 +51,28 @@
             <div class="card scoreborder">
             <div>
                 <div class="card-body my-3">
-                    <h6 class="ml-4 my-3"><b>Wandelaar LVL 2</b></h6>
+                    <h6 class="ml-4 my-3"><b>Wandelaar LVL 2 58/100 PT</b></h6>
                     <div class="progress">
                     <div class="progress-bar mb-3" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
             </div>
             <div>
                 <div class="card-body my-3">
-                    <h6 class="ml-4 my-3"><b>Routenaam</b></h6>
+                    <h6 class="ml-4 my-3"><b>Routenaam 30%</b></h6>
                     <div class="progress">
                     <div class="progress-bar mb-3" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
             </div>
             <div>
                 <div class="card-body my-3">
-                    <h6 class="ml-4 my-3"><b>Wandelaar</b></h6>
+                    <h6 class="ml-4 my-3"><b>Wandelaar 58/100 PT</b></h6>
                     <div class="progress">
                     <div class="progress-bar mb-3" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
             </div>
             <div>
                 <div class="card-body my-3">
-                    <h6 class="ml-4 my-3"><b>Wandelaar LVL 2</b></h6>
+                    <h6 class="ml-4 my-3"><b>Wandelaar LVL 2 58/100 PT</b></h6>
                     <div class="progress">
                     <div class="progress-bar mb-3" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
