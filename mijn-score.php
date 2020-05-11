@@ -1,4 +1,5 @@
-
+<!DOCTYPE html>
+<html lang="en">
 <?php include "include/head.php"; ?>
 <?php include "include/top_navbar.php"; ?>
 <title>Mijn Score</title>
@@ -82,6 +83,7 @@
     </div>
 </div>
 
-<?php include "include/bottom_navbar.php"; ?>
-<?php include "include/scripts.php"; ?>
+    <?php include "include/bottom_navbar.php"; ?>
+    <?php include "include/scripts.php"; ?>
 </body>
+</html>
