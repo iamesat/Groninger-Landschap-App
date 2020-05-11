@@ -4,7 +4,7 @@
 <?php include "include/top_navbar.php"; ?>
 <title>Mijn Groepen</title>
 <body>
-<div class="container groepruimte">
+<div class="container groepruimte groepboven">
     <div class="row justify-content-md-center">
         <div class="col-12">
             <div class="card groepborder">

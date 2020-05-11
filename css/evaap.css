@@ -4,6 +4,7 @@
 
 .groepruimte{
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .groepborder{
@@ -47,4 +48,8 @@ margin-right: auto;
 .card-groep-title{
   font-size: 20px;
   margin-left: 15px;
+}
+
+.groepboven{
+  margin-top: 152px;
 }
