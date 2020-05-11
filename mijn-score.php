@@ -45,14 +45,38 @@
     </div>
 </div>
 
-<div class="container groepruimte">
+<div class="container groepruimte mt-4">
     <div class="row justify-content-md-center">
         <div class="col-12">
             <div class="card scoreborder">
-                <div class="card-body">
-
+            <div>
+                <div class="card-body my-3">
                     <h6 class="ml-4 my-3"><b>Wandelaar LVL 2</b></h6>
+                    <div class="progress">
+                    <div class="progress-bar mb-3" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
+            </div>
+            <div>
+                <div class="card-body my-3">
+                    <h6 class="ml-4 my-3"><b>Routenaam</b></h6>
+                    <div class="progress">
+                    <div class="progress-bar mb-3" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+            <div>
+                <div class="card-body my-3">
+                    <h6 class="ml-4 my-3"><b>Wandelaar</b></h6>
+                    <div class="progress">
+                    <div class="progress-bar mb-3" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+            <div>
+                <div class="card-body my-3">
+                    <h6 class="ml-4 my-3"><b>Wandelaar LVL 2</b></h6>
+                    <div class="progress">
+                    <div class="progress-bar mb-3" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
             </div>
         </div>
     </div>
