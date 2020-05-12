@@ -45,6 +45,122 @@
     </div>
 </div>
 
+<div class="container">
+    <div class="row text-center">
+        <div class="col my-3">
+            <div class="card scoreborder scorebord-kaart">
+                <div>
+                    <div class="card-body">
+                        <h6 class="scorebord-titel py-1"><b><u>Punten Koning</u></b></h6>
+                        <div class="row pt-2">
+                            <div class="col">
+                                <p class="klassement">
+                                    Mees<br>
+                                    Johan<br>
+                                    Eric<br>
+                                    Eva<br>
+                                    Nieck
+                                </p>
+                            </div>
+                            <div class="col">
+                                <p class="klassement">
+                                    103pt<br>
+                                    97pt<br>
+                                    96pt<br>
+                                    89pt<br>
+                                    87pt
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card scoreborder scorebord-kaart mt-3">
+                <div>
+                    <div class="card-body">
+                        <h6 class="scorebord-titel py-1"><b><u>Fotograaf Koning</u></b></h6>
+                        <div class="row">
+                            <div class="col">
+                                <p class="klassement">
+                                    Eline<br>
+                                    Danique<br>
+                                    Bas<br>
+                                    Mees<br>
+                                    Erik
+                                </p>
+                            </div>
+                            <div class="col">
+                                <p class="klassement">
+                                    8pt<br>
+                                    8pt<br>
+                                    7pt<br>
+                                    6pt<br>
+                                    6pt
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col my-3">
+            <div class="card scoreborder scorebord-kaart">
+                <div>
+                    <div class="card-body">
+                        <h6 class="scorebord-titel py-1"><b><u>Groep Koning</u></b></h6>
+                        <div class="row pt-2">
+                            <div class="col">
+                                <p class="klassement">
+                                    Hanze<br>
+                                    Stinkies<br>
+                                    Bosman<br>
+                                    Jacobs<br>
+                                    Boerderij
+                                </p>
+                            </div>
+                            <div class="col">
+                                <p class="klassement">
+                                    103pt<br>
+                                    100pt<br>
+                                    100pt<br>
+                                    100pt<br>
+                                    100pt
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card scoreborder scorebord-kaart mt-3">
+                <div>
+                    <div class="card-body">
+                        <h6 class="scorebord-titel py-1"><b><u>Quiz Koning</u></b></h6>
+                        <div class="row pt-2">
+                            <div class="col">
+                                <p class="klassement">
+                                    Mees<br>
+                                    Bas<br>
+                                    Eric<br>
+                                    Danique<br>
+                                    Nieck
+                                </p>
+                            </div>
+                            <div class="col">
+                                <p class="klassement">
+                                    20pt<br>
+                                    19pt<br>
+                                    17pt<br>
+                                    16pt<br>
+                                    12pt
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 <?php include "include/bottom_navbar.php"; ?>

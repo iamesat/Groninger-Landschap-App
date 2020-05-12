@@ -55,8 +55,8 @@
             <b>LVL 3</b>
           </div>
         </div>
-        <div class="progress">
-          <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">100 punten</div>
+        <div class="progress progress-home">
+          <div class="progress-bar progress-bar-home" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">100 punten</div>
         </div>
         <br>
         <div class="row justify-content-between">

@@ -53,28 +53,56 @@
               <div class="card scoreborder">
               <div>
                   <div class="card-body my-3">
-                      <h6 class="ml-4" style="font-size: 14px;"><b>Wandelaar LVL 2 58/100 PT</b></h6>
+                        <div class="row">
+                            <div class="col">
+                                <h6 class="ml-4" style="font-size: 12px;"><b>Wandelaar LVL 2</b></h6>
+                            </div>
+                            <div class="col">
+                                <h6 class="ml-4 score-punten" style="font-size: 12px;"><b>58/100 PT</b></h6>
+                            </div>
+                        </div>
                   <div class="progress">
-                      <div class="progress-bar mijnscore-bar" role="progressbar" style="width: 58%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">58 PT</div>
+                      <div class="progress-bar progress-bar" role="progressbar" style="width: 58%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">58 PT</div>
                   </div>
               </div>
               <div>
-                  <div class="card-body my-3">
-                      <h6 class="ml-4" style="font-size: 14px;"><b>Routenaam 30%</b></h6>
+                    <div class="card-body my-3">
+                        <div class="row">
+                            <div class="col">
+                                <h6 class="ml-4" style="font-size: 12px;"><b>Routenaam</b></h6>
+                            </div>
+                            <div class="col">
+                                <h6 class="ml-4 score-punten" style="font-size: 12px;"><b>30%</b></h6>
+                            </div>
+                        </div>
                   <div class="progress">
                       <div class="progress-bar" role="progressbar" style="width: 30%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">30%</div>
                   </div>
                 </div>
               </div>
-                  <div class="card-body my-3">
-                      <h6 class="ml-4" style="font-size: 14px;"><b>Wandelaar 58/100 PT</b></h6>
+                    <div class="card-body my-3">
+                        <div class="row">
+                            <div class="col">
+                                <h6 class="ml-4" style="font-size: 12px;"><b>Wandelaar LVL 2</b></h6>
+                            </div>
+                            <div class="col">
+                                <h6 class="ml-4 score-punten" style="font-size: 12px;"><b>58/100 PT</b></h6>
+                            </div>
+                        </div>
                   <div class="progress">
                       <div class="progress-bar" role="progressbar" style="width: 58%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">58 PT</div>
                   </div>
               </div>
               <div>
-                  <div class="card-body my-3">
-                      <h6 class="ml-4" style="font-size: 14px;"><b>Wandelaar LVL 2 58/100 PT</b></h6>
+                    <div class="card-body my-3">
+                        <div class="row">
+                            <div class="col">
+                                <h6 class="ml-4" style="font-size: 12px;"><b>Wandelaar LVL 2</b></h6>
+                            </div>
+                            <div class="col">
+                                <h6 class="ml-4 score-punten" style="font-size: 12px;"><b>58/100 PT</b></h6>
+                            </div>
+                        </div>
                   <div class="progress">
                       <div class="progress-bar" role="progressbar" style="width: 58%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">58 PT</div>
                   </div>
