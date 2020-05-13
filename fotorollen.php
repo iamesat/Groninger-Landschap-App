@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php include "include/head.php"; ?>
+<?php include ($_SERVER['DOCUMENT_ROOT']. "/Groninger-Landschap-App/include/head.php"); ?>
 <?php include "include/top_navbar.php"; ?>
 <title>Fotorollen</title>
 <body>
-<br><br><br><br>
+    <br><br><br><br>
 <div class="container">
     <div class="row justify-content-md-center">
         <div class="col-12">
@@ -43,9 +43,9 @@
         <div class="col-12">
             <div class="card">
                 <div class="card-body text-center">
-                    <a href="mijn-foto-overzicht.php" class="stretched-link" data-transition="slide" rel="external"><button type="button" class="btn btn-outline-dark fotorollen-page-buttons">Mijn foto overzicht</button></a><br>
-                    <a href="groepen-foto-overzicht.php" class="stretched-link" data-transition="slide" rel="external"><button type="button" class="btn btn-outline-dark fotorollen-page-buttons">Groepen foto overzicht</button></a><br>
-                    <a href="fotowedstrijd.php" class="stretched-link" data-transition="slide" rel="external"><button type="button" class="btn btn-outline-dark fotorollen-page-buttons">Fotowedstrijd</button></a>
+                    <a href="mijn-foto-overzicht.php" data-transition="slide" rel="external"><button type="button" class="btn btn-outline-dark fotorollen-page-buttons">Mijn foto overzicht</button></a><br>
+                    <a href="groepen-foto-overzicht.php" data-transition="slide" rel="external"><button type="button" class="btn btn-outline-dark fotorollen-page-buttons">Groepen foto overzicht</button></a><br>
+                    <a href="fotowedstrijd.php" data-transition="slide" rel="external"><button type="button" class="btn btn-outline-dark fotorollen-page-buttons">Fotowedstrijd</button></a>
                 </div>
             </div>
         </div>
