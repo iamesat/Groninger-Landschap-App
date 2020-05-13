@@ -1,3 +1,40 @@
+.mijnscore-kaart{
+    width: 96px; 
+    height: 100px; 
+    border: none; 
+    border-radius: 20%;
+}
+
 .scoreborder{
     border-radius: 20px;
+}
+
+.score-punten{
+    text-align: right !important;
+    padding-right: 20px;
+}
+
+.progress{
+    margin-left: 15px !important;
+    margin-right: 15px !important;
+}
+
+.progress-bar{
+    background-color: #082668;
+}
+
+.scorebord-kaart{
+    width: 155px;
+    height: 194px;
+    border: none;
+    border-radius: 20%;
+}
+
+.scorebord-titel{
+    font-size: 14px;
+}
+
+.klassement{
+    font-size: 12px;
+    text-align: left !important;
 }
