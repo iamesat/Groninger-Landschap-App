@@ -17,6 +17,86 @@
     </div>
 </div>
 
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-body text-center">
+                    <p>Groep bosmannen</p>
+                    <div class="row justify-content-center">
+                    <a href="foto-overzicht.php" data-transition="slide" rel="external"><img src="assets/images/fotorollen/molen.png" class="recente-foto" alt="..."></a>
+                    <a href="foto-overzicht.php" data-transition="slide" rel="external"><img src="assets/images/fotorollen/huis.png" class="recente-foto" alt="..."></a>
+                    </div>
+                    <div class="row justify-content-center">
+                    <a href="foto-overzicht.php"  data-transition="slide" rel="external"><img src="assets/images/fotorollen/beekje.png" class="recente-foto" alt="..."></a>
+                    <a href="foto-overzicht.php" data-transition="slide" rel="external"><img src="assets/images/fotorollen/huis2.png" class="recente-foto" alt="..."></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-body text-center">
+                    <p>Groep Stinkies</p>
+                    <div class="row justify-content-center">
+                    <a href="foto-overzicht.php" data-transition="slide" rel="external"><img src="assets/images/fotorollen/molen.png" class="recente-foto" alt="..."></a>
+                    <a href="foto-overzicht.php" data-transition="slide" rel="external"><img src="assets/images/fotorollen/huis.png" class="recente-foto" alt="..."></a>
+                    </div>
+                    <div class="row justify-content-center">
+                    <a href="foto-overzicht.php"  data-transition="slide" rel="external"><img src="assets/images/fotorollen/beekje.png" class="recente-foto" alt="..."></a>
+                    <a href="foto-overzicht.php" data-transition="slide" rel="external"><img src="assets/images/fotorollen/huis2.png" class="recente-foto" alt="..."></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-body text-center">
+                    <p>Groep Jacobs College</p>
+                    <div class="row justify-content-center">
+                    <a href="foto-overzicht.php" data-transition="slide" rel="external"><img src="assets/images/fotorollen/molen.png" class="recente-foto" alt="..."></a>
+                    <a href="foto-overzicht.php" data-transition="slide" rel="external"><img src="assets/images/fotorollen/huis.png" class="recente-foto" alt="..."></a>
+                    </div>
+                    <div class="row justify-content-center">
+                    <a href="foto-overzicht.php"  data-transition="slide" rel="external"><img src="assets/images/fotorollen/beekje.png" class="recente-foto" alt="..."></a>
+                    <a href="foto-overzicht.php" data-transition="slide" rel="external"><img src="assets/images/fotorollen/huis2.png" class="recente-foto" alt="..."></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-body text-center">
+                    <p>Groep TheeTantes</p>
+                    <div class="row justify-content-center">
+                    <a href="foto-overzicht.php" data-transition="slide" rel="external"><img src="assets/images/fotorollen/molen.png" class="recente-foto" alt="..."></a>
+                    <a href="foto-overzicht.php" data-transition="slide" rel="external"><img src="assets/images/fotorollen/huis.png" class="recente-foto" alt="..."></a>
+                    </div>
+                    <div class="row justify-content-center">
+                    <a href="foto-overzicht.php"  data-transition="slide" rel="external"><img src="assets/images/fotorollen/beekje.png" class="recente-foto" alt="..."></a>
+                    <a href="foto-overzicht.php" data-transition="slide" rel="external"><img src="assets/images/fotorollen/huis2.png" class="recente-foto" alt="..."></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <?php include "include/bottom_navbar.php"; ?>
 <?php include "include/scripts.php"; ?>
 </body>
