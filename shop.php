@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php include "include/head.php"; ?>
-<title>Fotorollen</title>
+<title>Shop</title>
 <body>
 <?php include "include/top_navbar.php"; ?>
 

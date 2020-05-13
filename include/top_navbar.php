@@ -15,7 +15,7 @@
             <div class="col-auto">
             </div>
             <div class="col-auto">
-              <img src="assets/images/icons/winkel.svg" class="jumbo-img-top" alt="...">
+              <a href="shop.php" class="stretched-link" data-transition="slide" rel="external"><img src="assets/images/icons/winkel.svg" class="jumbo-img-top" alt="..."></a>
               <img src="assets/images/icons/bell.svg" class="jumbo-img-top" alt="...">
             </div>
             </div>

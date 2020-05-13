@@ -12,7 +12,7 @@
           <div class="col">
           </div>
           <div class="col icons-right-align">
-            <i class="fa fa-shopping-cart jumbo-icons"></i>
+            <a href="shop.php" class="stretched-link" data-transition="slide" rel="external"><i class="fa fa-shopping-cart jumbo-icons"></i></a>
           </div>
         </div>
       </div>
