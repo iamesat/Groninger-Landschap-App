@@ -17,3 +17,22 @@
     width: 100%;
     margin: 1px;
 }
+
+.foto-page-button {
+    font-size: 12px;
+    border-radius: 0.8rem;
+    margin-top: 100px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    background-color: white;
+    border-color: #fff;
+    width: 150px;
+}
+
+.foto-page-button.active {
+    border-color: #343a40;
+}
+
+.col.fotopage-buttons {
+  max-width: 33%;
+}
