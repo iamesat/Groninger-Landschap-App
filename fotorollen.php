@@ -25,12 +25,12 @@
                 <div class="card-body text-center">
                     <p>Mijn recente foto's</p>
                     <div class="row justify-content-center">
-                    <a href="mijn-foto-overzicht.php" class="stretched-link"  data-transition="slide" rel="external"><img src="assets/images/fotorollen/molen.png" class="recente-foto" alt="..."></a>
-                    <a href="mijn-foto-overzicht.php" class="stretched-link" data-transition="slide" rel="external"><img src="assets/images/fotorollen/huis.png" class="recente-foto" alt="..."></a>
+                    <a href="mijn-foto-overzicht.php" data-transition="slide" rel="external"><img src="assets/images/fotorollen/molen.png" class="recente-foto" alt="..."></a>
+                    <a href="mijn-foto-overzicht.php" data-transition="slide" rel="external"><img src="assets/images/fotorollen/huis.png" class="recente-foto" alt="..."></a>
                     </div>
                     <div class="row justify-content-center">
-                    <a href="mijn-foto-overzicht.php" class="stretched-link" data-transition="slide" rel="external"><img src="assets/images/fotorollen/beekje.png" class="recente-foto" alt="..."></a>
-                    <a href="mijn-foto-overzicht.php" class="stretched-link" data-transition="slide" rel="external"><img src="assets/images/fotorollen/huis2.png" class="recente-foto" alt="..."></a>
+                    <a href="mijn-foto-overzicht.php"  data-transition="slide" rel="external"><img src="assets/images/fotorollen/beekje.png" class="recente-foto" alt="..."></a>
+                    <a href="mijn-foto-overzicht.php" data-transition="slide" rel="external"><img src="assets/images/fotorollen/huis2.png" class="recente-foto" alt="..."></a>
                     </div>
                 </div>
             </div>
@@ -46,6 +46,7 @@
                     <a href="mijn-foto-overzicht.php" data-transition="slide" rel="external"><button type="button" class="btn btn-outline-dark fotorollen-page-buttons">Mijn foto overzicht</button></a><br>
                     <a href="groepen-foto-overzicht.php" data-transition="slide" rel="external"><button type="button" class="btn btn-outline-dark fotorollen-page-buttons">Groepen foto overzicht</button></a><br>
                     <a href="fotowedstrijd.php" data-transition="slide" rel="external"><button type="button" class="btn btn-outline-dark fotorollen-page-buttons">Fotowedstrijd</button></a>
+                    <a href="shop.php" data-transition="slide" rel="external"><button type="button" class="btn btn-outline-dark fotorollen-page-buttons">Nieuwe fotorollen aanschaffen</button></a>
                 </div>
             </div>
         </div>
