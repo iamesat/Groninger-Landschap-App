@@ -60,3 +60,53 @@
   border-radius: 1rem;
   color: white;
 }
+
+
+/* Login form */
+
+.login-card {
+    padding-left: 18px;
+    padding-right: 18px;
+    text-align: center;
+}
+
+.login-card .card {
+    border: 0px;
+    border-radius: 15px;
+}
+
+.inlog-button {
+    color: #fff;
+    background-color: #96C639;
+    border-radius: 2rem;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.input-veldje {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.container.inloggen {
+  padding-top:15%;
+  padding-bottom: 15px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.login-image {
+  padding-top: 10%;
+}
+
+.login-image img {
+    width: 70%;
+}
+
+.col.login-bottom-text p {
+  font-size: 12px;
+  margin-bottom: 5px;
+  color: #898A8F;
+}
