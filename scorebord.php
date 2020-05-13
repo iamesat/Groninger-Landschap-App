@@ -45,7 +45,7 @@
     </div>
 </div>
 
-<div class="container">
+<div class="container mt-2">
     <div class="row text-center">
         <div class="col my-3">
             <div class="card scoreborder scorebord-kaart">
