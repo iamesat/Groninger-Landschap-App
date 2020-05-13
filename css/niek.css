@@ -8,3 +8,12 @@
 .fotorollen-nummer {
     text-align: center;
 }
+
+.recente-foto {
+    padding: 5px;
+}
+
+.fotorollen-page-buttons {
+    width: 100%;
+    margin: 1px;
+}

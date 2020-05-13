@@ -11,7 +11,6 @@
             <div class="card">
                 <div class="card-body">
                     <h5 class="card-fotorollen-title">Aantal fotorollen</h5>
-                    <br>
                     <h2 class="fotorollen-nummer">3</h2>
                 </div>
             </div>
@@ -26,12 +25,12 @@
                 <div class="card-body text-center">
                     <p>Mijn recente foto's</p>
                     <div class="row justify-content-center">
-                    <a href="" class="stretched-link" data-transition="slide" rel="external"><img src="assets/images/fotorollen/molen.png" class="card-img-top" alt="..."></a>
-                    <a href="" class="stretched-link" data-transition="slide" rel="external"><img src="assets/images/fotorollen/huis.png" class="card-img-top" alt="..."></a>
+                    <a href="mijn-foto-overzicht.php" class="stretched-link"  data-transition="slide" rel="external"><img src="assets/images/fotorollen/molen.png" class="recente-foto" alt="..."></a>
+                    <a href="mijn-foto-overzicht.php" class="stretched-link" data-transition="slide" rel="external"><img src="assets/images/fotorollen/huis.png" class="recente-foto" alt="..."></a>
                     </div>
                     <div class="row justify-content-center">
-                    <a href="" class="stretched-link" data-transition="slide" rel="external"><img src="assets/images/fotorollen/beekje.png" class="card-img-top" alt="..."></a>
-                    <a href="" class="stretched-link" data-transition="slide" rel="external"><img src="assets/images/fotorollen/huis2.png" class="card-img-top" alt="..."></a>
+                    <a href="mijn-foto-overzicht.php" class="stretched-link" data-transition="slide" rel="external"><img src="assets/images/fotorollen/beekje.png" class="recente-foto" alt="..."></a>
+                    <a href="mijn-foto-overzicht.php" class="stretched-link" data-transition="slide" rel="external"><img src="assets/images/fotorollen/huis2.png" class="recente-foto" alt="..."></a>
                     </div>
                 </div>
             </div>
@@ -44,11 +43,9 @@
         <div class="col-12">
             <div class="card">
                 <div class="card-body text-center">
-                    <p>Mijn foto overzicht</p>
-                    <p>Groepen foto overzicht</p>
-                    <p>Fotowedstrijd</p>
-                    <p>Nieuwe fotorollen aanschaffen</p>
-                    </div>
+                    <a href="mijn-foto-overzicht.php" class="stretched-link" data-transition="slide" rel="external"><button type="button" class="btn btn-outline-dark fotorollen-page-buttons">Mijn foto overzicht</button></a><br>
+                    <a href="groepen-foto-overzicht.php" class="stretched-link" data-transition="slide" rel="external"><button type="button" class="btn btn-outline-dark fotorollen-page-buttons">Groepen foto overzicht</button></a><br>
+                    <a href="fotowedstrijd.php" class="stretched-link" data-transition="slide" rel="external"><button type="button" class="btn btn-outline-dark fotorollen-page-buttons">Fotowedstrijd</button></a>
                 </div>
             </div>
         </div>
