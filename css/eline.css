@@ -1,3 +1,5 @@
+/* Mijn score pagina */
+
 .mijnscore-kaart{
     width: 96px; 
     height: 100px; 
@@ -24,6 +26,8 @@
     background-color: #082668;
 }
 
+/* Scorebord pagina */
+
 .scorebord-kaart{
     width: 155px;
     height: 190px;
@@ -38,4 +42,12 @@
 .klassement{
     font-size: 12px;
     text-align: left !important;
+}
+
+/* Shop pagina */
+
+.shop-button{
+    border-color: #ffffff61;
+    background-color: #082668;
+    border-radius: 1rem;
 }
