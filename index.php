@@ -1,113 +1,44 @@
 <!doctype html>
 <html lang="en">
 <?php include ($_SERVER['DOCUMENT_ROOT']. "/Groninger-Landschap-App/include/head.php"); ?>
+<title>Mijn Routes</title>
   <body>
+
+    <div class="container inloggen">
+    <h3>Inloggen</h3>
+    </div>
+
     <div class="container">
-      <div class="jumbotron homepage mt-3">
-        <div class="container">
-        <div class="row justify-content-md-center">
-          <div class="col">
-              <i class="fa fa-bell jumbo-icons"></i>
-          </div>
-          <div class="col">
-          </div>
-          <div class="col icons-right-align">
-            <a href="shop.php" class="stretched-link" data-transition="slide" rel="external"><i class="fa fa-shopping-cart jumbo-icons"></i></a>
-          </div>
-        </div>
-      </div>
-        <div class="row justify-content-between">
-          <div class="col-4">
-          </div>
-          <div class="item">
-        		<a href="settings.php">
-      			<span class="notify-badge"><i class="fa fa-cog jumbo-icons"></i></span>
-              <img src="assets/images/profile-picture.png" class="profile-picture" alt="...">
-        		</a>
-        	</div>
-          <div class="col-4">
-          </div>
-        </div>
-        <div class="row justify-content-between">
-          <div class="col-4">
+      <div class="row row-cols-1">
+        <div class="col login-card">
+          <div class="card shadow">
+            <div class="card-body">
+              <form action="functions/login" method="POST">
+              <div class="input-group mb-3">
+              <input type="text" class="form-control input-veldje" placeholder="Gebruikersnaam" aria-label="Username" aria-describedby="basic-addon1" name="username" required>
+            </div>
+            <div class="input-group mb-3">
+            <input type="password" class="form-control input-veldje" placeholder="Wachtwoord" aria-label="Password" aria-describedby="basic-addon1" name="password" required>
           </div>
 
-          <b>Mees Venema</b>
-          <div class="col-4">
-          </div>
-        </div>
-        <div class="row justify-content-between">
-          <div class="col-4">
-          </div>
-
-          Beschermer
-          <div class="col-4">
-          </div>
-        </div>
-
-        <div class="row justify-content-md-center">
-          <div class="col">
-            <b>LVL 2</b>
-          </div>
-          <div class="col-6">
-          </div>
-          <div class="col">
-            <b>LVL 3</b>
-          </div>
-        </div>
-        <div class="progress progress-home">
-          <div class="progress-bar progress-bar-home" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">100 punten</div>
-        </div>
-        <br>
-        <div class="row justify-content-between">
-          <div class="col-2">
+              <input type="submit" value="Inloggen" name="login" class="btn inlog-button btn-lg btn-block" />
+        </form>
+          <div class="col login-bottom-text">
+            <p><a href="#">Wachtwoord vergeten?</a></p>
+            <p>Nog geen account?<a href="register"> Aanmelden</a></p>
+            <p><a href="#">Algemene voorwaarden</a></p>
           </div>
 
-          <button type="button" class="btn btn-outline-light speur-button">&nbsp;Doorgaan speurtocht&nbsp;</button>
-          <div class="col-2">
-          </div>
-        </div>
-        <br>
+
       </div>
     </div>
-
-    <div class="container home">
-      <div class="row row-cols-2">
-        <div class="col card-button">
-          <div class="card">
-            <div class="card-body">
-              <a href="mijn-routes.php" class="stretched-link" data-transition="slide" rel="external"><img src="assets/images/home-icons/track.png" class="card-img-top" alt="..."></a>
-              <h5 class="card-title">Routes</h5>
-            </div>
-          </div>
-        </div>
-        <div class="col card-button">
-          <div class="card">
-            <div class="card-body">
-            <a href="mijn-score.php" class="stretched-link" data-transition="slide" rel="external"><img src="assets/images/home-icons/podium.png" class="card-img-top" alt="..."></a>
-              <h5 class="card-title">Mijn score</h5>
-            </div>
-          </div>
-        </div>
-        <div class="col card-button">
-          <div class="card">
-            <div class="card-body">
-              <a href="groep.php" class="stretched-link" data-transition="slide" rel="external"><img src="assets/images/home-icons/team.png" class="card-img-top" alt="..."></a>
-              <h5 class="card-title">Groepen</h5>
-            </div>
-          </div>
-        </div>
-        <div class="col card-button">
-          <div class="card">
-            <div class="card-body">
-              <a href="fotorollen.php" class="stretched-link" data-transition="slide" rel="external"><img src="assets/images/home-icons/gallery.png" class="card-img-top" alt="..."></a>
-              <h5 class="card-title">Fotorollen</h5>
-            </div>
-          </div>
-        </div>
-      </div>
+    <br>
+    <div class="col login-image">
+      <img class="" src="assets/images/login_image.png" alt="route afbeelding">
     </div>
-    <?php include "include/bottom_navbar.php"; ?>
+  </div>
+</div>
+</div>
     <?php include "include/scripts.php"; ?>
   </body>
 </html>
