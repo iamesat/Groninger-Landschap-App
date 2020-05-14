@@ -22,7 +22,7 @@
         <div class="col-12">
             <div class="card">
                 <div class="card-body text-center">
-                    <a href="foto-groep-1.php" data-transition="slide" rel="external"><button type="button" class="btn btn-outline-dark fotorollen-page-buttons">Groep Bosmannen</button></a>
+                    <button type="button" class="btn btn-outline-dark fotorollen-page-buttons">Groep Stinkies</button>
                         <div class="row justify-content-center">
                             <a href="foto-overzicht.php" data-transition="slide" rel="external"><img src="assets/images/fotorollen/molen.png" class="recente-foto" alt="..."></a>
                             <a href="foto-overzicht.php" data-transition="slide" rel="external"><img src="assets/images/fotorollen/huis.png" class="recente-foto" alt="..."></a>
@@ -32,18 +32,7 @@
                             <a href="foto-overzicht.php"  data-transition="slide" rel="external"><img src="assets/images/fotorollen/beekje.png" class="recente-foto" alt="..."></a>
                             <a href="foto-overzicht.php" data-transition="slide" rel="external"><img src="assets/images/fotorollen/huis2.png" class="recente-foto" alt="..."></a>
                         </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-12">
-            <div class="card">
-                <div class="card-body text-center">
-                    <a href="foto-groep-2.php" data-transition="slide" rel="external"><button type="button" class="btn btn-outline-dark fotorollen-page-buttons">Groep Stinkies</button></a>
                         <div class="row justify-content-center">
                             <a href="foto-overzicht.php" data-transition="slide" rel="external"><img src="assets/images/fotorollen/molen.png" class="recente-foto" alt="..."></a>
                             <a href="foto-overzicht.php" data-transition="slide" rel="external"><img src="assets/images/fotorollen/huis.png" class="recente-foto" alt="..."></a>
@@ -53,18 +42,7 @@
                             <a href="foto-overzicht.php"  data-transition="slide" rel="external"><img src="assets/images/fotorollen/beekje.png" class="recente-foto" alt="..."></a>
                             <a href="foto-overzicht.php" data-transition="slide" rel="external"><img src="assets/images/fotorollen/huis2.png" class="recente-foto" alt="..."></a>
                         </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-12">
-            <div class="card">
-                <div class="card-body text-center">
-                    <a href="foto-groep-3.php" data-transition="slide" rel="external"><button type="button" class="btn btn-outline-dark fotorollen-page-buttons">Groep Jacobs College</button></a>
                         <div class="row justify-content-center">
                             <a href="foto-overzicht.php" data-transition="slide" rel="external"><img src="assets/images/fotorollen/molen.png" class="recente-foto" alt="..."></a>
                             <a href="foto-overzicht.php" data-transition="slide" rel="external"><img src="assets/images/fotorollen/huis.png" class="recente-foto" alt="..."></a>
@@ -74,22 +52,12 @@
                             <a href="foto-overzicht.php"  data-transition="slide" rel="external"><img src="assets/images/fotorollen/beekje.png" class="recente-foto" alt="..."></a>
                             <a href="foto-overzicht.php" data-transition="slide" rel="external"><img src="assets/images/fotorollen/huis2.png" class="recente-foto" alt="..."></a>
                         </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-12">
-            <div class="card">
-                <div class="card-body text-center">
-                    <a href="foto-groep-4.php" data-transition="slide" rel="external"><button type="button" class="btn btn-outline-dark fotorollen-page-buttons">De TheeTantes</button></a>
                         <div class="row justify-content-center">
                             <a href="foto-overzicht.php" data-transition="slide" rel="external"><img src="assets/images/fotorollen/molen.png" class="recente-foto" alt="..."></a>
                             <a href="foto-overzicht.php" data-transition="slide" rel="external"><img src="assets/images/fotorollen/huis.png" class="recente-foto" alt="..."></a>
                         </div>
+
                         <div class="row justify-content-center">
                             <a href="foto-overzicht.php"  data-transition="slide" rel="external"><img src="assets/images/fotorollen/beekje.png" class="recente-foto" alt="..."></a>
                             <a href="foto-overzicht.php" data-transition="slide" rel="external"><img src="assets/images/fotorollen/huis2.png" class="recente-foto" alt="..."></a>
