@@ -56,3 +56,23 @@
     width: 20px;
     height: 20px;
 }
+
+.modal-shop-header{
+    background-color: #082668 !important;
+    color: white !important;
+}
+
+.close-shop{
+    filter: brightness(0) invert(1);
+}
+
+.modal-body{
+    color: #082668 !important;
+}
+
+.btn-info-shop{
+    border-color: #ffffff61 !important;
+    background-color: #082668 !important;
+    color: white !important;
+    border-radius: 1rem;
+}
