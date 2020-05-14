@@ -33,7 +33,9 @@
     <div class="row">
         <div class="col">
             <h3 class="text-center pt-3" style="font-size: 14px">Doneer het Groninger landschap</h3>
-            
+            <div class="input-group input-group-sm mb-3">
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+            </div>
             <button type="button" class="btn btn-outline-light shop-button">Doneer</button>
         </div>
     </div>
