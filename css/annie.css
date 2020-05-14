@@ -89,6 +89,15 @@
   font-weight: 600;
 }
 
+.input-veldje.right {
+margin-right: 5px;
+}
+
+.input-veldje.left {
+margin-left: 5px;
+}
+
+
 .container.inloggen {
   padding-top:15%;
   padding-bottom: 15px;
