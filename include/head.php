@@ -1,6 +1,8 @@
 
 <?php
   include('include/db-connect.php');
+  include('include/session.php');
+
 ?>
 
   <head>

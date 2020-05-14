@@ -10,7 +10,7 @@
 	$row = $check->fetch();
 
 	if (!is_array($row)) {
-		header('Location: index.php');
+		header('Location: index');
 	}
 
 ?>

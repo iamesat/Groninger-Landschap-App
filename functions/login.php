@@ -21,7 +21,7 @@
 			$password = hash('sha256', $_POST['password']);
 
 			// Check of de gebruiker bestaat in de database
-			$login = $db->prepare("SELECT id, email, password, userlevel, cID FROM users WHERE username = :username");
+			$login = $db->prepare("SELECT id, email, password FROM users WHERE username = :username");
 			$login->execute(array(':username' => $username));
 			$user = $login->fetch();
 
@@ -30,15 +30,13 @@
 				$_SESSION['login'] = $username;
 				$_SESSION['userID'] = $user[0];
 				$_SESSION['email'] = $user[1];
-				$_SESSION['userlevel'] = $user[3];
-				$_SESSION['cID'] = $user[4];
-				header("location: ../portal");
+				header("location: ../home");
 			}
 			// Login fout krijg text en wordt je weer terug gestuurd naar de login page
 			else {
 
 				echo "<script type='text/javascript'>alert('$message');</script>";
-				echo "<script>setTimeout(\"location.href = '../login.php';\",1);</script>";
+				echo "<script>setTimeout(\"location.href = '../index';\",1);</script>";
 
 			}
 		}

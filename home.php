@@ -1,6 +1,15 @@
 <!doctype html>
 <html lang="en">
-<?php include ($_SERVER['DOCUMENT_ROOT']. "/Groninger-Landschap-App/include/head.php"); ?>
+<?php include ($_SERVER['DOCUMENT_ROOT']. "/Groninger-Landschap-App/include/head.php");
+
+	$username = $_SESSION['login'];
+	$id = $_SESSION['userID'];
+
+  $users = $db->prepare("SELECT id, username, naam, achternaam FROM users WHERE id = :id");
+  $users->execute(array(':id' => $id));
+  $user = $users->fetch();
+  ?>
+
   <body>
     <div class="container">
       <div class="jumbotron homepage mt-3">
@@ -32,7 +41,7 @@
           <div class="col-4">
           </div>
 
-          <b>Mees Venema</b>
+          <b><?php echo ucfirst($user[2]); ?>&nbsp;<?php echo ucfirst($user[3]); ?></b>
           <div class="col-4">
           </div>
         </div>
