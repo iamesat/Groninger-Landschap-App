@@ -46,10 +46,11 @@
 
 /* Shop pagina */
 
-.shop-button{
+.shop-button, .fotowedstrijd-btn{
     border-color: #ffffff61;
     background-color: #082668;
     border-radius: 1rem;
+    color: white;
 }
 
 .info-shop{
@@ -75,4 +76,30 @@
     background-color: #082668 !important;
     color: white !important;
     border-radius: 1rem;
+}
+
+/* Fotowedstrijd pagina */
+.fotowedstrijd-page{
+    max-height: 480px;
+}
+
+.wedstrijd-titel{
+    font-size: 18px;
+    font-weight: bold;
+    color: #082668 !important;
+    text-align: left;
+}
+
+.wedstrijd-route{
+    font-size: 14px;
+    text-align: left;
+}
+
+.wedstrijd-foto{
+    width: 300px;
+    height: 200px;
+}
+
+.wedstrijd-p{
+    font-size: 14px;
 }
