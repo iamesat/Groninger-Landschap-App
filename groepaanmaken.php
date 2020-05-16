@@ -125,6 +125,14 @@
 
 
                   </div>
+                  <form class="form">
+	<h2>Is this awesome?</h2>
+	<div class="switch-field">
+		<input type="radio" id="radio-one" name="switch-one" value="yes" checked/>
+		<label for="radio-one">Yes</label>
+		<input type="radio" id="radio-two" name="switch-one" value="no" />
+		<label for="radio-two">No</label>
+	</div>
 
 </div>
             </div>
@@ -157,6 +165,7 @@
 </div>
 
 
+
 <div class="container groepruimte">
     <div class="row justify-content-md-center">
         <div class="col-12">
@@ -169,7 +178,11 @@
 
                     <div class="container">
 
-                      <input type="text" class="groepsnaaminput" name="firstname" placeholder="Bestand uploaden... ">
+                      <form action="/action_page.php">
+    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+    <label for="vehicle1"> Ik ga Akkoord met de Algemene voorwaarden</label><br>
+
+  </form>
 
                   </div>
 </div>
@@ -178,7 +191,10 @@
     </div>
 </div>
 
-
+<br>
+<br>
+<br>
+<br>
 
 <script>
 function myFunction() {
@@ -189,6 +205,10 @@ function myFunction() {
     x.innerHTML = "Iedereen";
   }
 }
+
+$(document).ready(function () {
+    $('.dropdown-toggle').dropdown();
+});
 </script>
 
 
