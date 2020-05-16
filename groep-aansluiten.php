@@ -14,14 +14,14 @@
                       <h3 class="card-groep-title alleenspelen">Speel alleen of maak een groep aan</h3>
 
 
-    <p class="groepinfo2">Wil je liever alleen spelen of wil je een groep aanmaken?</p>
+    <p class="groepinfo2">Wil je liever alleen spelen of wil je bij een groep aansluiten?</p>
     <br>
                       <div class="container">
                       <div class="row">
                       <div class="col-sm groepinformatie ">
 
 
-                        <p class="bekijkenbutton"> bekijken </p>
+                        <p class="bekijkenbutton"> Alleen  </p>
 
                       <br>
 
@@ -30,7 +30,7 @@
 
                   <div class="col-sm  groepbutton2 ">
 
-                    <p class="bekijkenbutton"> bekijken </p>
+                    <p class="bekijkenbutton"> Aansluiten </p>
   </div>
                   </div>
   </div>
@@ -153,19 +153,18 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header modal-shop-header">
-                <h5 class="modal-title" id="exampleModalLabel">Upgrade naar Pro informatie</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Aansluiten bij een groep</h5>
                 <button type="button" class="close close-shop" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
                 <p>
-                    <b>Informatie over pro:</b><br>
-                    <br>
-                    - Advertentievrije applicatie<br>
-                    - Elke maand 3 gratis fotorollen<br>
-                    - Je mag 2 foto's insturen bij een wedstrijd.<br>
-                    - Je helpt het goede doel!
+                    Je aanvraag om lid te worden van de groep:
+<b>Groep Bosmannen</b> is verstuurd.
+Je ontvangt een bevestiging als de beheerder
+van de groep je aanvraag accepteert.
+
                 </p>
             </div>
             <div class="modal-footer">
