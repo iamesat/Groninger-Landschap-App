@@ -14,14 +14,14 @@
                       <h3 class="card-groep-title alleenspelen">Speel alleen of maak een groep aan</h3>
 
 
-    <p class="groepinfo2">Wil je liever alleen spelen of wil je een groep aanmaken?</p>
+    <p class="groepinfo2">Wil je liever alleen spelen of wil je bij een groep aansluiten?</p>
     <br>
                       <div class="container">
                       <div class="row">
                       <div class="col-sm groepinformatie ">
 
 
-                        <p class="bekijkenbutton"> bekijken </p>
+                        <p class="bekijkenbutton"> Alleen  </p>
 
                       <br>
 
@@ -30,7 +30,7 @@
 
                   <div class="col-sm  groepbutton2 ">
 
-                    <p class="bekijkenbutton"> bekijken </p>
+                    <p class="bekijkenbutton"> Aansluiten </p>
   </div>
                   </div>
   </div>
