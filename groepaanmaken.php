@@ -124,6 +124,8 @@
 		<label for="radio-two">Niemand</label>
 	</div>
 
+
+
 </div>
             </div>
         </div>
@@ -159,14 +161,14 @@
 <div class="container groepruimte">
     <div class="row justify-content-md-center">
         <div class="col-12">
-            <div class="card groepborder">
-                <div class="card-body">
 
-                    <h3 class="card-groep-title">Groepsafbeelding</h3>
+
+
+
 
                     <br>
 
-                    <div class="container">
+                    <div class="container accepteervoorwaarden">
 
                       <form action="/action_page.php">
     <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
@@ -175,11 +177,22 @@
   </form>
 
                   </div>
-</div>
-            </div>
+<br>
+
+
+                  <div class="container accepteervoorwaarden">
+
+
+  <button type="button" class="btn btn-outline-light shop-button">Groep aanmaken</button>
+
+
+
+                </div>
+
         </div>
     </div>
 </div>
+
 
 <br>
 <br>
