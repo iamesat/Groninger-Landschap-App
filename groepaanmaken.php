@@ -110,28 +110,18 @@
             <div class="card groepborder">
                 <div class="card-body">
 
-                    <h3 class="card-groep-title">toegankelijkheid</h3>
+                    <h3 class="card-groep-title">Toegankelijkheid</h3>
 
                     <br>
 
-                    <div class="container">
 
-                      <label class="switch">
-                        <input type="checkbox">
-                        <span class="slider round"><a onclick="myFunction()">Iedereen</a>
-
-<div id="myDIV">Iedereen</div></span>
-                      </label>
-
-
-                  </div>
                   <form class="form">
-	<h2>Is this awesome?</h2>
+
 	<div class="switch-field">
-		<input type="radio" id="radio-one" name="switch-one" value="yes" checked/>
-		<label for="radio-one">Yes</label>
-		<input type="radio" id="radio-two" name="switch-one" value="no" />
-		<label for="radio-two">No</label>
+		<input type="radio" id="radio-one" name="switch-one" value="Iedereen" checked/>
+		<label for="radio-one">Iedereen</label>
+		<input type="radio" id="radio-two" name="switch-one" value="Niemand" />
+		<label for="radio-two">Niemand</label>
 	</div>
 
 </div>
