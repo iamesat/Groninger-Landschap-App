@@ -107,7 +107,25 @@
 </div>
 
 
+<div class="container">
+<div class="row">
+<div class="col-sm groepinformatie ">
 
+
+  <p class="bekijkenbutton groepzoek"> Groep Zoeken </p>
+
+<br>
+
+</div>
+
+
+<div class="col-sm  groepbutton2 ">
+
+<p class="bekijkenbutton groepmaak"> Groep Aanmaken </p>
+</div>
+</div>
+
+<br><br><br>
 
 
 
