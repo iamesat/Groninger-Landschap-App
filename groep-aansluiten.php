@@ -153,19 +153,18 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header modal-shop-header">
-                <h5 class="modal-title" id="exampleModalLabel">Upgrade naar Pro informatie</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Aansluiten bij een groep</h5>
                 <button type="button" class="close close-shop" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
                 <p>
-                    <b>Informatie over pro:</b><br>
-                    <br>
-                    - Advertentievrije applicatie<br>
-                    - Elke maand 3 gratis fotorollen<br>
-                    - Je mag 2 foto's insturen bij een wedstrijd.<br>
-                    - Je helpt het goede doel!
+                    Je aanvraag om lid te worden van de groep:
+<b>Groep Bosmannen</b> is verstuurd.
+Je ontvangt een bevestiging als de beheerder
+van de groep je aanvraag accepteert.
+
                 </p>
             </div>
             <div class="modal-footer">
