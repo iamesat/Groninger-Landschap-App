@@ -63,8 +63,30 @@ margin-right: auto;
   color: #092B75;
 }
 
+.aansluiten{
+  margin-left: 0px;
+  margin-right: 0px;
+}
 
+.aanmaken{
+  float: left;
+}
 
+.groepinfo2{
+  font-size: 15px;
+  color: #898A8F;
+  margin-top: 20px;
+  text-align: center;
+
+}
+
+.alleenspelen{
+  text-align: center;
+}
+
+.groepbutton{
+  margin-top: 80px;
+}
 /*toggle button*/
 .switch-field {
 	display: flex;
