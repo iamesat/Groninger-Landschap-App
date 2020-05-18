@@ -30,7 +30,7 @@
 
                   <div class="col-sm  groepbutton2 ">
 
-                    <p class="bekijkenbutton"> Aansluiten </p>
+                    <p class="bekijkenbutton"> Aanmaken </p>
   </div>
                   </div>
   </div>
@@ -143,11 +143,7 @@
     </div>
 </div>
 
-<br>
-<br>
-<br>
-<br>
-<br>
+
 
 <div class="modal fade" id="UpgradeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
@@ -174,6 +170,26 @@ van de groep je aanvraag accepteert.
     </div>
 </div>
 
+
+<div class="container">
+<div class="row">
+<div class="col-sm groepinformatie ">
+
+
+  <p class="bekijkenbutton groepzoek"> Groep Zoeken </p>
+
+<br>
+
+</div>
+
+
+<div class="col-sm  groepbutton2 ">
+
+<p class="bekijkenbutton groepmaak"> Groep Aanmaken </p>
+</div>
+</div>
+
+<br><br><br>
 
 
 
