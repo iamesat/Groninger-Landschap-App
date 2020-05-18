@@ -4,7 +4,6 @@
 <?php include "include/top_navbar.php"; ?>
 <title>Foto overzicht</title>
 <body>
-
 <div class="container text-center my-3">
     <div class="row justify-content-center">
         <div class="col fotopage-buttons">
@@ -67,7 +66,6 @@
         </div>
     </div>
 </div>
-<br><br><br><br>
 <?php include "include/bottom_navbar.php"; ?>
 <?php include "include/scripts.php"; ?>
 </body>

@@ -4,9 +4,6 @@
 <title>Shop</title>
 <body>
 <?php include "include/top_navbar.php"; ?>
-<br><br><br><br>
-
-
 <div class="container mt-4 text-center">
     <div class="row">
         <div class="col">
@@ -35,10 +32,10 @@
                 </div>
             </div>
         </div>
-    </div>     
+    </div>
 </div>
 
-<div class="container my-4 text-center">  
+<div class="container my-4 text-center">
     <div class="card scoreborder">
         <div class="card-body my-3">
             <div class="row">
@@ -54,7 +51,7 @@
                 </div>
             </div>
         </div>
-    </div>       
+    </div>
 </div>
 
 <div class="modal fade" id="UpgradeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -103,7 +100,7 @@
                     onderhouden. Daar hebben we<br>
                     jouw hulp dus hard voor nodig!<br>
                     <br>
-                    <b>Per €10,- krijg je 2 fotorollen</b> 
+                    <b>Per €10,- krijg je 2 fotorollen</b>
                 </p>
             </div>
             <div class="modal-footer">
@@ -112,11 +109,6 @@
         </div>
     </div>
 </div>
-
-<br><br><br><br>
-
-
-
 <?php include "include/bottom_navbar.php"; ?>
 <?php include "include/scripts.php"; ?>
 </body>

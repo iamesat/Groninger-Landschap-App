@@ -4,8 +4,7 @@
 <?php include "include/top_navbar.php"; ?>
 <title>Aansluiten bij een groep </title>
 <body>
-
-  <div class="container groepruimte groepboven">
+  <div class="container groepruimte">
       <div class="row justify-content-md-center">
           <div class="col-12">
               <div class="card groepborder">
@@ -188,8 +187,6 @@ van de groep je aanvraag accepteert.
 <p class="bekijkenbutton groepmaak"> Groep Aanmaken </p>
 </div>
 </div>
-
-<br><br><br>
 
 
 

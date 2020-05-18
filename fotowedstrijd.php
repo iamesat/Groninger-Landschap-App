@@ -4,9 +4,7 @@
 <title>Fotowedstrijd</title>
 <body>
 <?php include "include/top_navbar.php"; ?>
-<br><br><br><br>
-
-<div class="container">   
+<div class="container">
     <div class="card fotowedstrijd-page">
         <div class="card-body text-center">
             <h3 class="wedstrijd-titel">Maak jij deze foto het mooist na?</h3>
@@ -43,9 +41,6 @@
         </div>
     </div>
 </div>
-
-<br><br><br><br>
-
 <?php include "include/bottom_navbar.php"; ?>
 <?php include "include/scripts.php"; ?>
 </body>
