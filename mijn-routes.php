@@ -4,7 +4,8 @@
 <title>Mijn Routes</title>
     <?php include "include/top_navbar.php"; ?>
   <body>
-<div class="container">
+    <div class="app-breaks">
+      <div class="container">
     <div class="row justify-content-center">
    <div class="col routes-buttons">
   <button type="button" class="btn btn-outline-dark route-page-button active">Mijn Routes</button>
@@ -238,6 +239,7 @@
 
       </div>
     </div>
+  </div>
     <?php include "include/bottom_navbar.php"; ?>
     <?php include "include/scripts.php"; ?>
   </body>

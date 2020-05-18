@@ -4,7 +4,8 @@
 <?php include "include/top_navbar.php"; ?>
 <title>Mijn Groepen</title>
 <body>
-<div class="container groepruimte groepboven">
+  <div class="app-breaks">
+<div class="container">
     <div class="row justify-content-md-center">
         <div class="col-12">
             <div class="card groepborder">
@@ -124,9 +125,7 @@
 <p class="bekijkenbutton groepmaak"> Groep Aanmaken </p>
 </div>
 </div>
-
-<br><br><br>
-
+</div>
 
 
 <?php include "include/bottom_navbar.php"; ?>
