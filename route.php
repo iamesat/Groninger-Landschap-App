@@ -1,56 +1,192 @@
-<!doctype html>
-<html lang="en">
-<?php include ($_SERVER['DOCUMENT_ROOT']. "/Groninger-Landschap-App/include/head.php"); ?>
-<title>Mijn Routes</title>
-    <?php include "include/top_navbar.php"; ?>
-  <body>
-<div class="container">
-    <div class="row justify-content-center">
-   <div class="col routes-buttons">
-  <button type="button" class="btn btn-outline-dark route-page-button active">Mijn Routes</button>
-   </div>
-   <div class="col routes-buttons">
-  <button type="button" class="btn btn-outline-dark route-page-button">Unlocken</button>
-   </div>
-   <div class="col routes-buttons">
-  <button type="button" class="btn btn-outline-dark route-page-button">Voltooid</button>
-   </div>
- </div>
-</div>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <?php include ($_SERVER['DOCUMENT_ROOT']. "/Groninger-Landschap-App/include/head.php"); ?>
 
-    <div class="container">
-      <div class="row row-cols-1">
-        <div class="col card-button">
-          <div class="card">
-            <div class="card-body">
-              <!-- CONTENT HIERO -->
-            </div>
-          </div>
-        </div>
-        <div class="col card-button">
-          <div class="card">
-            <div class="card-body">
+    <title>Directions Service</title>
+    <nav class="navbar navbar-top-home fixed-top">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg">
+                  jo
+                </div>
+                <div class="col-auto">
+                  Moi
+                </div>
+                <div class="col-auto">
+                </div>
+                </div>
+        </nav>
+        <!DOCTYPE html>
+    <html>
 
-            </div>
-          </div>
-        </div>
-        <div class="col card-button">
-          <div class="card">
-            <div class="card-body">
-              <!-- CONTENT HIERO -->
-            </div>
-          </div>
-        </div>
-        <div class="col card-button">
-          <div class="card">
-            <div class="card-body">
-              <!-- CONTENT HIERO -->
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <?php include "include/bottom_navbar.php"; ?>
-    <?php include "include/scripts.php"; ?>
-  </body>
-</html>
+    <head>
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+        <!-- <link rel="stylesheet" type="text/css" href="master.css"> -->
+    </head>
+
+    <body>
+
+        <h1>My First Google Map</h1>
+
+        <div id="googleMap" style="width:100%;height:800px;"></div>
+
+        <script>
+            function detectBrowser() {
+                var useragent = navigator.userAgent;
+                var mapdiv = document.getElementById("map");
+
+                if (useragent.indexOf('iPhone') != -1 || useragent.indexOf('Android') != -1) {
+                    mapdiv.style.width = '100%';
+                    mapdiv.style.height = '100%';
+                } else {
+                    mapdiv.style.width = '600px';
+                    mapdiv.style.height = '800px';
+                }
+            }
+
+            var myLatLng;
+            var latit;
+            var longit;
+
+            function geoSuccess(position) {
+                var latitude = position.coords.latitude;
+                var longitude = position.coords.longitude;
+                var directionsService = new google.maps.DirectionsService;
+                var directionsDisplay = new google.maps.DirectionsRenderer;
+                myLatLng = {
+                    lat: latitude,
+                    lng: longitude
+                };
+                var mapProp = {
+                    //            center: new google.maps.LatLng(latitude, longitude), // puts your current location at the centre of the map,
+                    zoom: 15,
+                    mapTypeId: 'roadmap',
+
+                };
+                var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+
+                var directionsService = new google.maps.DirectionsService;
+                var directionsDisplay = new google.maps.DirectionsRenderer;
+
+                //call renderer to display directions
+                directionsDisplay.setMap(map);
+
+                var bounds = new google.maps.LatLngBounds();
+                //        var mapOptions = {
+                //            mapTypeId: 'roadmap'
+                //        };
+
+                // Multiple Markers
+                var marker = new google.maps.Marker({
+                    position: myLatLng,
+                    map: map,
+                    title: 'My location'
+                });
+                var markers = [
+                    ['3fe', 53.23425659331499, 6.490932454710916],
+                    ['my current location', latitude, longitude]
+                ];
+
+                // Info Window Content
+                var infoWindowContent = [
+                    ['<div class="info_content">' +
+                        '<h3>3fe</h3>' +
+                        '<p>32 Grand Canal Street Lower, Grand Canal Dock, Dublin 2</p>' +
+                        '<img src="images/3fe.jpg" width="200" height="200">' +
+                        '</div>'
+                    ]
+                ];
+
+                // Display multiple markers on a map
+                var infoWindow = new google.maps.InfoWindow(),
+                    marker, i;
+
+                // Loop through our array of markers & place each one on the map
+                for (i = 0; i < markers.length; i++) {
+                    var position = new google.maps.LatLng(markers[i][1], markers[i][2]);
+                    bounds.extend(position);
+                    marker = new google.maps.Marker({
+                        position: position,
+                        map: map,
+                        title: markers[i][0]
+                    });
+
+                    // Allow each marker to have an info window
+                    google.maps.event.addListener(marker, 'click', (function(marker, i) {
+                        return function() {
+                            infoWindow.setContent(infoWindowContent[i][0]);
+                            infoWindow.open(map, marker);
+
+                            latit = marker.getPosition().lat();
+                            longit = marker.getPosition().lng();
+                            // console.log("lat: " + latit);
+                            // console.log("lng: " + longit);
+                        }
+                    })(marker, i));
+
+                    marker.addListener('click', function() {
+                        directionsService.route({
+                            // origin: document.getElementById('start').value,
+                            origin: myLatLng,
+
+                            // destination: marker.getPosition(),
+                            destination: {
+                                lat: latit,
+                                lng: longit
+                            },
+                            travelMode: 'WALKING'
+                        }, function(response, status) {
+                            if (status === 'OK') {
+                                directionsDisplay.setDirections(response);
+                            } else {
+                                window.alert('Directions request failed due to ' + status);
+                            }
+                        });
+
+                    });
+                    // Automatically center the map fitting all markers on the screen
+                    map.fitBounds(bounds);
+                }
+            }
+
+            // function calculateAndDisplayRoute(directionsService, directionsDisplay) {
+            //     directionsService.route({
+            //         // origin: document.getElementById('start').value,
+            //         origin: myLatLng,
+            //         destination: marker.getPosition(),
+            //         travelMode: 'DRIVING'
+            //     }, function(response, status) {
+            //         if (status === 'OK') {
+            //             console.log('all good');
+            //             directionsDisplay.setDirections(response);
+            //         } else {
+            //             window.alert('Directions request failed due to ' + status);
+            //         }
+            //     });
+            // }
+
+            function geoError() {
+                alert("Geocoder failed.");
+            }
+
+            function getLocation() {
+                if (navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition(geoSuccess, geoError);
+                    // alert("Geolocation is supported by this browser.");
+                } else {
+                    alert("Geolocation is not supported by this browser.");
+                }
+            }
+        </script>
+
+        <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCN6HxTWzlajkzwfx2nN8WLBVln-tlZdNs&callback=getLocation"></script>
+
+    </body>
+
+    </html>
+
+<!-- <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCN6HxTWzlajkzwfx2nN8WLBVln-tlZdNs&callback=initMap" defer></script> -->
