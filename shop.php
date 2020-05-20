@@ -4,6 +4,7 @@
 <title>Shop</title>
 <body>
 <?php include "include/top_navbar.php"; ?>
+
 <div class="container mt-4 text-center">
     <div class="row">
         <div class="col">
