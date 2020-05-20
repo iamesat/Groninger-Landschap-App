@@ -38,10 +38,10 @@
               <div class="col">
                 <div class="row row-cols-3 justify-content-center">
                <div class="col group-buttons">
-                 <p>Actieve groepen</p>
+               <p><img class="munt-image" src="assets/images/icons/hourglass.svg" alt="route afbeelding">&nbsp; Loop duur</p>
                </div>
                <div class="col group-buttons">
-                 <p>Loop duur</p>
+               <p><img class="munt-image" src="assets/images/icons/location-start.svg" alt="route afbeelding">&nbsp; Start</p>
                </div>
                <div class="col group-buttons">
               <p><img class="munt-image" src="assets/images/icons/coin.png" alt="route afbeelding"> &nbsp; +100 punten</p>
@@ -67,10 +67,10 @@
               <div class="col">
                 <div class="row row-cols-3 justify-content-center">
                <div class="col group-buttons">
-                 <p>Actieve groepen</p>
+               <p><img class="munt-image" src="assets/images/icons/hourglass.svg" alt="route afbeelding">&nbsp; Loop duur</p>
                </div>
                <div class="col group-buttons">
-                 <p>Loop duur</p>
+                 <p><img class="munt-image" src="assets/images/icons/location-start.svg" alt="route afbeelding">&nbsp; Start</p>
                </div>
                <div class="col group-buttons">
               <p><img class="munt-image" src="assets/images/icons/coin.png" alt="route afbeelding"> &nbsp; +100 punten</p>

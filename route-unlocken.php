@@ -42,67 +42,13 @@
               <div class="col">
                 <div class="row row-cols-3 justify-content-center">
                <div class="col group-buttons">
-                 <p>Actieve groepen</p>
+                 <p><b>Actieve groepen</b></p>
                </div>
                <div class="col group-buttons">
-                 <p>Loop duur</p>
+               <p><img class="munt-image" src="assets/images/icons/hourglass.svg" alt="route afbeelding">&nbsp; Loop duur</p>
                </div>
                <div class="col group-buttons">
-                 <p>Start</p>
-               </div>
-             </div>
-              </div>
-              <div class="col">
-                <div class="row row-cols-3 justify-content-center">
-               <div class="col group-buttons">
-              <button type="button" class="btn btn-group">OBS Hanze</button>
-               </div>
-               <div class="col group-buttons">
-              <button type="button" class="btn btn-group">Stinkies</button>
-               </div>
-               <div class="col group-buttons">
-              <button type="button" class="btn btn-group">Meer...</button>
-               </div>
-             </div>
-              </div>
-              <div class="col">
-                <div class="row row-cols-3 justify-content-center">
-               <div class="col group-buttons">
-              <p><img class="munt-image" src="assets/images/icons/coin.png" alt="route afbeelding"> &nbsp; -80 punten</p>
-               </div>
-               <div class="col group-buttons">
-               </div>
-               <div class="col group-buttons">
-              <button type="button" class="btn btn-group blue">Bekijken</button>
-               </div>
-             </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col route-card">
-          <div class="card">
-            <div class="card-body">
-              <div class="media">
-                <a class="pull-left" href="#">
-                  <img class="route-img" src="assets/images/map.png" alt="route afbeelding">
-                </a>
-                <div class="media-body">
-                  <h6>Route Hoendiep</h6>
-                  <p>Beschrijving over de speurtocht - 10 km</p>
-                </div>
-              </div>
-              <div class="col">
-                <div class="row row-cols-3 justify-content-center">
-               <div class="col group-buttons">
-                 <p>Actieve groepen</p>
-               </div>
-               <div class="col group-buttons">
-                 <p>Loop duur</p>
-               </div>
-               <div class="col group-buttons">
-                 <p>Start</p>
+               <p><img class="munt-image" src="assets/images/icons/location-start.svg" alt="route afbeelding">&nbsp; Start</p>
                </div>
              </div>
               </div>
@@ -150,13 +96,13 @@
               <div class="col">
                 <div class="row row-cols-3 justify-content-center">
                <div class="col group-buttons">
-                 <p>Actieve groepen</p>
+               <p><b>Actieve groepen</b></p>
                </div>
                <div class="col group-buttons">
-                 <p>Loop duur</p>
+               <p><img class="munt-image" src="assets/images/icons/hourglass.svg" alt="route afbeelding">&nbsp; Loop duur</p>
                </div>
                <div class="col group-buttons">
-                 <p>Start</p>
+               <p><img class="munt-image" src="assets/images/icons/location-start.svg" alt="route afbeelding">&nbsp; Start</p>
                </div>
              </div>
               </div>
@@ -204,13 +150,67 @@
               <div class="col">
                 <div class="row row-cols-3 justify-content-center">
                <div class="col group-buttons">
-                 <p>Actieve groepen</p>
+               <p><b>Actieve groepen</b></p>
                </div>
                <div class="col group-buttons">
-                 <p>Loop duur</p>
+               <p><img class="munt-image" src="assets/images/icons/hourglass.svg" alt="route afbeelding">&nbsp; Loop duur</p>
                </div>
                <div class="col group-buttons">
-                 <p>Start</p>
+               <p><img class="munt-image" src="assets/images/icons/location-start.svg" alt="route afbeelding">&nbsp; Start</p>
+               </div>
+             </div>
+              </div>
+              <div class="col">
+                <div class="row row-cols-3 justify-content-center">
+               <div class="col group-buttons">
+              <button type="button" class="btn btn-group">OBS Hanze</button>
+               </div>
+               <div class="col group-buttons">
+              <button type="button" class="btn btn-group">Stinkies</button>
+               </div>
+               <div class="col group-buttons">
+              <button type="button" class="btn btn-group">Meer...</button>
+               </div>
+             </div>
+              </div>
+              <div class="col">
+                <div class="row row-cols-3 justify-content-center">
+               <div class="col group-buttons">
+              <p><img class="munt-image" src="assets/images/icons/coin.png" alt="route afbeelding"> &nbsp; -80 punten</p>
+               </div>
+               <div class="col group-buttons">
+               </div>
+               <div class="col group-buttons">
+              <button type="button" class="btn btn-group blue">Bekijken</button>
+               </div>
+             </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col route-card">
+          <div class="card">
+            <div class="card-body">
+              <div class="media">
+                <a class="pull-left" href="#">
+                  <img class="route-img" src="assets/images/map.png" alt="route afbeelding">
+                </a>
+                <div class="media-body">
+                  <h6>Route Hoendiep</h6>
+                  <p>Beschrijving over de speurtocht - 10 km</p>
+                </div>
+              </div>
+              <div class="col">
+                <div class="row row-cols-3 justify-content-center">
+               <div class="col group-buttons">
+               <p><b>Actieve groepen</b></p>
+               </div>
+               <div class="col group-buttons">
+               <p><img class="munt-image" src="assets/images/icons/hourglass.svg" alt="route afbeelding">&nbsp; Loop duur</p>
+               </div>
+               <div class="col group-buttons">
+               <p><img class="munt-image" src="assets/images/icons/location-start.svg" alt="route afbeelding">&nbsp; Start</p>
                </div>
              </div>
               </div>
