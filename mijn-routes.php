@@ -14,7 +14,7 @@
    <a href="route-unlocken" class="stretched-link" data-transition="slide" rel="external"><button type="button" class="btn btn-outline-dark route-page-button">Unlocken</button></a>
    </div>
    <div class="col routes-buttons">
-   <a href="" class="stretched-link" data-transition="slide" rel="external"><button type="button" class="btn btn-outline-dark route-page-button">Voltooid</button></a>
+   <a href="route-voltooid" class="stretched-link" data-transition="slide" rel="external"><button type="button" class="btn btn-outline-dark route-page-button">Voltooid</button></a>
    </div>
  </div>
 </div>
