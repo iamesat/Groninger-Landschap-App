@@ -22,13 +22,10 @@
     <div class="card scoreborder">
         <div class="card-body my-3">
             <div class="row">
-                <div class="col-10">
-                    <h3 class="text-center" style="font-size: 16px">Upgrade naar PRO</h3>
+                <div class="col">
+                    <h3 class="text-center" style="font-size: 16px">Upgrade naar PRO <a href="" class="stretched-link pl-4" data-transition="slide" rel="external" data-toggle="modal" data-target="#UpgradeModal"><img src="assets/images/icons/info.svg" class="card-img-top info-shop" alt="..."></a></h3>
                     <p class="text-center pt-2" style="font-size: 30px;">€2,99<br>per maand</p>
                     <button type="button" class="btn btn-outline-light shop-button">Upgrade</button>
-                </div>
-                <div class="col-1">
-                    <a href="" class="stretched-link" data-transition="slide" rel="external" data-toggle="modal" data-target="#UpgradeModal"><img src="assets/images/icons/info.svg" class="card-img-top info-shop" alt="..."></a>
                 </div>
             </div>
         </div>
@@ -39,15 +36,12 @@
     <div class="card scoreborder">
         <div class="card-body my-3">
             <div class="row">
-                <div class="col-10">
-                    <h3 style="font-size: 16px">Doneer het Groninger landschap</h3>
+                <div class="col">
+                    <h3 style="font-size: 16px">Doneer Groninger landschap <a href="" class="stretched-link pl-4" data-transition="slide" rel="external" data-toggle="modal" data-target="#DoneerModal"><img src="assets/images/icons/info.svg" class="card-img-top info-shop" alt="..."></a></h3>
                     <div class="input-group input-group-sm my-4">
                         <input type="text" class="form-control" style="width: 116px;" placeholder="€" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
                     </div>
                     <button type="button" class="btn btn-outline-light shop-button">Doneer</button>
-                </div>
-                <div class="col-1">
-                    <a href="" class="stretched-link" data-transition="slide" rel="external" data-toggle="modal" data-target="#DoneerModal"><img src="assets/images/icons/info.svg" class="card-img-top info-shop" alt="..."></a>
                 </div>
             </div>
         </div>
