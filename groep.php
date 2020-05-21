@@ -89,7 +89,7 @@
                     <p class="groepinfo">Besloten groep</p>
                     <p class="groepinfo">Status: Aanvraag verstuurd</hp>
                       <p class="meldingengroep"> Geen nieuwe meldingen </p>
-                    <br>
+                    
 
                   </div>
 
