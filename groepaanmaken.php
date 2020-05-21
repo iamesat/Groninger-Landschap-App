@@ -179,7 +179,8 @@
                   <div class="container accepteervoorwaarden">
 
 
-  <button type="button" class="btn btn-outline-light shop-button">Groep aanmaken</button>
+
+    <a href="" class="stretched-link" data-transition="slide" rel="external" data-toggle="modal" data-target="#UpgradeModal"><p class="bekijkenbutton"> Groep Aanmaken </p></a>
 
 
 
@@ -189,32 +190,58 @@
     </div>
 </div>
 
-
 <div class="modal fade" id="UpgradeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header modal-shop-header">
-                <h5 class="modal-title" id="exampleModalLabel">Upgrade naar Pro informatie</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Groep is aangemaakt</h5>
                 <button type="button" class="close close-shop" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
                 <p>
-                    <b>Informatie over pro:</b><br>
-                    <br>
-                    - Advertentievrije applicatie<br>
-                    - Elke maand 3 gratis fotorollen<br>
-                    - Je mag 2 foto's insturen bij een wedstrijd.<br>
-                    - Je helpt het goede doel!
+                    Je bent momenteel de enige in de groep. Kies één van onderstaande opties om mensen uit te nodigen
                 </p>
+                <img class="zoekicon" src="assets/images/search.png" alt="route afbeelding">
+                <p>
+                  <p class="zoekinput">
+                      <input type="text" class="zoeklidinput" name="firstname" placeholder="Tik om een naam in te voeren ">
+                  </p>
+
+                  <img class="zoekicon" src="assets/images/instagram.png" alt="route afbeelding">
+                  <p>
+                    <p class="iconinput">
+                        Uitnodigen via Instagram
+                    </p>
+
+                    <img class="zoekicon" src="assets/images/facebook.png" alt="route afbeelding">
+                    <p>
+                      <p class="iconinput">
+                          Uitnodigen via Facebook
+                      </p>
+
+
+                      <img class="zoekicon" src="assets/images/at.png" alt="route afbeelding">
+                      <p>
+                        <p class="iconinput">
+                            Uitnodigen via email
+                        </p>
+
+<div class="uitnodigenbutton">
+<a href="groepbeheerder.php"  <button type="button" class="btn btn-group blue">Verder</button></a>
+  <br>
+
+
+</div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary btn-info-shop" data-dismiss="modal">Begrepen</button>
+                <button type="button" class="btn btn-secondary btn-info-shop" data-dismiss="modal">Annuleren</button>
             </div>
         </div>
     </div>
 </div>
+
 <script>
 function myFunction() {
   var x = document.getElementById("myDIV");
