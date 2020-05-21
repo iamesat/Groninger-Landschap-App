@@ -7,7 +7,7 @@
 <div class="container groepruimte">
     <div class="row justify-content-md-center">
         <div class="col-12">
-            <div class="card groepborder">
+            <div class="card groepborder groepborderboven">
                 <div class="card-body">
 
                     <h3 class="card-groep-title">Naam van de groep</h3>
@@ -168,7 +168,7 @@
 
                       <form action="/action_page.php">
     <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-    <label for="vehicle1"> Ik ga Akkoord met de Algemene voorwaarden</label><br>
+    <label for="vehicle1"> Ik ga Akkoord met de <br> Algemene voorwaarden</label><br>
 
   </form>
 
