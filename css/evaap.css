@@ -152,9 +152,7 @@ h2 {
   margin-left: 15px;
 }
 
-.groepzoek{
-  color: #898A8F;
-}
+
 
 .groepmaak{
   background-color: #092B75;
@@ -163,4 +161,29 @@ h2 {
 
 .groepborderboven{
   margin-top: 30px;
+}
+
+.routegroep{
+  width: 294px;
+  height: 100px;
+  border-radius: 10%;
+}
+
+.groepfont{
+  font-size: 15px;
+}
+
+.routepin{
+  width: 20px;
+  height: auto;
+  float: left;
+}
+
+.groeprouteinfo{
+  float: left;
+}
+
+.groeproutetijd{
+  text-align: right;
+  color: #3A58FC;
 }

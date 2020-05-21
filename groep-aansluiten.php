@@ -10,7 +10,7 @@
               <div class="card groepborder">
                   <div class="card-body">
 
-                      <h3 class="card-groep-title alleenspelen">Speel alleen of maak een groep aan</h3>
+                        <img class="route-img" src="assets/images/map.png" alt="route afbeelding">
 
 
     <p class="groepinfo2">Wil je liever alleen spelen of wil je bij een groep aansluiten?</p>
@@ -29,7 +29,8 @@
 
                   <div class="col-sm  groepsbutton ">
 
-                    <p class="bekijkenbutton"> Aanmaken </p>
+                    <a href="groepaanmaken.php" ><p class="bekijkenbutton"> Aanmaken </p></a>
+    </div>
   </div>
                   </div>
   </div>
@@ -184,7 +185,7 @@ van de groep je aanvraag accepteert.
 
 <div class="col-sm  groepbutton2 ">
 
-<p class="bekijkenbutton groepmaak"> Groep Aanmaken </p>
+  <a href="groepaanmaken.php" ><p class="bekijkenbutton groepmaak"> Aanmaken </p></a>
 </div>
 </div>
 
