@@ -31,6 +31,7 @@
   <h6><b>Leden</b></h6>
   <hr>
 
+
   <div class="groepleden">
   <img class="routelid" src="assets/images/profile-picture.png" alt="route afbeelding">
   <p class=  "lidnaam"> <b> Jij </b>
@@ -39,8 +40,151 @@ Lid
   <button type="button" class="btn btn-group blue groepverwijder">Verwijder</button></p>
 
   <br>
-
+  <div class="progress">
+    <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+  </div>
+  <br>
+  <br>
+  <br>
 </div>
+
+
+<div class="groepleden">
+<img class="routelid" src="assets/images/profile-picture.png" alt="route afbeelding">
+<p class=  "lidnaam"> <b> Jij </b>
+<br>
+Lid
+<button type="button" class="btn btn-group blue groepverwijder">Verwijder</button></p>
+
+<br>
+<div class="progress">
+  <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+</div>
+<br>
+<br>
+<br>
+</div>
+
+
+<div class="groepleden">
+<img class="routelid" src="assets/images/profile-picture.png" alt="route afbeelding">
+<p class=  "lidnaam"> <b> Jij </b>
+<br>
+Lid
+<button type="button" class="btn btn-group blue groepverwijder">Verwijder</button></p>
+
+<br>
+<div class="progress">
+  <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+</div>
+<br>
+<br>
+<br>
+</div>
+
+
+<div class="groepleden">
+<img class="routelid" src="assets/images/profile-picture.png" alt="route afbeelding">
+<p class=  "lidnaam"> <b> Jij </b>
+<br>
+Lid
+<button type="button" class="btn btn-group blue groepverwijder">Verwijder</button></p>
+
+<br>
+<div class="progress">
+  <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+</div>
+<br>
+<br>
+<br>
+</div>
+
+
+<div class="groepleden">
+<img class="routelid" src="assets/images/profile-picture.png" alt="route afbeelding">
+<p class=  "lidnaam"> <b> Jij </b>
+<br>
+Lid
+<button type="button" class="btn btn-group blue groepverwijder">Verwijder</button></p>
+
+<br>
+<div class="progress">
+  <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+</div>
+<br>
+<br>
+<br>
+</div>
+
+
+<div class="groepleden">
+<img class="routelid" src="assets/images/profile-picture.png" alt="route afbeelding">
+<p class=  "lidnaam"> <b> Jij </b>
+<br>
+Lid
+<button type="button" class="btn btn-group blue groepverwijder">Verwijder</button></p>
+
+<br>
+<div class="progress">
+  <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+</div>
+<br>
+<br>
+<br>
+</div>
+
+
+<div class="groepleden">
+<img class="routelid" src="assets/images/profile-picture.png" alt="route afbeelding">
+<p class=  "lidnaam"> <b> Jij </b>
+<br>
+Lid
+<button type="button" class="btn btn-group blue groepverwijder">Verwijder</button></p>
+
+<br>
+<div class="progress">
+  <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+</div>
+<br>
+<br>
+<br>
+</div>
+
+
+<div class="groepleden">
+<img class="routelid" src="assets/images/profile-picture.png" alt="route afbeelding">
+<p class=  "lidnaam"> <b> Jij </b>
+<br>
+Lid
+<button type="button" class="btn btn-group blue groepverwijder">Verwijder</button></p>
+
+<br>
+<div class="progress">
+  <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+</div>
+<br>
+<br>
+<br>
+</div>
+
+
+<div class="groepleden">
+<img class="routelid" src="assets/images/profile-picture.png" alt="route afbeelding">
+<p class=  "lidnaam"> <b> Jij </b>
+<br>
+Lid
+<button type="button" class="btn btn-group blue groepverwijder">Verwijder</button></p>
+
+<br>
+<div class="progress">
+  <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+</div>
+<br>
+<br>
+</div>
+
+
+
 
 
 
@@ -48,107 +192,14 @@ Lid
 
 
                   </div>
+<button type="button" class="btn btn-group blue groepverlaten">Groep verlaten</button></p>
 
-
-                <div class="col-sm groepsbutton ">
-                  <p class ="groepaantal"> 2/10 </p>
-                  <p class="bekijkenbutton"> bekijken </p>
-</div>
-                </div>
-</div>
-</div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="container groepruimte">
-    <div class="row justify-content-md-center">
-        <div class="col-12">
-            <div class="card groepborder">
-                <div class="card-body">
-
-                    <h3 class="card-groep-title">Groep Stinkies</h3>
-
-                    <br>
-
-                    <div class="container">
-                    <div class="row">
-                    <div class="col-sm groepinformatie ">
-
-                    <p class="groepinfo">Besloten groep</p>
-                    <p class="groepinfo">Status: Aanvraag verstuurd</hp>
-                      <p class="meldingengroep"> Geen nieuwe meldingen </p>
-                    <br>
-
-                  </div>
-
-
-                <div class="col-sm groepsbutton ">
-                  <p class ="groepaantal"> 2/10 </p>
-                  <p class="bekijkenbutton"> bekijken </p>
-</div>
-                </div>
-</div>
-</div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="container groepruimte">
-    <div class="row justify-content-md-center">
-        <div class="col-12">
-            <div class="card groepborder">
-                <div class="card-body">
-
-                    <h3 class="card-groep-title">Groep Jacobs College</h3>
-
-                    <br>
-
-                    <div class="container">
-                    <div class="row">
-                    <div class="col-sm groepinformatie ">
-
-                    <p class="groepinfo">Besloten groep</p>
-                    <p class="groepinfo">Status: Aanvraag verstuurd</hp>
-                      <p class="meldingengroep"> Geen nieuwe meldingen </p>
-
-
-                  </div>
-
-
-                <div class="col-sm groepsbutton ">
-                  <p class ="groepaantal"> 2/10 </p>
-                  <p class="bekijkenbutton"> bekijken </p>
-</div>
-                </div>
-</div>
-</div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<div class="container">
-<div class="row">
-<div class="col-sm groepinformatie ">
-
-
-  <p class="bekijkenbutton groepzoek"> Groep Zoeken </p>
 
 <br>
 
 </div>
 
 
-<div class="col-sm  groepbutton2 ">
-
-<a href="groepaanmaken.php" <p class="bekijkenbutton groepmaak" > Groep Aanmaken </p></a>
-
-
-</div>
 </div>
 
 <?php include "include/bottom_navbar.php"; ?>

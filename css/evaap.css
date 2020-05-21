@@ -205,3 +205,10 @@ h2 {
 .groepverwijder{
   float: right;
 }
+
+.groepverlaten{
+  margin-top:0;
+  margin-right:auto;
+  margin-bottom:0;
+  margin-left:auto;
+}
