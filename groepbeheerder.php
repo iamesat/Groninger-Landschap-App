@@ -10,6 +10,27 @@
             <div class="card groepborder">
                 <div class="card-body">
 
+                  <h3 class="card-groep-title"> Nieuwe verzoeken (1)</h3>
+                  <hr>
+                  <img class="routelid verzoek" src="assets/images/profile-picture.png" alt="route afbeelding">
+                  <p class=  "lidnaam"> <b> Klara Koe </b>
+                  <br>
+                  Level 5
+              </p>
+
+              <br>
+
+              <div class="switch-field nieuweverzoeken">
+                <input type="radio" id="radio-one" name="switch-one" value="Weigeren" checked/>
+                <label for="radio-one">Weigeren</label>
+                <input type="radio" id="radio-two" name="switch-one" value="Accepteren" />
+                <label for="radio-two">Accepteren</label>
+              </div>
+
+
+
+<br>
+<br>
                     <h3 class="card-groep-title"> Recente Activiteiten</h3>
                     <hr>
 
