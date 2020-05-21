@@ -27,7 +27,7 @@
                     </div>
 
 
-                  <div class="col-sm  groepbutton2 ">
+                  <div class="col-sm  groepsbutton ">
 
                     <p class="bekijkenbutton"> Aanmaken </p>
   </div>
@@ -188,11 +188,12 @@ van de groep je aanvraag accepteert.
 </div>
 </div>
 
-<<<<<<< HEAD
-<br><br><br><br>
+<!--<<<<<<< HEAD -->
+<br>
 
+<!--
 =======
->>>>>>> 4dcbe4e7886596ed8428e1ffe19354d9616efa2c
+>>>>>>> 4dcbe4e7886596ed8428e1ffe19354d9616efa2c -->
 
 
 <?php include "include/bottom_navbar.php"; ?>
