@@ -148,9 +148,7 @@ h2 {
 	margin-bottom: 8px;
 }
 
-.accepteervoorwaarden{
-  margin-left: 15px;
-}
+
 
 
 
@@ -219,4 +217,24 @@ h2 {
 
 .verzoek{
   margin-left: 22px;
+}
+
+.zoekicon{
+  width: 20px;
+  height: auto;
+  float: left;
+}
+
+.zoeklidinput{
+  margin-left: 20px;
+  width: 254px;
+  border-style: none;
+}
+
+.iconinput{
+  margin-left: 40px;
+}
+
+.uitnodigenbutton{
+  text-align: center;
 }
