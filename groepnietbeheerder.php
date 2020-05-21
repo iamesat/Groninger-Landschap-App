@@ -10,27 +10,8 @@
             <div class="card groepborder">
                 <div class="card-body">
 
-                  <h3 class="card-groep-title"> Nieuwe verzoeken (1)</h3>
-                  <hr>
-                  <img class="routelid verzoek" src="assets/images/profile-picture.png" alt="route afbeelding">
-                  <p class=  "lidnaam"> <b> Klara Koe </b>
-                  <br>
-                  Level 5
-              </p>
-
-              <br>
-
-              <div class="switch-field nieuweverzoeken">
-                <input type="radio" id="radio-one" name="switch-one" value="Weigeren" checked/>
-                <label for="radio-one">Weigeren</label>
-                <input type="radio" id="radio-two" name="switch-one" value="Accepteren" />
-                <label for="radio-two">Accepteren</label>
-              </div>
 
 
-
-<br>
-<br>
                     <h3 class="card-groep-title"> Recente Activiteiten</h3>
                     <hr>
 
@@ -57,7 +38,7 @@
   <img class="routelid" src="assets/images/profile-picture.png" alt="route afbeelding">
   <p class=  "lidnaam"> <b> Jij </b>
   <br>
-Beheerder
+lid
 
 
   <br>
@@ -72,10 +53,10 @@ Beheerder
 
 <div class="groepleden">
 <img class="routelid" src="assets/images/profile-picture.png" alt="route afbeelding">
-<p class=  "lidnaam"> <b> Jij </b>
+<p class=  "lidnaam"> <b> Kip Tok </b>
 <br>
-Lid
-<button type="button" class="btn btn-group blue groepverwijder">Verwijder</button></p>
+Beheerder
+<button type="button" class="btn btn-group blue groepverwijder">Melden</button></p>
 
 <br>
 <div class="progress">
@@ -92,7 +73,7 @@ Lid
 <p class=  "lidnaam"> <b> Jij </b>
 <br>
 Lid
-<button type="button" class="btn btn-group blue groepverwijder">Verwijder</button></p>
+<button type="button" class="btn btn-group blue groepverwijder">Melden</button></p>
 
 <br>
 <div class="progress">
@@ -109,7 +90,7 @@ Lid
 <p class=  "lidnaam"> <b> Jij </b>
 <br>
 Lid
-<button type="button" class="btn btn-group blue groepverwijder">Verwijder</button></p>
+<button type="button" class="btn btn-group blue groepverwijder">Melden</button></p>
 
 <br>
 <div class="progress">
@@ -126,7 +107,7 @@ Lid
 <p class=  "lidnaam"> <b> Jij </b>
 <br>
 Lid
-<button type="button" class="btn btn-group blue groepverwijder">Verwijder</button></p>
+<button type="button" class="btn btn-group blue groepverwijder">Melden</button></p>
 
 <br>
 <div class="progress">
@@ -143,7 +124,7 @@ Lid
 <p class=  "lidnaam"> <b> Jij </b>
 <br>
 Lid
-<button type="button" class="btn btn-group blue groepverwijder">Verwijder</button></p>
+<button type="button" class="btn btn-group blue groepverwijder">Melden</button></p>
 
 <br>
 <div class="progress">
@@ -160,7 +141,7 @@ Lid
 <p class=  "lidnaam"> <b> Jij </b>
 <br>
 Lid
-<button type="button" class="btn btn-group blue groepverwijder">Verwijder</button></p>
+<button type="button" class="btn btn-group blue groepverwijder">Melden</button></p>
 
 <br>
 <div class="progress">
@@ -177,7 +158,7 @@ Lid
 <p class=  "lidnaam"> <b> Jij </b>
 <br>
 Lid
-<button type="button" class="btn btn-group blue groepverwijder">Verwijder</button></p>
+<button type="button" class="btn btn-group blue groepverwijder">Melden</button></p>
 
 <br>
 <div class="progress">
@@ -194,7 +175,7 @@ Lid
 <p class=  "lidnaam"> <b> Jij </b>
 <br>
 Lid
-<button type="button" class="btn btn-group blue groepverwijder">Verwijder</button></p>
+<button type="button" class="btn btn-group blue groepverwijder">Melden</button></p>
 
 <br>
 <div class="progress">
