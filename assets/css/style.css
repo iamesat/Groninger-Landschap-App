@@ -33,6 +33,10 @@ body
   color: white;
 }
 
+.container.navtop {
+  display: block;
+}
+
 /* .col-auto.left {
   padding-right: 128px;
 } */
@@ -43,7 +47,7 @@ body
     color: white;
     border-radius: 30px;
     padding: 1rem 1rem;
-
+    width: 100%;
 }
 .jumbo-img-top {
     height: 25px;

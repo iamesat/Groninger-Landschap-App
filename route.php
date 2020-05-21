@@ -7,19 +7,20 @@
 
     <title>Directions Service</title>
     <nav class="navbar navbar-top-home fixed-top">
-            <div class="container">
-              <div class="row">
-                <div class="col-lg">
-                  jo
+              <div class="jumbotron homepage mt-3">
+                <div class="row justify-content-between">
+                  <div class="col-auto mr-auto">
+                    <i class="fa fa-bell jumbo-icons"></i>
+                  </div>
+                  <div class="col-auto">
+                    <i class="fa fa-shopping-cart jumbo-icons"></i>
+                  </div>
                 </div>
-                <div class="col-auto">
-                  Moi
-                </div>
-                <div class="col-auto">
-                </div>
+                <div class="row justify-content-between">
+                  <div class="col-auto mr-auto">Route naam</div>
+                  <div class="col-auto">Wandelaar lvl 1</div>
                 </div>
         </nav>
-        <!DOCTYPE html>
     <html>
 
     <head>
@@ -29,7 +30,7 @@
 
     <body>
 
-        <h1>My First Google Map</h1>
+
 
         <div id="googleMap" style="width:100%;height:800px;"></div>
 
@@ -63,9 +64,11 @@
                 var mapProp = {
                     //            center: new google.maps.LatLng(latitude, longitude), // puts your current location at the centre of the map,
                     zoom: 15,
+                      streetViewControl: false,
                     mapTypeId: 'roadmap',
 
                 };
+
                 var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
 
                 var directionsService = new google.maps.DirectionsService;
@@ -93,8 +96,8 @@
                 // Info Window Content
                 var infoWindowContent = [
                     ['<div class="info_content">' +
-                        '<h3>3fe</h3>' +
-                        '<p>32 Grand Canal Street Lower, Grand Canal Dock, Dublin 2</p>' +
+                        '<h3>Eindpunt</h3>' +
+                        '<p>Dit is je eindpunt waar je moet zijn</p>' +
                         '<img src="images/3fe.jpg" width="200" height="200">' +
                         '</div>'
                     ]
@@ -182,7 +185,9 @@
             }
         </script>
 
-        <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCN6HxTWzlajkzwfx2nN8WLBVln-tlZdNs&callback=getLocation"></script>
+        <!-- <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCN6HxTWzlajkzwfx2nN8WLBVln-tlZdNs&callback=getLocation"></script> -->
+
+
 
     </body>
 
