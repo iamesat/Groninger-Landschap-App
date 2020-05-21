@@ -10,10 +10,23 @@
     border-radius: 15px;
 }
 
-.route-img {
+/* .route-img {
     height: 95px;
     width: auto;
-}
+} */
+
+.route-img {
+  width: 90px;
+  height: 90px;
+  overflow: hidden;
+  margin-right: 7px;
+    }
+
+.route-img img {
+  width: 400px;
+  height: 400px;
+  margin: -75px 0 0 -100px;
+    }
 
 .munt-image {
   height: 12px;

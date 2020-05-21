@@ -5,10 +5,6 @@ include ($_SERVER['DOCUMENT_ROOT']. "/Groninger-Landschap-App/include/head.php")
 $username = $_SESSION['login'];
 $id = $_SESSION['userID'];
 
-$users = $db->prepare("SELECT id, username, naam, achternaam, coins FROM users WHERE id = :id");
-$users->execute(array(':id' => $id));
-$user = $users->fetch();
-
 $routes = $db->prepare("SELECT id, routename, routedescr, routeimage, cost FROM routes");
 $routes->execute(array(':id' => $id));
 $route = $routes->fetch();
@@ -35,7 +31,7 @@ $route = $routes->fetch();
 </div>
 
 <div class="containter">
-    <p class="ml-4" style="font-size: 14px;"><img class="munt-image" src="assets/images/icons/coin.png" alt="route afbeelding"> &nbsp; Mijn punten: <?php echo $user[4]; ?></p>
+    <p class="ml-4" style="font-size: 14px;"><img class="munt-image" src="assets/images/icons/coin.png" alt="route afbeelding"> &nbsp; Mijn punten: 100</p>
 </div>
     <div class="container">
       <div class="row row-cols-1">

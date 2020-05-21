@@ -38,11 +38,13 @@
           </div>
         </div>
         <div class="row justify-content-between">
-          <div class="col-4">
+          <div class="col">
           </div>
+					<div class="col">
+						  <b><?php echo ucfirst($user[2]); ?>&nbsp;<?php echo ucfirst($user[3]); ?></b>
+					</div>
 
-          <b><?php echo ucfirst($user[2]); ?>&nbsp;<?php echo ucfirst($user[3]); ?></b>
-          <div class="col-4">
+          <div class="col">
           </div>
         </div>
         <div class="row justify-content-between">
