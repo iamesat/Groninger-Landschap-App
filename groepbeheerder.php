@@ -18,16 +18,34 @@
                     <div class="row">
                     <div class="col-sm groepinformatie ">
                       <h6><b>Speurtocht door het landschap </b></h6>
-                      <br>
                         <img class="routepin" src="assets/images/pin.png" alt="route afbeelding"><p class="groepfont"> Groep bosmannen </p>
-                      <img class="routegroep" src="assets/images/map.png" alt="route afbeelding">
-                      <br>
                       <br>
                 <p class="groeprouteinfo"> 14:00 -15:00 </p>
                 <p class="groeproutetijd"> 45 min </p>
-                <hr>
-                      <p class="meldingengroep"> Geen nieuwe meldingen </p>
-                    <br>
+                  <br>
+                      <img class="routepin" src="assets/images/pin.png" alt="route afbeelding"><p class="groepfont"> Startpunt: Ruiterdiep (Groninger Landschap) </p>
+
+  <img class="routegroep" src="assets/images/map.png" alt="route afbeelding">
+  <br>
+  <br>
+  <h6><b>Leden</b></h6>
+  <hr>
+
+  <div class="groepleden">
+  <img class="routelid" src="assets/images/profile-picture.png" alt="route afbeelding">
+  <p class=  "lidnaam"> <b> Jij </b>
+  <br>
+Lid
+  <button type="button" class="btn btn-group blue groepverwijder">Verwijder</button></p>
+
+  <br>
+
+</div>
+
+
+
+
+
 
                   </div>
 

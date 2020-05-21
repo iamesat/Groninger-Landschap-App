@@ -165,18 +165,20 @@ h2 {
 
 .routegroep{
   width: 294px;
-  height: 100px;
+  height: 150px;
   border-radius: 10%;
 }
 
 .groepfont{
   font-size: 15px;
+  color: #898A8F;
 }
 
 .routepin{
   width: 20px;
   height: auto;
   float: left;
+  color: #898A8F;
 }
 
 .groeprouteinfo{
@@ -186,4 +188,20 @@ h2 {
 .groeproutetijd{
   text-align: right;
   color: #3A58FC;
+}
+
+
+.routelid{
+  width: 50px;
+  height: auto;
+  border-radius: 25%;
+  float: left;
+}
+
+.lidnaam{
+  margin-left: 76px;
+}
+
+.groepverwijder{
+  float: right;
 }
