@@ -4,11 +4,7 @@
 <?php include "include/top_navbar.php"; ?>
 <title>Groep Aanmaken</title>
 <body>
-
-
-
-
-<div class="container groepruimte groepboven">
+<div class="container groepruimte">
     <div class="row justify-content-md-center">
         <div class="col-12">
             <div class="card groepborder">
@@ -192,12 +188,6 @@
         </div>
     </div>
 </div>
-
-
-<br>
-<br>
-<br>
-<br>
 
 <script>
 function myFunction() {

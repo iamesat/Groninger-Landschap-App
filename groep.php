@@ -4,7 +4,7 @@
 <?php include "include/top_navbar.php"; ?>
 <title>Mijn Groepen</title>
 <body>
-<div class="container groepruimte groepboven">
+<div class="container">
     <div class="row justify-content-md-center">
         <div class="col-12">
             <div class="card groepborder">
@@ -26,7 +26,7 @@
                   </div>
 
 
-                <div class="col-sm groepbutton ">
+                <div class="col-sm groepsbutton ">
                   <p class ="groepaantal"> 2/10 </p>
                   <p class="bekijkenbutton"> bekijken </p>
 </div>
@@ -60,7 +60,7 @@
                   </div>
 
 
-                <div class="col-sm groepbutton ">
+                <div class="col-sm groepsbutton ">
                   <p class ="groepaantal"> 2/10 </p>
                   <p class="bekijkenbutton"> bekijken </p>
 </div>
@@ -89,12 +89,12 @@
                     <p class="groepinfo">Besloten groep</p>
                     <p class="groepinfo">Status: Aanvraag verstuurd</hp>
                       <p class="meldingengroep"> Geen nieuwe meldingen </p>
-                    
+
 
                   </div>
 
 
-                <div class="col-sm groepbutton ">
+                <div class="col-sm groepsbutton ">
                   <p class ="groepaantal"> 2/10 </p>
                   <p class="bekijkenbutton"> bekijken </p>
 </div>
@@ -124,10 +124,6 @@
 <p class="bekijkenbutton groepmaak"> Groep Aanmaken </p>
 </div>
 </div>
-
-<br><br><br>
-
-
 
 <?php include "include/bottom_navbar.php"; ?>
 <?php include "include/scripts.php"; ?>

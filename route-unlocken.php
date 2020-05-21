@@ -1,22 +1,28 @@
 <!doctype html>
 <html lang="en">
 <?php include ($_SERVER['DOCUMENT_ROOT']. "/Groninger-Landschap-App/include/head.php"); ?>
-<title>Mijn Routes</title>
-    <?php include "include/top_navbar.php"; ?>
+<title>Route Unlocken</title>
   <body>
+
+  <?php include "include/top_navbar.php"; ?>
+  
     <div class="app-breaks">
       <div class="container">
     <div class="row justify-content-center">
    <div class="col routes-buttons">
-  <button type="button" class="btn btn-outline-dark route-page-button active">Mijn Routes</button>
+    <a href="mijn-routes" class="stretched-link" data-transition="slide" rel="external"><button type="button" class="btn btn-outline-dark route-page-button">Mijn Routes</button></a>
    </div>
    <div class="col routes-buttons">
-   <a href="route-unlocken" class="stretched-link" data-transition="slide" rel="external"><button type="button" class="btn btn-outline-dark route-page-button">Unlocken</button></a>
+    <a href="route-unlocken" class="stretched-link" data-transition="slide" rel="external"><button type="button" class="btn btn-outline-dark route-page-button active">Unlocken</button></a>
    </div>
    <div class="col routes-buttons">
-   <a href="route-voltooid" class="stretched-link" data-transition="slide" rel="external"><button type="button" class="btn btn-outline-dark route-page-button">Voltooid</button></a>
+    <a href="route-voltooid" class="stretched-link" data-transition="slide" rel="external"><button type="button" class="btn btn-outline-dark route-page-button">Voltooid</button></a>
    </div>
  </div>
+</div>
+
+<div class="containter">
+    <p class="ml-4" style="font-size: 14px;"><img class="munt-image" src="assets/images/icons/coin.png" alt="route afbeelding"> &nbsp; Mijn punten: 100</p>
 </div>
 
     <div class="container">
@@ -36,13 +42,13 @@
               <div class="col">
                 <div class="row row-cols-3 justify-content-center">
                <div class="col group-buttons">
-                 <p>Actieve groepen</p>
+                 <p><b>Actieve groepen</b></p>
                </div>
                <div class="col group-buttons">
-                 <p>Loop duur</p>
+               <p><img class="munt-image" src="assets/images/icons/hourglass.svg" alt="route afbeelding">&nbsp; Loop duur</p>
                </div>
                <div class="col group-buttons">
-                 <p>Actieve groepen</p>
+               <p><img class="munt-image" src="assets/images/icons/location-start.svg" alt="route afbeelding">&nbsp; Start</p>
                </div>
              </div>
               </div>
@@ -62,12 +68,12 @@
               <div class="col">
                 <div class="row row-cols-3 justify-content-center">
                <div class="col group-buttons">
-              <p><img class="munt-image" src="assets/images/icons/coin.png" alt="route afbeelding"> &nbsp; +100 punten</p>
+              <p><img class="munt-image" src="assets/images/icons/coin.png" alt="route afbeelding"> &nbsp; -80 punten</p>
                </div>
                <div class="col group-buttons">
                </div>
                <div class="col group-buttons">
-              <button type="button" class="btn btn-group blue">Doorgaan</button>
+              <button type="button" class="btn btn-group blue">Bekijken</button>
                </div>
              </div>
               </div>
@@ -90,13 +96,13 @@
               <div class="col">
                 <div class="row row-cols-3 justify-content-center">
                <div class="col group-buttons">
-                 <p>Actieve groepen</p>
+               <p><b>Actieve groepen</b></p>
                </div>
                <div class="col group-buttons">
-                 <p>Loop duur</p>
+               <p><img class="munt-image" src="assets/images/icons/hourglass.svg" alt="route afbeelding">&nbsp; Loop duur</p>
                </div>
                <div class="col group-buttons">
-                 <p>Actieve groepen</p>
+               <p><img class="munt-image" src="assets/images/icons/location-start.svg" alt="route afbeelding">&nbsp; Start</p>
                </div>
              </div>
               </div>
@@ -116,12 +122,12 @@
               <div class="col">
                 <div class="row row-cols-3 justify-content-center">
                <div class="col group-buttons">
-              <p><img class="munt-image" src="assets/images/icons/coin.png" alt="route afbeelding"> &nbsp; +100 punten</p>
+              <p><img class="munt-image" src="assets/images/icons/coin.png" alt="route afbeelding"> &nbsp; -80 punten</p>
                </div>
                <div class="col group-buttons">
                </div>
                <div class="col group-buttons">
-              <button type="button" class="btn btn-group blue">Doorgaan</button>
+              <button type="button" class="btn btn-group blue">Bekijken</button>
                </div>
              </div>
               </div>
@@ -144,13 +150,13 @@
               <div class="col">
                 <div class="row row-cols-3 justify-content-center">
                <div class="col group-buttons">
-                 <p>Actieve groepen</p>
+               <p><b>Actieve groepen</b></p>
                </div>
                <div class="col group-buttons">
-                 <p>Loop duur</p>
+               <p><img class="munt-image" src="assets/images/icons/hourglass.svg" alt="route afbeelding">&nbsp; Loop duur</p>
                </div>
                <div class="col group-buttons">
-                 <p>Actieve groepen</p>
+               <p><img class="munt-image" src="assets/images/icons/location-start.svg" alt="route afbeelding">&nbsp; Start</p>
                </div>
              </div>
               </div>
@@ -170,12 +176,12 @@
               <div class="col">
                 <div class="row row-cols-3 justify-content-center">
                <div class="col group-buttons">
-              <p><img class="munt-image" src="assets/images/icons/coin.png" alt="route afbeelding"> &nbsp; +100 punten</p>
+              <p><img class="munt-image" src="assets/images/icons/coin.png" alt="route afbeelding"> &nbsp; -80 punten</p>
                </div>
                <div class="col group-buttons">
                </div>
                <div class="col group-buttons">
-              <button type="button" class="btn btn-group blue">Doorgaan</button>
+              <button type="button" class="btn btn-group blue">Bekijken</button>
                </div>
              </div>
               </div>
@@ -198,13 +204,13 @@
               <div class="col">
                 <div class="row row-cols-3 justify-content-center">
                <div class="col group-buttons">
-                 <p>Actieve groepen</p>
+               <p><b>Actieve groepen</b></p>
                </div>
                <div class="col group-buttons">
-                 <p>Loop duur</p>
+               <p><img class="munt-image" src="assets/images/icons/hourglass.svg" alt="route afbeelding">&nbsp; Loop duur</p>
                </div>
                <div class="col group-buttons">
-                 <p>Actieve groepen</p>
+               <p><img class="munt-image" src="assets/images/icons/location-start.svg" alt="route afbeelding">&nbsp; Start</p>
                </div>
              </div>
               </div>
@@ -224,12 +230,12 @@
               <div class="col">
                 <div class="row row-cols-3 justify-content-center">
                <div class="col group-buttons">
-              <p><img class="munt-image" src="assets/images/icons/coin.png" alt="route afbeelding"> &nbsp; +100 punten</p>
+              <p><img class="munt-image" src="assets/images/icons/coin.png" alt="route afbeelding"> &nbsp; -80 punten</p>
                </div>
                <div class="col group-buttons">
                </div>
                <div class="col group-buttons">
-              <button type="button" class="btn btn-group blue">Doorgaan</button>
+              <button type="button" class="btn btn-group blue">Bekijken</button>
                </div>
              </div>
               </div>

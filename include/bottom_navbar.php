@@ -1,3 +1,4 @@
+</div>
 <nav class="navbar navbar-home fixed-bottom d-flex justify-content-center">
       <div class="navbar">
         <div class="container">

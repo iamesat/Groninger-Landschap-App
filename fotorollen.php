@@ -4,7 +4,6 @@
 <?php include "include/top_navbar.php"; ?>
 <title>Fotorollen</title>
 <body>
-    <br><br><br><br>
 <div class="container">
     <div class="row justify-content-md-center">
         <div class="col-12">
@@ -51,7 +50,6 @@
         </div>
     </div>
 </div>
-
 
 <?php include "include/bottom_navbar.php"; ?>
 <?php include "include/scripts.php"; ?>

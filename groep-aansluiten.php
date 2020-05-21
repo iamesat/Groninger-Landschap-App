@@ -4,8 +4,7 @@
 <?php include "include/top_navbar.php"; ?>
 <title>Aansluiten bij een groep </title>
 <body>
-
-  <div class="container groepruimte groepboven">
+  <div class="container groepruimte">
       <div class="row justify-content-md-center">
           <div class="col-12">
               <div class="card groepborder">
@@ -189,8 +188,11 @@ van de groep je aanvraag accepteert.
 </div>
 </div>
 
+<<<<<<< HEAD
 <br><br><br><br>
 
+=======
+>>>>>>> 4dcbe4e7886596ed8428e1ffe19354d9616efa2c
 
 
 <?php include "include/bottom_navbar.php"; ?>
