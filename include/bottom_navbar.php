@@ -13,8 +13,8 @@
                 &nbsp;
               </div>
               <div class="col">
-                <a class="linkje" href="#">
-                <img src="assets/images/icons/gps.svg" class="navbar-bottom-icons" alt="home" />
+                <a class="linkje" href="route">
+                <img src="assets/images/icons/gps.svg" class="navbar-bottom-icons" alt="route" />
                 Route
               </a>
               </div>
@@ -23,7 +23,7 @@
               </div>
               <div class="col">
                 <a class="linkje" href="#">
-                <img src="assets/images/icons/chatten.svg" class="navbar-bottom-icons" alt="home" />
+                <img src="assets/images/icons/chatten.svg" class="navbar-bottom-icons" alt="chat" />
                 Chats
               </a>
               </div>

@@ -33,6 +33,13 @@ body
   color: white;
 }
 
+.navbar-top-route {
+  background-color: #092B75;
+  border-radius: 0 0 18px 18px;
+  padding: 0px 0 0px 0;
+  color: white;
+}
+
 .container.navtop {
   display: block;
 }
@@ -48,6 +55,14 @@ body
     border-radius: 30px;
     padding: 1rem 1rem;
     width: 100%;
+}
+.jumbotron.route {
+    background-color: #092B75;
+    color: white;
+    border-radius: 30px;
+    padding: 0rem 1rem;
+    width: 100%;
+    margin-bottom: 1.1rem;
 }
 .jumbo-img-top {
     height: 25px;

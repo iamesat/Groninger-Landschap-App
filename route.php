@@ -6,8 +6,8 @@
     <?php include ($_SERVER['DOCUMENT_ROOT']. "/Groninger-Landschap-App/include/head.php"); ?>
 
     <title>Directions Service</title>
-    <nav class="navbar navbar-top-home fixed-top">
-              <div class="jumbotron homepage mt-3">
+    <nav class="navbar navbar-top-route fixed-top">
+              <div class="jumbotron route mt-3">
                 <div class="row justify-content-between">
                   <div class="col-auto mr-auto">
                     <i class="fa fa-bell jumbo-icons"></i>
@@ -16,6 +16,23 @@
                     <i class="fa fa-shopping-cart jumbo-icons"></i>
                   </div>
                 </div>
+
+              	<div class="row">
+              		<div class="col-sm-3 col-md-2">
+              			<div class="progress-1" data-percentage="20">
+              				<span class="progress-left">
+              					<span class="progress-1-bar"></span>
+              				</span>
+              				<span class="progress-right">
+              					<span class="progress-1-bar"></span>
+              				</span>
+              				<div class="progress-value">
+              					<div>
+              						20%<br>
+              					</div>
+              				</div>
+              			</div>
+
                 <div class="row justify-content-between">
                   <div class="col-auto mr-auto">Route naam</div>
                   <div class="col-auto">Wandelaar lvl 1</div>
@@ -32,7 +49,7 @@
 
 
 
-        <div id="googleMap" style="width:100%;height:800px;"></div>
+        <div id="googleMap" style="width:100%;height:800px;margin-top:145px;"></div>
 
         <script>
             function detectBrowser() {
@@ -185,12 +202,11 @@
             }
         </script>
 
-        <!-- <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCN6HxTWzlajkzwfx2nN8WLBVln-tlZdNs&callback=getLocation"></script> -->
+        <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCN6HxTWzlajkzwfx2nN8WLBVln-tlZdNs&callback=getLocation"></script>
 
 
-
+<?php include "include/bottom_navbar.php"; ?>
     </body>
-
     </html>
 
 <!-- <script
