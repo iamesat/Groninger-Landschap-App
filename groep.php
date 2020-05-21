@@ -28,7 +28,7 @@
 
                 <div class="col-sm groepsbutton ">
                   <p class ="groepaantal"> 2/10 </p>
-                  <p class="bekijkenbutton"> bekijken </p>
+                  <a href="#"> <p class="bekijkenbutton"> bekijken </p></a>
 </div>
                 </div>
 </div>
@@ -62,7 +62,7 @@
 
                 <div class="col-sm groepsbutton ">
                   <p class ="groepaantal"> 2/10 </p>
-                  <p class="bekijkenbutton"> bekijken </p>
+                  <a href="#"> <p class="bekijkenbutton"> bekijken </p></a>
 </div>
                 </div>
 </div>
@@ -96,11 +96,11 @@
 
                 <div class="col-sm groepsbutton ">
                   <p class ="groepaantal"> 2/10 </p>
-                  <p class="bekijkenbutton"> bekijken </p>
-</div>
+                  <a href="#"> <p class="bekijkenbutton"> bekijken </p></a>
+                    </div>
+                  </div>
                 </div>
-</div>
-</div>
+              </div>
             </div>
         </div>
     </div>
@@ -121,9 +121,10 @@
 
 <div class="col-sm  groepbutton2 ">
 
-<a href="groepaanmaken.php" <p class="bekijkenbutton groepmaak" > Groep Aanmaken </p></a>
+<a href="groepaanmaken.php"> <p class="bekijkenbutton groepmaak" > Groep Aanmaken </p></a>
 
 
+</div>
 </div>
 </div>
 
