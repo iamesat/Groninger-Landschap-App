@@ -189,6 +189,32 @@
     </div>
 </div>
 
+
+<div class="modal fade" id="UpgradeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header modal-shop-header">
+                <h5 class="modal-title" id="exampleModalLabel">Upgrade naar Pro informatie</h5>
+                <button type="button" class="close close-shop" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    <b>Informatie over pro:</b><br>
+                    <br>
+                    - Advertentievrije applicatie<br>
+                    - Elke maand 3 gratis fotorollen<br>
+                    - Je mag 2 foto's insturen bij een wedstrijd.<br>
+                    - Je helpt het goede doel!
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary btn-info-shop" data-dismiss="modal">Begrepen</button>
+            </div>
+        </div>
+    </div>
+</div>
 <script>
 function myFunction() {
   var x = document.getElementById("myDIV");

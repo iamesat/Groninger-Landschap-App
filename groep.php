@@ -121,7 +121,9 @@
 
 <div class="col-sm  groepbutton2 ">
 
-<p class="bekijkenbutton groepmaak"> Groep Aanmaken </p>
+<a href="groepaanmaken.php" class="bekijkenbutton groepmaak" > Groep Aanmaken </a>
+
+
 </div>
 </div>
 
