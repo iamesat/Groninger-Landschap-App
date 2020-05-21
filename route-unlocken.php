@@ -87,7 +87,7 @@ $route = $routes->fetch();
                <div class="col group-buttons">
                </div>
                <div class="col group-buttons">
-              <button type="button" class="btn btn-group blue">Bekijken</button>
+              <a href="doorgaan-unlocken" class="stretched-link" data-transition="slide" rel="external"><button type="button" class="btn btn-group blue">Bekijken</button></a>
                </div>
              </div>
               </div>
