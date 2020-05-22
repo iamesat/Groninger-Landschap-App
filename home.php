@@ -29,7 +29,7 @@
           <div class="col-4">
           </div>
           <div class="item">
-        		<a href="settings.php">
+        		<a href="instellingen.php">
       			<span class="notify-badge"><i class="fa fa-cog jumbo-icons"></i></span>
               <img src="assets/images/profile-picture.png" class="profile-picture" alt="...">
         		</a>

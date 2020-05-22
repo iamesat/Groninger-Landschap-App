@@ -64,12 +64,12 @@
                 <br>
                 "Route Hoenddiep"<br>
                 <br>
-                met succes ontgrendeld. Je hebt nu nog  <img class="munt-image" src="assets/images/icons/coin.png" alt="route afbeelding"> &nbsp; 20 over
+                met succes ontgrendeld.<br> Je hebt nu nog  <img class="munt-image" src="assets/images/icons/coin.png" alt="route afbeelding"> &nbsp; 20 over
                    
                 </p>
             </div>
             <div class="modal-footer">
-            <a href="" class="stretched-link" data-transition="slide" rel="external"><button type="button" class="btn btn-secondary btn-info-shop" data-dismiss="modal">Naar Route</button></a>
+            <a href="route" class="stretched-link" data-transition="slide" rel="external"><button type="button" class="btn btn-secondary btn-info-shop" data-dismiss="modal">Naar Route</button></a>
             </div>
         </div>
     </div>
