@@ -10,7 +10,8 @@
         <div class="row justify-content-center">
             <div class="card scoreborder img-setting">
                 <div class="cardbody text-center">
-                    <img src="assets/images/profile-picture.png" class="profile-picture setting-picture my-4" alt="...">
+                    <img src="assets/images/profile-picture.png" class="profile-picture setting-picture mt-4" alt="...">
+                    <h6 class="mb-4"><b>Kies een profielfoto</b></h6>
                 </div>
             </div>
             <div class="card scoreborder img-setting my-3">
