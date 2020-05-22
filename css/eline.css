@@ -105,6 +105,9 @@
 }
 
 /* instellingen pagina */
+.setting-picture{
+    opacity: 0.5;
+}
 
 .img-setting{
     width: 330px !important;
@@ -114,9 +117,3 @@
     font-size: 14px !important;
 }
 
-.setting-password{
-    font-size: 14px;
-    font-weight: 600;
-    border-radius: 1rem !important;
-    border: lightgray !important;
-}

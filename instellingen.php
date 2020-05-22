@@ -10,12 +10,12 @@
         <div class="row justify-content-center">
             <div class="card scoreborder img-setting">
                 <div class="cardbody text-center">
-                    <img src="assets/images/profile-picture.png" class="profile-picture my-4" alt="...">
+                    <img src="assets/images/profile-picture.png" class="profile-picture setting-picture my-4" alt="...">
                 </div>
             </div>
             <div class="card scoreborder img-setting my-3">
                 <div class="cardbody">
-                    <h6 class="pt-4 pb-2 pl-4 instantie-wijzigen">Instantie wijzigen</h6>
+                    <h6 class="pt-4 pb-2 pl-4"><b>Instantie wijzigen</b></h6>
                     <button class="btn dropdown-toggle ml-2 mb-4" type="button" id="instellingendropdown dropdownkleur" style="font-size: 14px;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Groninger Landschap
                     </button>
@@ -40,7 +40,25 @@
                 </div>
                 </div>
             </div>
-
+            <div class="card scoreborder img-setting">
+                <div class="cardbody">
+                    <h6 class="pt-4 pb-2 pl-4 notifi-setting"><b>Notificaties</b></h6>
+                    <div class="switch-field pl-4 py-2">
+                        <input type="radio" id="radio-one" name="switch-one" value="Iedereen" checked/>
+                        <label for="radio-one" style="font-size: 14px;">Aan</label>
+                        <input type="radio" id="radio-two" name="switch-one" value="Niemand" />
+                        <label for="radio-two" style="font-size: 14px;">Uit</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center mt-3">
+                <div class="col">
+                    <a href="index" class="stretched-link" data-transition="slide" rel="external"><button type="button" style="font-size: 14px;" class="btn btn-group">Uitloggen</button></a>
+                </div>
+                <div class="col">
+                    <a href="instellingen" class="stretched-link" data-transition="slide" rel="external"><button type="button" style="font-size: 14px;" class="btn btn-group blue">Opslaan</button></a>
+                </div>         
+            </div>
         </div>
     </div>
 
