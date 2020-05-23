@@ -10,10 +10,19 @@
     border-radius: 15px;
 }
 
-/* .route-img {
-    height: 95px;
-    width: auto;
-} */
+.route-navbar {
+  background: #f3f3f3;
+  height: 200px;
+  text-align: center;
+  border-radius: 18px 18px 0px 0px;
+}
+
+.route-navbar img {
+  height: 89px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 15px;
+}
 
 .route-img {
   width: 90px;

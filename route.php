@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <?php include ($_SERVER['DOCUMENT_ROOT']. "/Groninger-Landschap-App/include/head.php"); ?>
 
-    <title>Directions Service</title>
+    <title>Route Volgen</title>
     <nav class="navbar navbar-top-route fixed-top">
               <div class="jumbotron route mt-3">
                 <div class="row justify-content-between">
@@ -205,7 +205,56 @@
         <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCN6HxTWzlajkzwfx2nN8WLBVln-tlZdNs&callback=getLocation"></script>
 
 
-<?php include "include/bottom_navbar.php"; ?>
+      </div>
+<div class="route-navbar fixed-bottom d-flex justify-content-center">
+  <div class="container">
+      <div class="row">
+        <div class="col">
+          <a class="linkje" href="home.php">
+          <img src="assets/images/icons/camera.png" class="navbar-bottom-icons" alt="camera" />
+        </a>
+        </div>
+        <div class="col">
+          <a class="linkje" href="route">
+          <img src="assets/images/icons/qrcode.png" class="navbar-bottom-icons" alt="qr" />
+        </a>
+      </div>
+</div>
+</div>
+</div>
+
+      <nav class="navbar navbar-home fixed-bottom d-flex justify-content-center">
+            <div class="navbar">
+              <div class="container">
+                  <div class="row row-cols-5">
+                    <div class="col">
+                      <a class="linkje" href="home.php">
+                      <img src="assets/images/icons/home.svg" class="navbar-bottom-icons" alt="home" />
+                      Home
+                    </a>
+                    </div>
+                    <div class="col">
+                      &nbsp;
+                    </div>
+                    <div class="col">
+                      <a class="linkje" href="route">
+                      <img src="assets/images/icons/gps.svg" class="navbar-bottom-icons" alt="route" />
+                      Route
+                    </a>
+                    </div>
+                    <div class="col">
+                      &nbsp;
+                    </div>
+                    <div class="col">
+                      <a class="linkje" href="#">
+                      <img src="assets/images/icons/chatten.svg" class="navbar-bottom-icons" alt="chat" />
+                      Chats
+                    </a>
+                    </div>
+            </div>
+            </div>
+            </div>
+          </nav>
     </body>
     </html>
 

@@ -2,11 +2,9 @@
 <html lang="en">
 <?php include ($_SERVER['DOCUMENT_ROOT']. "/Groninger-Landschap-App/include/head.php"); ?>
 <title>Instellingen</title>
-
+<?php include "include/top_navbar.php"; ?>
   <body>
-    <?php include "include/top_navbar.php"; ?>
-
-    <div class="containter">
+        <div class="containter">
         <div class="row justify-content-center">
             <div class="card scoreborder img-setting">
                 <div class="cardbody text-center">
@@ -58,15 +56,11 @@
                 </div>
                 <div class="col">
                     <a href="instellingen" class="stretched-link" data-transition="slide" rel="external"><button type="button" style="font-size: 14px;" class="btn btn-group blue">Opslaan</button></a>
-                </div>         
+                </div>
             </div>
         </div>
     </div>
-
-
-    
-  
-    <?php include "include/bottom_navbar.php"; ?>
-    <?php include "include/scripts.php"; ?>
   </body>
+      <?php include "include/bottom_navbar.php"; ?>
+      <?php include "include/scripts.php"; ?>
 </html>

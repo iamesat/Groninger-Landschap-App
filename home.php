@@ -74,7 +74,7 @@
           <div class="col-2">
           </div>
 
-          <button type="button" class="btn btn-outline-light speur-button">&nbsp;Doorgaan speurtocht&nbsp;</button>
+          <a href="route.php" type="button" class="btn btn-outline-light speur-button">&nbsp;Doorgaan speurtocht&nbsp;</a>
           <div class="col-2">
           </div>
         </div>
