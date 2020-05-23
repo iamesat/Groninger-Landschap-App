@@ -1,10 +1,11 @@
 <!doctype html>
 <html lang="en">
 <?php include ($_SERVER['DOCUMENT_ROOT']. "/Groninger-Landschap-App/include/head.php"); ?>
-<title>Instellingen</title>
+
 <?php include "include/top_navbar.php"; ?>
+<title>Instellingen</title>
   <body>
-        <div class="containter">
+        <div class="container">
         <div class="row justify-content-center">
             <div class="card scoreborder img-setting">
                 <div class="cardbody text-center">
@@ -27,14 +28,14 @@
             </div>
             <div class="card scoreborder img-setting">
                 <div class="cardbody text-center">
-                <div class="input-group input-group-sm my-4">
+                <div class="input-group col-md-2 my-4">
                     <input type="text" class="form-control" placeholder="••••••••••••••••" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
                 </div>
                 </div>
             </div>
             <div class="card scoreborder img-setting my-3">
                 <div class="cardbody text-center">
-                <div class="input-group input-group-sm my-4">
+                <div class="input-group col-md-2 my-4">
                     <input type="text" class="form-control" placeholder="meesvenema@info.com" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
                 </div>
                 </div>
