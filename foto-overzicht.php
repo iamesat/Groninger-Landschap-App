@@ -22,7 +22,7 @@
             <div class="card">
                 <div class="card-body text-center">
                     <div class="row justify-content-center">
-                    <a href="" data-transition="slide" rel="external" data-toggle="modal" data-target="#UpgradeModal"><img src="assets/images/fotorollen/molen.png" class="recente-foto" alt="..."></a>
+                    <a href="" data-transition="slide" rel="external" data-toggle="modal" data-target="#UpgradeModal"><img src="assets/images/fotorollen/iwemasteenhuis.jpg" class="recente-foto" alt="..."></a>
                     <a href="" data-transition="slide" rel="external" data-toggle="modal" data-target="#UpgradeModal"><img src="assets/images/fotorollen/huis.png" class="recente-foto" alt="..."></a>
                     </div>
                     <div class="row justify-content-center">
@@ -62,15 +62,15 @@
             </div>
             <div class="modal-body">
                 <p>
-                    Locatie: Route 1 <br><br>
+                    Locatie: wandelroute Iwema Steenhuis<br><br>
                     Wil je deze foto inzenden voor de fotowedstrijd? <br><br>
                     Klik dan op 'JA'. Wil je er nog over nadenken? Klik dan op 'NEE'.
                 </p>
-                <img src="assets/images/fotorollen/beekje.png">
+                <img src="assets/images/fotorollen/wedstrijd.svg">
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary btn-info-shop" data-dismiss="modal">JA</button>
-                <button type="button" class="btn btn-secondary btn-info-shop" data-dismiss="modal">NEE</button>
+            <a href="foto-upload" class="stretched-link" data-transition="slide" rel="external"><button type="button" class="btn btn-secondary btn-info-shop" data-dismiss="modal">JA</button></a>
+            <button type="button" class="btn btn-secondary btn-info-shop" data-dismiss="modal">NEE</button>
             </div>
         </div>
     </div>
