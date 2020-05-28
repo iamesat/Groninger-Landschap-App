@@ -67,7 +67,7 @@
                <div class="col group-buttons">
                </div>
                <div class="col group-buttons">
-              <button type="button" class="btn btn-group blue">Doorgaan</button>
+              <a href="route"> <button type="button" class="btn btn-group blue">Doorgaan</button> </a>
                </div>
              </div>
               </div>
@@ -121,7 +121,7 @@
                <div class="col group-buttons">
                </div>
                <div class="col group-buttons">
-              <button type="button" class="btn btn-group blue">Doorgaan</button>
+              <a href="route"> <button type="button" class="btn btn-group blue">Doorgaan</button> </a>
                </div>
              </div>
               </div>
@@ -175,7 +175,7 @@
                <div class="col group-buttons">
                </div>
                <div class="col group-buttons">
-              <button type="button" class="btn btn-group blue">Doorgaan</button>
+              <a href="route"> <button type="button" class="btn btn-group blue">Doorgaan</button> </a>
                </div>
              </div>
               </div>
@@ -229,7 +229,7 @@
                <div class="col group-buttons">
                </div>
                <div class="col group-buttons">
-              <button type="button" class="btn btn-group blue">Doorgaan</button>
+              <a href="route"> <button type="button" class="btn btn-group blue">Doorgaan</button> </a>
                </div>
              </div>
               </div>
