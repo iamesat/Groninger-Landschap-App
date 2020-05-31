@@ -163,6 +163,10 @@ body
 }
 
 .linkje {
+  color: #0000007d;
+}
+
+.linkje.active {
   color: black;
 }
 /* Einde notificatie badges */

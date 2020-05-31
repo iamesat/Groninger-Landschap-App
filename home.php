@@ -4,6 +4,7 @@
 
 	$username = $_SESSION['login'];
 	$id = $_SESSION['userID'];
+	$page = $_SERVER['REQUEST_URI'];
 
   $users = $db->prepare("SELECT id, username, naam, achternaam FROM users WHERE id = :id");
   $users->execute(array(':id' => $id));

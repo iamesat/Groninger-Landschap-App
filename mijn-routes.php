@@ -1,102 +1,71 @@
 <!doctype html>
 <html lang="en">
-<?php include ($_SERVER['DOCUMENT_ROOT']. "/Groninger-Landschap-App/include/head.php"); ?>
-<title>Mijn Routes</title>
-    <?php include "include/top_navbar.php"; ?>
+<?php
+include ($_SERVER['DOCUMENT_ROOT']. "/Groninger-Landschap-App/include/head.php");
+$username = $_SESSION['login'];
+$id = $_SESSION['userID'];
+
+$users = $db->prepare("SELECT id, username, naam, achternaam, coins FROM users WHERE id = :id");
+$users->execute(array(':id' => $id));
+$user = $users->fetch();
+
+$routes = $db->prepare("SELECT id, routename, routedescr, routeimage, cost, startpunt, kilom FROM routes");
+$routes->execute(array(':id' => $id));
+$route = $routes->fetch();
+
+$myroutes = $db->prepare("SELECT routeID, userID FROM mijnroutes");
+$myroutes->execute(array(':id' => $id));
+?>
+
+<title>Route Unlocken</title>
   <body>
+
+  <?php include "include/top_navbar.php"; ?>
+
     <div class="app-breaks">
       <div class="container">
     <div class="row justify-content-center">
    <div class="col routes-buttons">
-  <button type="button" class="btn btn-outline-dark route-page-button active">Mijn Routes</button>
+    <a href="mijn-routes" class="stretched-link" data-transition="slide" rel="external"><button type="button" class="btn btn-outline-dark route-page-button active">Mijn Routes</button></a>
    </div>
    <div class="col routes-buttons">
-   <a href="route-unlocken" class="stretched-link" data-transition="slide" rel="external"><button type="button" class="btn btn-outline-dark route-page-button">Unlocken</button></a>
+    <a href="route-unlocken" class="stretched-link" data-transition="slide" rel="external"><button type="button" class="btn btn-outline-dark route-page-button ">Unlocken</button></a>
    </div>
    <div class="col routes-buttons">
-   <a href="route-voltooid" class="stretched-link" data-transition="slide" rel="external"><button type="button" class="btn btn-outline-dark route-page-button">Voltooid</button></a>
+    <a href="route-voltooid" class="stretched-link" data-transition="slide" rel="external"><button type="button" class="btn btn-outline-dark route-page-button">Voltooid</button></a>
    </div>
  </div>
 </div>
 
+<div class="containter">
+    <p class="ml-4" style="font-size: 14px;"><img class="munt-image" src="assets/images/icons/coin.png" alt="route afbeelding"> &nbsp; Mijn punten: <?php echo $user[4]; ?></p>
+</div>
     <div class="container">
       <div class="row row-cols-1">
-        <div class="col route-card">
-          <div class="card">
-            <div class="card-body">
-              <div class="media">
-                <a class="pull-left" href="#">
-                  <img class="route-img" src="assets/images/map.png" alt="route afbeelding">
-                </a>
-                <div class="media-body">
-                  <h6>Route Hoendiep</h6>
-                  <p>Beschrijving over de speurtocht - 10 km</p>
-                </div>
-              </div>
-              <div class="col">
-                <div class="row row-cols-3 justify-content-center">
-               <div class="col group-buttons">
-                 <p>Actieve groepen</p>
-               </div>
-               <div class="col group-buttons">
-                 <p>Loop duur</p>
-               </div>
-               <div class="col group-buttons">
-                 <p>Actieve groepen</p>
-               </div>
-             </div>
-              </div>
-              <div class="col">
-                <div class="row row-cols-3 justify-content-center">
-               <div class="col group-buttons">
-              <button type="button" class="btn btn-group">OBS Hanze</button>
-               </div>
-               <div class="col group-buttons">
-              <button type="button" class="btn btn-group">Stinkies</button>
-               </div>
-               <div class="col group-buttons">
-              <button type="button" class="btn btn-group">Meer...</button>
-               </div>
-             </div>
-              </div>
-              <div class="col">
-                <div class="row row-cols-3 justify-content-center">
-               <div class="col group-buttons">
-              <p><img class="munt-image" src="assets/images/icons/coin.png" alt="route afbeelding"> &nbsp; +100 punten</p>
-               </div>
-               <div class="col group-buttons">
-               </div>
-               <div class="col group-buttons">
-              <a href="route"> <button type="button" class="btn btn-group blue">Doorgaan</button> </a>
-               </div>
-             </div>
-              </div>
-            </div>
-          </div>
-        </div>
 
+        <?php foreach($routes as $route): ?>
         <div class="col route-card">
           <div class="card">
             <div class="card-body">
               <div class="media">
                 <a class="pull-left" href="#">
-                  <img class="route-img" src="assets/images/map.png" alt="route afbeelding">
+                  <img class="route-img" src="assets/images/routes/<?php echo ucfirst($route[3]); ?>" alt="route afbeelding">
                 </a>
                 <div class="media-body">
-                  <h6>Route Hoendiep</h6>
-                  <p>Beschrijving over de speurtocht - 10 km</p>
+                  <h6><?php echo ucfirst($route[1]); ?></h6>
+                  <p><?php echo ucfirst($route[2]); ?></p>
                 </div>
               </div>
               <div class="col">
                 <div class="row row-cols-3 justify-content-center">
                <div class="col group-buttons">
-                 <p>Actieve groepen</p>
+                 <p><b>Actieve groepen</b></p>
                </div>
                <div class="col group-buttons">
-                 <p>Loop duur</p>
+               <p><img class="munt-image" src="assets/images/icons/hourglass.svg" alt="route afbeelding">&nbsp; <?php echo ucfirst($route[6]);?>&nbsp;km</p>
                </div>
                <div class="col group-buttons">
-                 <p>Actieve groepen</p>
+               <p><img class="munt-image" src="assets/images/icons/location-start.svg" alt="route afbeelding">&nbsp; <?php echo ucfirst($route[5]);?></p>
                </div>
              </div>
               </div>
@@ -116,126 +85,19 @@
               <div class="col">
                 <div class="row row-cols-3 justify-content-center">
                <div class="col group-buttons">
-              <p><img class="munt-image" src="assets/images/icons/coin.png" alt="route afbeelding"> &nbsp; +100 punten</p>
+              <p><img class="munt-image" src="assets/images/icons/coin.png" alt="route afbeelding"> &nbsp;+<?php echo $route[4]; ?> punten</p>
                </div>
                <div class="col group-buttons">
                </div>
                <div class="col group-buttons">
-              <a href="route"> <button type="button" class="btn btn-group blue">Doorgaan</button> </a>
+              <a href="doorgaan-unlocken" class="stretched-link" data-transition="slide" rel="external"><button type="button" class="btn btn-group blue">Nu wandelen</button></a>
                </div>
              </div>
               </div>
             </div>
           </div>
         </div>
-
-        <div class="col route-card">
-          <div class="card">
-            <div class="card-body">
-              <div class="media">
-                <a class="pull-left" href="#">
-                  <img class="route-img" src="assets/images/map.png" alt="route afbeelding">
-                </a>
-                <div class="media-body">
-                  <h6>Route Hoendiep</h6>
-                  <p>Beschrijving over de speurtocht - 10 km</p>
-                </div>
-              </div>
-              <div class="col">
-                <div class="row row-cols-3 justify-content-center">
-               <div class="col group-buttons">
-                 <p>Actieve groepen</p>
-               </div>
-               <div class="col group-buttons">
-                 <p>Loop duur</p>
-               </div>
-               <div class="col group-buttons">
-                 <p>Actieve groepen</p>
-               </div>
-             </div>
-              </div>
-              <div class="col">
-                <div class="row row-cols-3 justify-content-center">
-               <div class="col group-buttons">
-              <button type="button" class="btn btn-group">OBS Hanze</button>
-               </div>
-               <div class="col group-buttons">
-              <button type="button" class="btn btn-group">Stinkies</button>
-               </div>
-               <div class="col group-buttons">
-              <button type="button" class="btn btn-group">Meer...</button>
-               </div>
-             </div>
-              </div>
-              <div class="col">
-                <div class="row row-cols-3 justify-content-center">
-               <div class="col group-buttons">
-              <p><img class="munt-image" src="assets/images/icons/coin.png" alt="route afbeelding"> &nbsp; +100 punten</p>
-               </div>
-               <div class="col group-buttons">
-               </div>
-               <div class="col group-buttons">
-              <a href="route"> <button type="button" class="btn btn-group blue">Doorgaan</button> </a>
-               </div>
-             </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col route-card">
-          <div class="card">
-            <div class="card-body">
-              <div class="media">
-                <a class="pull-left" href="#">
-                  <img class="route-img" src="assets/images/map.png" alt="route afbeelding">
-                </a>
-                <div class="media-body">
-                  <h6>Route Hoendiep</h6>
-                  <p>Beschrijving over de speurtocht - 10 km</p>
-                </div>
-              </div>
-              <div class="col">
-                <div class="row row-cols-3 justify-content-center">
-               <div class="col group-buttons">
-                 <p>Actieve groepen</p>
-               </div>
-               <div class="col group-buttons">
-                 <p>Loop duur</p>
-               </div>
-               <div class="col group-buttons">
-                 <p>Actieve groepen</p>
-               </div>
-             </div>
-              </div>
-              <div class="col">
-                <div class="row row-cols-3 justify-content-center">
-               <div class="col group-buttons">
-              <button type="button" class="btn btn-group">OBS Hanze</button>
-               </div>
-               <div class="col group-buttons">
-              <button type="button" class="btn btn-group">Stinkies</button>
-               </div>
-               <div class="col group-buttons">
-              <button type="button" class="btn btn-group">Meer...</button>
-               </div>
-             </div>
-              </div>
-              <div class="col">
-                <div class="row row-cols-3 justify-content-center">
-               <div class="col group-buttons">
-              <p><img class="munt-image" src="assets/images/icons/coin.png" alt="route afbeelding"> &nbsp; +100 punten</p>
-               </div>
-               <div class="col group-buttons">
-               </div>
-               <div class="col group-buttons">
-              <a href="route"> <button type="button" class="btn btn-group blue">Doorgaan</button> </a>
-               </div>
-             </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <?php endforeach; ?>
 
       </div>
     </div>

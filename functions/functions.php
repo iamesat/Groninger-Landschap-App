@@ -15,10 +15,9 @@
 		$check->execute(array(':username' => $username));
 		$row = $check->fetch();
 
-		// Redirect to registration page if user exists
 		if (is_array($row)) {
 
-			header('Location: ../users');
+			header('Location: ../fout');
 
 		} else {
 
@@ -39,4 +38,24 @@
 			header('Location: ../index.php');
 		}
 	}
+
+
+if(isset($_POST["add-route"])) {
+
+			$routeID = $_POST['routeID'];
+			$userID = $_POST['userID'];
+
+
+			$addoute = $db->prepare("INSERT INTO mijnroutes (routeID, userID) VALUES (:routeID, :userID)");
+			$addoute->bindValue(':routeID',$routeID);
+			$addoute->bindValue(':userID',$userID);
+			$addoute->execute();
+
+			header("Location: ../mijn-routes");
+
+		} else {
+			header('Location: ../fout');
+		}
+
+
 ?>

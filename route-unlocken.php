@@ -9,7 +9,7 @@ $users = $db->prepare("SELECT id, username, naam, achternaam, coins FROM users W
 $users->execute(array(':id' => $id));
 $user = $users->fetch();
 
-$routes = $db->prepare("SELECT id, routename, routedescr, routeimage, cost FROM routes");
+$routes = $db->prepare("SELECT id, routename, routedescr, routeimage, cost, startpunt, kilom FROM routes");
 $routes->execute(array(':id' => $id));
 $route = $routes->fetch();
 ?>
@@ -59,10 +59,10 @@ $route = $routes->fetch();
                  <p><b>Actieve groepen</b></p>
                </div>
                <div class="col group-buttons">
-               <p><img class="munt-image" src="assets/images/icons/hourglass.svg" alt="route afbeelding">&nbsp; Loop duur</p>
+               <p><img class="munt-image" src="assets/images/icons/hourglass.svg" alt="route afbeelding">&nbsp; <?php echo ucfirst($route[6]);?>&nbsp;km</p>
                </div>
                <div class="col group-buttons">
-               <p><img class="munt-image" src="assets/images/icons/location-start.svg" alt="route afbeelding">&nbsp; Start</p>
+               <p><img class="munt-image" src="assets/images/icons/location-start.svg" alt="route afbeelding">&nbsp; <?php echo ucfirst($route[5]);?></p>
                </div>
              </div>
               </div>
@@ -87,7 +87,7 @@ $route = $routes->fetch();
                <div class="col group-buttons">
                </div>
                <div class="col group-buttons">
-              <a href="doorgaan-unlocken" class="stretched-link" data-transition="slide" rel="external"><button type="button" class="btn btn-group blue">Bekijken</button></a>
+              <a href="doorgaan-unlocken?id=<?php echo $route[0] ?>" class="stretched-link" data-transition="slide" rel="external"><button type="button" class="btn btn-group blue">Bekijken</button></a>
                </div>
              </div>
               </div>
