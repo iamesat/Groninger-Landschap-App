@@ -331,3 +331,9 @@ margin-left: 5px;
 		 transform: rotate(180deg);
 	}
 }
+
+#camera-scann {
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+}
