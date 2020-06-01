@@ -9,7 +9,7 @@
         }
 
         $id = $_SESSION['userID'];
-        $routes = $db->prepare("SELECT id, routename, routedescr, routeimage, cost, startpunt, kilom FROM routes WHERE id = :id");
+        $routes = $db->prepare("SELECT id, routename, routedescr, routeimage, cost, startpunt, eindpunt, kilom FROM routes WHERE id = :id");
         $routes->execute(array(':id' => $routeID));
         $route = $routes->fetch();
 
@@ -55,6 +55,13 @@
                           <form id="add-route" method="post" action="functions/functions.php" class="add-route" name="add-route">
                           <input type="hidden" name="routeID" value="<?php echo $routeID; ?>">
                           <input type="hidden" name="userID" value="<?php echo $id; ?>">
+                          <input type="hidden" name="routename" value="<?php echo $route[1]; ?>">
+                          <input type="hidden" name="routedescr" value="<?php echo $route[2]; ?>">
+                          <input type="hidden" name="routeimage" value="<?php echo $route[3]; ?>">
+                          <input type="hidden" name="cost" value="<?php echo $route[4]; ?>">
+                          <input type="hidden" name="startpunt" value="<?php echo $route[5]; ?>">
+                          <input type="hidden" name="eindpunt" value="<?php echo $route[6]; ?>">
+                          <input type="hidden" name="kilom" value="<?php echo $route[7]; ?>">
                           <input type="submit" name="add-route" value="Unlocken" class="btn btn-group blue">
 
                         <!-- <a href="" class="stretched-link pl-4" data-transition="slide" rel="external" data-toggle="modal" data-target="#unlock-modal"><button type="button" class="btn btn-group blue" style="font-size:14px">Unlocken</button></a> -->

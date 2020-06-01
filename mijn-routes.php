@@ -3,18 +3,17 @@
 <?php
 include ($_SERVER['DOCUMENT_ROOT']. "/Groninger-Landschap-App/include/head.php");
 $username = $_SESSION['login'];
+$userID = $_SESSION['userID'];
 $id = $_SESSION['userID'];
 
 $users = $db->prepare("SELECT id, username, naam, achternaam, coins FROM users WHERE id = :id");
 $users->execute(array(':id' => $id));
 $user = $users->fetch();
 
-$routes = $db->prepare("SELECT id, routename, routedescr, routeimage, cost, startpunt, kilom FROM routes");
-$routes->execute(array(':id' => $id));
+$routes = $db->prepare("SELECT userID, routename, routedescr, routeimage, cost, startpunt, eindpunt, kilom, routeID FROM mijnroutes WHERE userID = :id");
+$routes->execute(array(':id' => $userID));
 $route = $routes->fetch();
 
-$myroutes = $db->prepare("SELECT routeID, userID FROM mijnroutes");
-$myroutes->execute(array(':id' => $id));
 ?>
 
 <title>Route Unlocken</title>
@@ -37,9 +36,6 @@ $myroutes->execute(array(':id' => $id));
  </div>
 </div>
 
-<div class="containter">
-    <p class="ml-4" style="font-size: 14px;"><img class="munt-image" src="assets/images/icons/coin.png" alt="route afbeelding"> &nbsp; Mijn punten: <?php echo $user[4]; ?></p>
-</div>
     <div class="container">
       <div class="row row-cols-1">
 
@@ -49,7 +45,7 @@ $myroutes->execute(array(':id' => $id));
             <div class="card-body">
               <div class="media">
                 <a class="pull-left" href="#">
-                  <img class="route-img" src="assets/images/routes/<?php echo ucfirst($route[3]); ?>" alt="route afbeelding">
+                  <img class="route-img" src="assets/images/routes/<?php echo $route[3]; ?>" alt="route afbeelding">
                 </a>
                 <div class="media-body">
                   <h6><?php echo ucfirst($route[1]); ?></h6>
@@ -62,7 +58,7 @@ $myroutes->execute(array(':id' => $id));
                  <p><b>Actieve groepen</b></p>
                </div>
                <div class="col group-buttons">
-               <p><img class="munt-image" src="assets/images/icons/hourglass.svg" alt="route afbeelding">&nbsp; <?php echo ucfirst($route[6]);?>&nbsp;km</p>
+               <p><img class="munt-image" src="assets/images/icons/hourglass.svg" alt="route afbeelding">&nbsp; <?php echo ucfirst($route[7]);?>&nbsp;km</p>
                </div>
                <div class="col group-buttons">
                <p><img class="munt-image" src="assets/images/icons/location-start.svg" alt="route afbeelding">&nbsp; <?php echo ucfirst($route[5]);?></p>
@@ -90,7 +86,13 @@ $myroutes->execute(array(':id' => $id));
                <div class="col group-buttons">
                </div>
                <div class="col group-buttons">
-              <a href="doorgaan-unlocken" class="stretched-link" data-transition="slide" rel="external"><button type="button" class="btn btn-group blue">Nu wandelen</button></a>
+
+              <form id="update-route"" method="post" action="functions/functions.php" class="update-route" name="update-route"">
+              <input type="hidden" name="current_route" value="<?php echo $route[8]; ?>">
+              <input type="hidden" name="userID" value="<?php echo $userID; ?>">
+              <input type="submit" name="update-route" value="Wandelen" class="btn btn-group blue">
+              </form>
+
                </div>
              </div>
               </div>

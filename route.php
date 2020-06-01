@@ -3,7 +3,27 @@
   <head>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
-    <?php include ($_SERVER['DOCUMENT_ROOT']. "/Groninger-Landschap-App/include/head.php"); ?>
+    <?php
+    include ($_SERVER['DOCUMENT_ROOT']. "/Groninger-Landschap-App/include/head.php");
+
+    $userIDs = $_SESSION['userID'];
+    $id = $_SESSION['userID'];
+
+
+
+    $users = $db->prepare("SELECT id, username, naam, achternaam, coins, current_route FROM users WHERE id = :id");
+    $users->execute(array(':id' => $id));
+    $user = $users->fetch();
+    $current = $user[5];
+
+
+
+    $routes = $db->prepare("SELECT userID, routename, routedescr, routeimage, cost, startpunt, eindpunt, kilom, routeID FROM mijnroutes WHERE userID = :ids AND routeID = :current");
+    $routes->execute(array(':ids' => $userIDs, ':current' => $current ));
+    // $routes->execute(array(':id' => $current_route));
+    $route = $routes->fetch();
+
+    ?>
 
     <title>Route Volgen</title>
     <nav class="navbar navbar-top-route fixed-top">
@@ -34,7 +54,7 @@
               			</div>
 
                 <div class="row justify-content-between">
-                  <div class="col-auto mr-auto">Route naam</div>
+                  <div class="col-auto mr-auto"><?php echo $route[1]; ?></div>
                   <div class="col-auto">Wandelaar lvl 1</div>
                 </div>
         </nav>
@@ -202,7 +222,7 @@
             }
         </script>
 
-        <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCN6HxTWzlajkzwfx2nN8WLBVln-tlZdNs&callback=getLocation"></script>
+        <!-- <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCN6HxTWzlajkzwfx2nN8WLBVln-tlZdNs&callback=getLocation"></script> -->
 
 
       </div>

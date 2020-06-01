@@ -42,13 +42,30 @@
 
 if(isset($_POST["add-route"])) {
 
-			$routeID = $_POST['routeID'];
+
 			$userID = $_POST['userID'];
+			$routeID = $_POST['routeID'];
+			$routename = $_POST['routename'];
+			$routedescr = $_POST['routedescr'];
+			$routeimage = $_POST['routeimage'];
+			$cost = $_POST['cost'];
+			$startpunt = $_POST['startpunt'];
+			$eindpunt = $_POST['eindpunt'];
+			$kilom = $_POST['kilom'];
 
-
-			$addoute = $db->prepare("INSERT INTO mijnroutes (routeID, userID) VALUES (:routeID, :userID)");
-			$addoute->bindValue(':routeID',$routeID);
+			$addoute = $db->prepare("INSERT INTO mijnroutes (userID, routeID, routename, routedescr, routeimage, cost, startpunt, eindpunt, kilom ) VALUES (:userID, :routeID, :routename, :routedescr, :routeimage, :cost, :startpunt, :eindpunt, :kilom)");
 			$addoute->bindValue(':userID',$userID);
+			$addoute->bindValue(':routeID',$routeID);
+			$addoute->bindValue(':routename',$routename);
+			$addoute->bindValue(':routedescr',$routedescr);
+			$addoute->bindValue(':routeimage',$routeimage);
+			$addoute->bindValue(':cost',$cost);
+			$addoute->bindValue(':startpunt',$startpunt);
+			$addoute->bindValue(':eindpunt',$eindpunt);
+			$addoute->bindValue(':kilom',$kilom);
+
+
+
 			$addoute->execute();
 
 			header("Location: ../mijn-routes");
@@ -57,5 +74,19 @@ if(isset($_POST["add-route"])) {
 			header('Location: ../fout');
 		}
 
+		if(isset($_POST["update-route"])) {
+
+				$id = $_POST['userID'];
+				$current_route = $_POST['current_route'];
+
+				$editAccount = $db->prepare("UPDATE users SET current_route = :current_route WHERE id = :id");
+
+				$editAccount->bindValue(':id', $id);
+				$editAccount->bindValue(':current_route', $current_route);
+				$editAccount->execute();
+
+				header("Location: ../home");
+
+			}
 
 ?>
