@@ -51,8 +51,7 @@
 
           <div class="form-check float-left">
             <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Ik ga akkoord met de algemene
-        voorwaarden</label>
+            <label class="form-check-label" for="exampleCheck1">Ik ga akkoord met de <a href="privacy"><br>algemene voorwaarden</a></label>
           </div>
   <br><br><br>
 
@@ -61,7 +60,7 @@
           <div class="col login-bottom-text">
             <p><a href="#">Wachtwoord vergeten?</a></p>
             <p>Nog geen account?<a href="#"> Aanmelden</a></p>
-            <p><a href="#">Algemene voorwaarden</a></p>
+            <p><a href="privacy">Algemene voorwaarden</a></p>
           </div>
 
 
