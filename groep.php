@@ -4,6 +4,29 @@
 <?php include "include/top_navbar.php"; ?>
 <title>Mijn Groepen</title>
 <body>
+
+
+
+  <div class="container">
+  <div class="row">
+  <div class="col-sm groepinformatie ">
+
+
+    <p class="bekijkenbutton groepzoek"> Groep Zoeken </p>
+
+  <br>
+
+  </div>
+
+
+  <div class="col-sm  groepbutton2 ">
+
+  <a href="groepaanmaken.php"> <p class="bekijkenbutton groepmaak" > Groep Aanmaken </p></a>
+
+
+  </div>
+  </div>
+  </div>
 <div class="container">
     <div class="row justify-content-md-center">
         <div class="col-12">
@@ -107,26 +130,7 @@
 </div>
 
 
-<div class="container">
-<div class="row">
-<div class="col-sm groepinformatie ">
 
-
-  <p class="bekijkenbutton groepzoek"> Groep Zoeken </p>
-
-<br>
-
-</div>
-
-
-<div class="col-sm  groepbutton2 ">
-
-<a href="groepaanmaken.php"> <p class="bekijkenbutton groepmaak" > Groep Aanmaken </p></a>
-
-
-</div>
-</div>
-</div>
 
 <?php include "include/bottom_navbar.php"; ?>
 <?php include "include/scripts.php"; ?>

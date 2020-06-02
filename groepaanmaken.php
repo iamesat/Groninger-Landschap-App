@@ -42,7 +42,7 @@
 
                     <div class="container">
 
-                      <input type="text" class="groepsnaaminput" name="firstname" placeholder="Omschrijving invoeren ">
+                        <input type="text" class="form-control" style="width: 116px;" placeholder="Omschrijving invoeren" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
 
                   </div>
 </div>
