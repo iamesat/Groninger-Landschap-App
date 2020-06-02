@@ -1,10 +1,21 @@
 </div>
+
+<?php
+function active($currect_page){
+  $url_array =  explode('/', $_SERVER['REQUEST_URI']) ;
+  $url = end($url_array);  
+  if($currect_page == $url){
+      echo 'active'; 
+  } 
+}
+?>
+
 <nav class="navbar navbar-home fixed-bottom d-flex justify-content-center">
       <div class="navbar">
         <div class="container">
             <div class="row row-cols-5">
               <div class="col">
-                <a class="linkje <?php echo ($page == "/Groninger-Landschap-App/home" ? "active" : "")?>" href="home">
+                <a class="linkje <?php active('home.php');?>" href="home">
                 <img src="assets/images/icons/home.svg" class="navbar-bottom-icons" alt="home" />
                 Home
               </a>
@@ -13,7 +24,7 @@
                 &nbsp;
               </div>
               <div class="col">
-                <a class="linkje <?php echo ($page == "/Groninger-Landschap-App/route.php" ? "active" : "")?>" href="route">
+                <a class="linkje <?php active('route.php');?>" href="route">
                 <img src="assets/images/icons/gps.svg" class="navbar-bottom-icons" alt="route" />
                 Route
               </a>
@@ -22,7 +33,7 @@
                 &nbsp;
               </div>
               <div class="col">
-                <a class="linkje <?php echo ($page == "/Groninger-Landschap-App/chatten.php" ? "active" : "")?>" href="#">
+                <a class="linkje <?php active('#');?>" href="#">
                 <img src="assets/images/icons/chatten.svg" class="navbar-bottom-icons" alt="chat" />
                 Chats
               </a>
@@ -31,3 +42,7 @@
       </div>
       </div>
     </nav>
+
+    
+
+   
