@@ -26,7 +26,8 @@
                     </p>
                 </div>
             </div>
-            <a href="foto-overzicht.php" class="stretched-link" data-transition="slide" rel="external"><button type="button" class="btn btn-outline-dark fotowedstrijd-btn">Upload</button></a>
+            <a href="foto-overzicht.php" data-transition="slide" rel="external"><button type="button" class="btn btn-outline-dark fotowedstrijd-btn">Upload</button></a>
+            <a href="route.php" data-transition="slide" rel="external"><button type="button" class="btn btn-outline-dark fotowedstrijd-btn">Maak foto</button></a>
             <p class="wedstrijd-p pt-3">uploaden kan tot 10 april 2020</p>
         </div>
     </div>
@@ -54,7 +55,8 @@
                     </p>
                 </div>
             </div>
-            <a href="foto-overzicht.php" class="stretched-link" data-transition="slide" rel="external"><button type="button" class="btn btn-outline-dark fotowedstrijd-btn">Upload</button></a>
+            <a href="foto-overzicht.php" data-transition="slide" rel="external"><button type="button" class="btn btn-outline-dark fotowedstrijd-btn">Upload</button></a>
+            <a href="route.php" data-transition="slide" rel="external"><button type="button" class="btn btn-outline-dark fotowedstrijd-btn">Maak foto</button></a>
             <p class="wedstrijd-p pt-3">uploaden kan tot 30 mei 2020</p>
         </div>
     </div>
