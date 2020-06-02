@@ -143,7 +143,17 @@
 
                     <div class="container">
 
-                      <input type="text" class="groepsnaaminput" name="firstname" placeholder="Bestand uploaden... ">
+                      <form class="md-form">
+  <div class="file-field">
+    <div class="btn btn-primary btn-sm float-left">
+      <span>Choose file</span>
+      <input type="file">
+    </div>
+    <div class="file-path-wrapper">
+
+    </div>
+  </div>
+</form>
 
                   </div>
 </div>
