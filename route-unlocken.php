@@ -11,7 +11,7 @@ $user = $users->fetch();
 
 $routes = $db->prepare("SELECT id, routename, routedescr, routeimage, cost, startpunt, kilom FROM routes");
 $routes->execute(array(':id' => $id));
-$route = $routes->fetch();
+
 ?>
 
 <title>Route Unlocken</title>

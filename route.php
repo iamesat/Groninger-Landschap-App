@@ -18,7 +18,7 @@
 
 
 
-    $routes = $db->prepare("SELECT userID, routename, routedescr, routeimage, cost, startpunt, eindpunt, kilom, routeID FROM mijnroutes WHERE userID = :ids AND routeID = :current");
+    $routes = $db->prepare("SELECT userID, routename, routedescr, routeimage, cost, startpunt, eindpunt, kilom, routeID, links, rechts FROM mijnroutes WHERE userID = :ids AND routeID = :current");
     $routes->execute(array(':ids' => $userIDs, ':current' => $current ));
     // $routes->execute(array(':id' => $current_route));
     $route = $routes->fetch();
@@ -66,7 +66,7 @@
     </head>
 
     <body>
-    
+
 
 
         <div id="googleMap" style="width:100%;height:800px;margin-top:145px;"></div>
@@ -126,7 +126,7 @@
                     title: 'My location'
                 });
                 var markers = [
-                    ['3fe', 53.23425659331499, 6.490932454710916],
+                    ['3fe', "<?php Print($route[9]); ?>", "<?php Print($route[10]); ?>"],
                     ['my current location', latitude, longitude]
                 ];
 

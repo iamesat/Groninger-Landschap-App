@@ -35,7 +35,6 @@ include ($_SERVER['DOCUMENT_ROOT']. "/Groninger-Landschap-App/include/head.php")
     </div>
   </div>
 
-
 </div>
 
 <script src="assets/js/instascan.min.js"></script>

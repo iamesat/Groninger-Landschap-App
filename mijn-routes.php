@@ -12,7 +12,6 @@ $user = $users->fetch();
 
 $routes = $db->prepare("SELECT userID, routename, routedescr, routeimage, cost, startpunt, eindpunt, kilom, routeID FROM mijnroutes WHERE userID = :id");
 $routes->execute(array(':id' => $userID));
-$route = $routes->fetch();
 
 ?>
 
