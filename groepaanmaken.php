@@ -2,6 +2,9 @@
 <html lang="en">
 <?php include "include/head.php"; ?>
 <?php include "include/top_navbar.php"; ?>
+<?php
+  include('include/db-connect.php');
+  ?>
 <title>Groep Aanmaken</title>
 <body>
 <div class="container groepruimte">
@@ -15,11 +18,12 @@
                     <br>
 
                     <div class="container">
-
-                      <input type="text" class="form-control"  placeholder="Naam invoeren" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+<form method="post" action="functions/functions.php" name="add-group">
+                      <input type="text" class="form-control"  placeholder="Naam invoeren" name="naamgroep" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
 
 
                   </div>
+
 
 
 
@@ -111,12 +115,10 @@
                     <br>
 
 
-                  <form class="form">
-
 	<div class="switch-field">
-		<input type="radio" id="radio-one" name="switch-one" value="Iedereen" checked/>
+		<input type="radio" id="radio-one"  value="Iedereen" checked/>
 		<label for="radio-one">Iedereen</label>
-		<input type="radio" id="radio-two" name="switch-one" value="Niemand" />
+		<input type="radio" id="radio-two"  value="Niemand" />
 		<label for="radio-two">Niemand</label>
 	</div>
 
@@ -143,7 +145,7 @@
 
                     <div class="container">
 
-                      <form class="md-form">
+                      <div class="md-form">
   <div class="file-field">
     <div class="btn btn-primary btn-sm float-left">
       <span>Choose file</span>
@@ -153,7 +155,7 @@
 
     </div>
   </div>
-</form>
+</div>
 
                   </div>
 </div>
@@ -176,11 +178,9 @@
 
                     <div class="container accepteervoorwaarden">
 
-                      <form action="/action_page.php">
-    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+    <input type="checkbox" id="vehicle1" value="Bike">
     <label for="vehicle1"> Ik ga Akkoord met de <br> Algemene voorwaarden</label><br>
 
-  </form>
 
                   </div>
 <br>
@@ -190,9 +190,9 @@
 
 
 
-    <a href="" class="stretched-link" data-transition="slide" rel="external" data-toggle="modal" data-target="#UpgradeModal"><p class="bekijkenbutton"> Groep Aanmaken </p></a>
-
-
+    <!-- <a href="" class="stretched-link" data-transition="slide" rel="external" data-toggle="modal" data-target="#UpgradeModal"><p class="bekijkenbutton">  </p></a> -->
+    <input type="submit" name="add-group" value="Groep Aanmaken" class="bekijkenbutton">
+  </form>
 
                 </div>
 
@@ -216,7 +216,7 @@
                 <img class="zoekicon" src="assets/images/search.png" alt="route afbeelding">
                 <p>
                   <p class="zoekinput">
-                      <input type="text" class="zoeklidinput" name="firstname" placeholder="Tik om een naam in te voeren ">
+                      <input type="text" class="zoeklidinput"  placeholder="Tik om een naam in te voeren ">
                   </p>
 
                   <img class="zoekicon" src="assets/images/instagram.png" alt="route afbeelding">

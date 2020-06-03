@@ -89,4 +89,25 @@ if(isset($_POST["add-route"])) {
 
 			}
 
+
+if(isset($_POST["add-group"])) {
+
+
+	$naamgroep = $_POST['naamgroep'];
+
+	$addgroup = $db->prepare("INSERT INTO groep (groepsnaam) VALUES (:groepsnaam)");
+
+	$addgroup->bindValue(':groepsnaam',$naamgroep);
+
+
+
+	$addgroup->execute();
+
+	header("Location: ../groepbeheerder");
+
+	} else {
+	header('Location: ../fout');
+	}
+
+
 ?>
