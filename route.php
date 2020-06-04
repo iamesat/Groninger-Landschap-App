@@ -18,7 +18,7 @@
 
 
 
-    $routes = $db->prepare("SELECT userID, routename, routedescr, routeimage, cost, startpunt, eindpunt, kilom, routeID, links, rechts FROM mijnroutes WHERE userID = :ids AND routeID = :current");
+    $routes = $db->prepare("SELECT userID, routename, routedescr, routeimage, cost, startpunt, eindpunt, kilom, routeID, links, rechts, progress, voltooid FROM mijnroutes WHERE userID = :ids AND routeID = :current");
     $routes->execute(array(':ids' => $userIDs, ':current' => $current ));
     // $routes->execute(array(':id' => $current_route));
     $route = $routes->fetch();
@@ -39,7 +39,7 @@
 
               	<div class="row">
               		<div class="col-sm-3 col-md-2">
-              			<div class="progress-1" data-percentage="20">
+              			<div class="progress-1" data-percentage="<?php echo $route[11];?>">
               				<span class="progress-left">
               					<span class="progress-1-bar"></span>
               				</span>
@@ -48,7 +48,7 @@
               				</span>
               				<div class="progress-value">
               					<div>
-              						20%<br>
+              						<?php echo $route[11];?>%<br>
               					</div>
               				</div>
               			</div>
@@ -123,7 +123,8 @@
                 var marker = new google.maps.Marker({
                     position: myLatLng,
                     map: map,
-                    title: 'My location'
+                    title: 'My location',
+                    type: 'info'
                 });
                 var markers = [
                     ['3fe', "<?php Print($route[9]); ?>", "<?php Print($route[10]); ?>"],
@@ -134,8 +135,8 @@
                 var infoWindowContent = [
                     ['<div class="info_content">' +
                         '<h3>Eindpunt</h3>' +
-                        '<p>Dit is je eindpunt waar je moet zijn</p>' +
-                        '<img src="images/3fe.jpg" width="200" height="200">' +
+                        '<p>Dit is je waar je moet zijn</p>' +
+                        '<img src="assets/images/routes/<?php Print($route[3]); ?>" width="200" height="150">' +
                         '</div>'
                     ]
                 ];
@@ -192,24 +193,9 @@
                 }
             }
 
-            // function calculateAndDisplayRoute(directionsService, directionsDisplay) {
-            //     directionsService.route({
-            //         // origin: document.getElementById('start').value,
-            //         origin: myLatLng,
-            //         destination: marker.getPosition(),
-            //         travelMode: 'DRIVING'
-            //     }, function(response, status) {
-            //         if (status === 'OK') {
-            //             console.log('all good');
-            //             directionsDisplay.setDirections(response);
-            //         } else {
-            //             window.alert('Directions request failed due to ' + status);
-            //         }
-            //     });
-            // }
 
             function geoError() {
-                alert("Geocoder failed.");
+                alert("Geocoder fout met laden.");
             }
 
             function getLocation() {
@@ -217,7 +203,7 @@
                     navigator.geolocation.getCurrentPosition(geoSuccess, geoError);
                     // alert("Geolocation is supported by this browser.");
                 } else {
-                    alert("Geolocation is not supported by this browser.");
+                    alert("Locatie wordt nie ondersteund door je browser.");
                 }
             }
         </script>
@@ -235,7 +221,7 @@
         </a>
         </div>
         <div class="col">
-          <a class="linkje" href="route">
+          <a class="linkje" href="qr-scanner">
           <img src="assets/images/icons/qrcode.png" class="navbar-bottom-icons" alt="qr" />
         </a>
       </div>

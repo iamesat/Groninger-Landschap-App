@@ -9,7 +9,7 @@
         }
 
         $id = $_SESSION['userID'];
-        $routes = $db->prepare("SELECT id, routename, routedescr, routeimage, cost, startpunt, eindpunt, kilom, links, rechts FROM routes WHERE id = :id");
+        $routes = $db->prepare("SELECT id, routename, routedescr, routeimage, cost, startpunt, eindpunt, kilom FROM routes WHERE id = :id");
         $routes->execute(array(':id' => $routeID));
         $route = $routes->fetch();
 
@@ -62,8 +62,6 @@
                           <input type="hidden" name="startpunt" value="<?php echo $route[5]; ?>">
                           <input type="hidden" name="eindpunt" value="<?php echo $route[6]; ?>">
                           <input type="hidden" name="kilom" value="<?php echo $route[7]; ?>">
-                          <input type="hidden" name="links" value="<?php echo $route[8]; ?>">
-                          <input type="hidden" name="rechts" value="<?php echo $route[9]; ?>">
                           <input type="submit" name="add-route" value="Unlocken" class="btn btn-group blue">
 
                         <!-- <a href="" class="stretched-link pl-4" data-transition="slide" rel="external" data-toggle="modal" data-target="#unlock-modal"><button type="button" class="btn btn-group blue" style="font-size:14px">Unlocken</button></a> -->

@@ -25,13 +25,13 @@ include ($_SERVER['DOCUMENT_ROOT']. "/Groninger-Landschap-App/include/head.php")
 </div>
 <div class="row justify-content-md-center">
     <div class="col col-lg-2">
-      1 of 3
+
     </div>
     <div class="col-md-auto">
         <a class="btn btn-group blue overlaytje">Richt qr op</a>
     </div>
     <div class="col col-lg-2">
-      3 of 3
+
     </div>
   </div>
 
@@ -52,7 +52,7 @@ let scanner = new Instascan.Scanner({ video: document.getElementById('preview'),
 
     audio.play();
 
-    window.open("/Groninger-Landschap-App/..." + content + ".php" ,"_self");
+    window.open("/Groninger-Landschap-App/qr-pagina?id=" + content + ".php" ,"_self");
 
   });
 
