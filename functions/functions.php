@@ -109,8 +109,6 @@ if(isset($_POST["add-group"])) {
 
 	header("Location: ../groepbeheerder");
 
-	} else {
-	header('Location: ../fout');
 	}
 
 
