@@ -222,6 +222,7 @@ Lid
 
 
 </div>
+</div>
 
 <?php include "include/bottom_navbar.php"; ?>
 <?php include "include/scripts.php"; ?>
