@@ -2,6 +2,13 @@
 <html lang="en">
 <?php include "include/head.php"; ?>
 <?php include "include/top_navbar.php"; ?>
+<?php
+  include('include/db-connect.php');
+
+  $groepnieuw = $db->prepare("SELECT groepsnaam FROM groep");
+  $groepnieuw->execute();
+
+  ?>
 <title>Mijn Groepen</title>
 <body>
 
@@ -9,6 +16,7 @@
 
   <div class="container">
   <div class="row">
+
   <div class="col-sm groepinformatie ">
 
 
@@ -27,13 +35,17 @@
   </div>
   </div>
   </div>
-<div class="container">
+
+
+
+  <?php foreach($groepnieuw as $groep): ?>
+<div class="container groepruimte">
     <div class="row justify-content-md-center">
         <div class="col-12">
             <div class="card groepborder">
                 <div class="card-body">
 
-                    <h3 class="card-groep-title">Groep bosmannen</h3>
+                    <h3 class="card-groep-title"><?php echo $groep[0]; ?></h3>
 
                     <br>
 
@@ -60,8 +72,10 @@
         </div>
     </div>
 </div>
+<?php endforeach; ?>
 
-<div class="container groepruimte">
+
+<!-- <div class="container groepruimte">
     <div class="row justify-content-md-center">
         <div class="col-12">
             <div class="card groepborder">
@@ -127,7 +141,7 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 
 
 
