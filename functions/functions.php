@@ -107,7 +107,7 @@ if(isset($_POST["add-group"])) {
 
 	$addgroup->execute();
 
-	header("Location: ../groepbeheerder");
+	header("Location: ../groep");
 
 	} else {
 	header('Location: ../fout');

@@ -63,7 +63,7 @@
 
                 <div class="col-sm groepsbutton ">
                   <p class ="groepaantal"> 2/10 </p>
-                  <a href="#"> <p class="bekijkenbutton"> bekijken </p></a>
+                  <a href="groepbeheerder"> <p class="bekijkenbutton" > Bekijken </p></a>
 </div>
                 </div>
 </div>
