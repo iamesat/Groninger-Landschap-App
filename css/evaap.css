@@ -238,3 +238,16 @@ h2 {
 .uitnodigenbutton{
   text-align: center;
 }
+
+.btn-primary{
+  background-color: #092b75;
+}
+
+.groepsfoto{
+  width: 80px;
+  height: auto;
+  border-radius: 25%;
+  display:block;
+  margin-right: auto;
+  margin-left: auto;
+}

@@ -5,7 +5,7 @@
 <?php
   include('include/db-connect.php');
 
-  $groepnieuw = $db->prepare("SELECT id, groepsnaam FROM groep");
+  $groepnieuw = $db->prepare("SELECT id, groepsnaam, groepsomschrijving FROM groep");
   $groepnieuw->execute();
 
   ?>
@@ -48,13 +48,14 @@
                     <h3 class="card-groep-title"><?php echo $groep[1]; ?></h3>
 
                     <br>
-
+                    <img class="groepsfoto" src= alt="route afbeelding">
+                    <br>
                     <div class="container">
                     <div class="row">
                     <div class="col-sm groepinformatie ">
 
-                    <p class="groepinfo">Besloten groep</p>
-                    <p class="groepinfo">Status: Aanvraag verstuurd</hp>
+                    <p class="groepinfo"><?php echo $groep[2]; ?></p>
+                    <p class="groepinfo"><b> Status: </b> Aanvraag verstuurd</hp>
                       <p class="meldingengroep"> Geen nieuwe meldingen </p>
                     <br>
 

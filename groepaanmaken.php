@@ -4,6 +4,12 @@
 <?php include "include/top_navbar.php"; ?>
 <?php
   include('include/db-connect.php');
+
+
+
+
+
+
   ?>
 <title>Groep Aanmaken</title>
 <body>
@@ -45,8 +51,8 @@
                     <br>
 
                     <div class="container">
-
-                        <input type="text" class="form-control"  placeholder="Omschrijving invoeren" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+  <form method="post" action="functions/functions.php" name="add-group">
+        <input type="text" class="form-control"  placeholder="Beschrijving invoeren" name="groepbeschrijving" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
 
                   </div>
 </div>
@@ -147,6 +153,7 @@
 
                       <div class="md-form">
   <div class="file-field">
+    
     <div class="btn btn-primary btn-sm float-left">
       <span>Choose file</span>
       <input type="file">

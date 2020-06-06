@@ -98,10 +98,14 @@ if(isset($_POST["add-group"])) {
 
 
 	$naamgroep = $_POST['naamgroep'];
+	$groepbeschrijving = $_POST['groepbeschrijving'];
+//	$fotogroep = $_POST['fotogroep'];
 
-	$addgroup = $db->prepare("INSERT INTO groep (groepsnaam) VALUES (:groepsnaam)");
+	$addgroup = $db->prepare("INSERT INTO groep (groepsnaam, groepsomschrijving) VALUES (:groepsnaam, :groepsomschrijving)");
 
 	$addgroup->bindValue(':groepsnaam',$naamgroep);
+		$addgroup->bindValue(':groepsomschrijving',$groepbeschrijving);
+	//	$addgroup->bindValue(':groepsfoto',$fotogroep);
 
 
 
