@@ -5,14 +5,17 @@
 <?php
   include('include/db-connect.php');
 
-  $groepnieuw = $db->prepare("SELECT groepsnaam FROM groep");
-  $groepnieuw->execute();
+  $groepID = $_GET['id'];
+  $groepnieuw = $db->prepare("SELECT id, groepsnaam FROM groep WHERE id = :id");
+  $groepnieuw->execute(array(':id' => $groepID));
+
 
   ?>
 
   <?php foreach($groepnieuw as $groep): ?>
-<title><?php echo $groep[0]; ?></title>
 
+<title><?php echo $groep[1]; ?></title>
+<?php endforeach; ?>
 <body>
 <div class="container">
     <div class="row justify-content-md-center">
@@ -46,7 +49,7 @@
                     <div class="row">
                     <div class="col-sm groepinformatie ">
                       <h6><b>Speurtocht door het landschap </b></h6>
-                        <img class="routepin" src="assets/images/pin.png" alt="route afbeelding"><p class="groepfont"><?php echo $groep[0]; ?> </p>
+                        <img class="routepin" src="assets/images/pin.png" alt="route afbeelding"><p class="groepfont"><?php echo $groep[1]; ?> </p>
                       <br>
                 <p class="groeprouteinfo"> 14:00 -15:00 </p>
                 <p class="groeproutetijd"> 45 min </p>
@@ -234,5 +237,4 @@ Lid
 <?php include "include/bottom_navbar.php"; ?>
 <?php include "include/scripts.php"; ?>
 </body>
-<?php endforeach; ?>
 </html>

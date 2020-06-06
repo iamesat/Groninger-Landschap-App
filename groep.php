@@ -5,7 +5,7 @@
 <?php
   include('include/db-connect.php');
 
-  $groepnieuw = $db->prepare("SELECT groepsnaam FROM groep");
+  $groepnieuw = $db->prepare("SELECT id, groepsnaam FROM groep");
   $groepnieuw->execute();
 
   ?>
@@ -45,7 +45,7 @@
             <div class="card groepborder">
                 <div class="card-body">
 
-                    <h3 class="card-groep-title"><?php echo $groep[0]; ?></h3>
+                    <h3 class="card-groep-title"><?php echo $groep[1]; ?></h3>
 
                     <br>
 
@@ -63,7 +63,7 @@
 
                 <div class="col-sm groepsbutton ">
                   <p class ="groepaantal"> 2/10 </p>
-                  <a href="groepbeheerder"> <p class="bekijkenbutton" > Bekijken </p></a>
+                  <a href="groepbeheerder?id=<?php echo $groep[0]; ?>"><p class="bekijkenbutton" > Bekijken </p></a>
 </div>
                 </div>
 </div>
