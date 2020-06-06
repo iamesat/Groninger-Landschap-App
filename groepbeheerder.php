@@ -2,7 +2,17 @@
 <html lang="en">
 <?php include "include/head.php"; ?>
 <?php include "include/top_navbar.php"; ?>
-<title>Groep Bosmannen</title>
+<?php
+  include('include/db-connect.php');
+
+  $groepnieuw = $db->prepare("SELECT groepsnaam FROM groep");
+  $groepnieuw->execute();
+
+  ?>
+
+  <?php foreach($groepnieuw as $groep): ?>
+<title><?php echo $groep[0]; ?></title>
+
 <body>
 <div class="container">
     <div class="row justify-content-md-center">
@@ -26,9 +36,6 @@
                 <input type="radio" id="radio-two" name="switch-one" value="Accepteren" />
                 <label for="radio-two">Accepteren</label>
               </div>
-
-
-
 <br>
 <br>
                     <h3 class="card-groep-title"> Recente Activiteiten</h3>
@@ -39,7 +46,7 @@
                     <div class="row">
                     <div class="col-sm groepinformatie ">
                       <h6><b>Speurtocht door het landschap </b></h6>
-                        <img class="routepin" src="assets/images/pin.png" alt="route afbeelding"><p class="groepfont"> Groep bosmannen </p>
+                        <img class="routepin" src="assets/images/pin.png" alt="route afbeelding"><p class="groepfont"><?php echo $groep[0]; ?> </p>
                       <br>
                 <p class="groeprouteinfo"> 14:00 -15:00 </p>
                 <p class="groeproutetijd"> 45 min </p>
@@ -227,4 +234,5 @@ Lid
 <?php include "include/bottom_navbar.php"; ?>
 <?php include "include/scripts.php"; ?>
 </body>
+<?php endforeach; ?>
 </html>
