@@ -28,7 +28,7 @@
                 <p>
                    <a href="fotowedstrijd" data-transition="slide" rel="external">Je loopt nu in de buurt van het Iwema steenhuis, dat is een fotowedstrijd!</a><br><br>
                    <a href="qr-scanner" data-transition="slide" rel="external">Kijk goed op je kaart, kijk goed om je heen! Een QR-code bevindt zich in jouw buurt! </a> <br><br>
-                   <a href="foto-overzicht" data-transition="slide" rel="external">Nog geen foto ingezonden voor de foto wedstrijd? Doe het snel en verzamel zoveel mogelijk stemmen! </a>
+                   <a href="foto-overzicht" data-transition="slide" rel="external">Nog geen foto ingezonden voor de foto wedstrijd? Doe het snel en verzamel zoveel mogelijk stemmen! </a> <br><br>
                    <a href="groep" data-transition="slide" rel="external">Je bent uitgenodigd voor de groep: Ontbijtgranen en melk. Ga snel naar groepen om de uitnodiging te bekijken! </a>  
                 </p>
             </div>
