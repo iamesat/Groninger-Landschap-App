@@ -1,11 +1,26 @@
 <!doctype html>
 <html lang="en">
-<?php include ($_SERVER['DOCUMENT_ROOT']. "/Groninger-Landschap-App/include/head.php"); ?>
-<title>Route Voltooid</title>
-    <?php include "include/top_navbar.php"; ?>
+<?php
+include ($_SERVER['DOCUMENT_ROOT']. "/Groninger-Landschap-App/include/head.php");
+$username = $_SESSION['login'];
+$userID = $_SESSION['userID'];
+$id = $_SESSION['userID'];
+
+$users = $db->prepare("SELECT id, username, naam, achternaam, coins FROM users WHERE id = :id");
+$users->execute(array(':id' => $id));
+$user = $users->fetch();
+
+$routes = $db->prepare("SELECT userID, routename, routedescr, routeimage, cost, startpunt, eindpunt, kilom, routeID, voltooid FROM mijnroutes WHERE userID = :id AND voltooid = 1");
+$routes->execute(array(':id' => $userID));
+
+?>
+
+<title>Voltooide Routes</title>
   <body>
 
-  <div class="app-breaks">
+  <?php include "include/top_navbar.php"; ?>
+
+    <div class="app-breaks">
       <div class="container">
     <div class="row justify-content-center">
    <div class="col routes-buttons">
@@ -20,68 +35,57 @@
  </div>
 </div>
 
-
     <div class="container">
       <div class="row row-cols-1">
+
+        <?php foreach($routes as $route): ?>
         <div class="col route-card">
           <div class="card">
             <div class="card-body">
               <div class="media">
                 <a class="pull-left" href="#">
-                  <img class="route-img" src="assets/images/map.png" alt="route afbeelding">
+                  <img class="route-img" src="assets/images/routes/<?php echo $route[3]; ?>" alt="route afbeelding">
                 </a>
                 <div class="media-body">
-                  <h6>Route Hoendiep</h6>
-                  <p>Beschrijving over de speurtocht - 10 km</p>
+                  <h6><?php echo ucfirst($route[1]); ?></h6>
+                  <p><?php echo ucfirst($route[2]); ?></p>
                 </div>
               </div>
               <div class="col">
                 <div class="row row-cols-3 justify-content-center">
                <div class="col group-buttons">
-               <p><img class="munt-image" src="assets/images/icons/hourglass.svg" alt="route afbeelding">&nbsp; Loop duur</p>
+               <p><img class="munt-image" src="assets/images/icons/hourglass.svg" alt="route afbeelding">&nbsp; <?php echo ucfirst($route[7]);?>&nbsp;km</p>
                </div>
                <div class="col group-buttons">
-               <p><img class="munt-image" src="assets/images/icons/location-start.svg" alt="route afbeelding">&nbsp; Start</p>
+                 <p><img class="munt-image" src="assets/images/icons/location-start.svg" alt="route afbeelding">&nbsp; <?php echo ucfirst($route[5]);?></p>
                </div>
                <div class="col group-buttons">
-              <p><img class="munt-image" src="assets/images/icons/coin.png" alt="route afbeelding"> &nbsp; +100 punten</p>
+
+               <p><img class="munt-image" src="assets/images/icons/coin.png" alt="route afbeelding"> &nbsp;+<?php echo $route[4]; ?> punten</p>
+               </div>
+             </div>
+              </div>
+              <div class="col">
+                <div class="row row-cols-3 justify-content-center">
+               <div class="col group-buttons">
+
+               </div>
+               <div class="col group-buttons">
+               </div>
+               <div class="col group-buttons">
+
+              <form id="update-route"" method="post" action="functions/functions.php" class="update-route" name="update-route"">
+              <input type="hidden" name="current_route" value="<?php echo $route[8]; ?>">
+              <input type="hidden" name="userID" value="<?php echo $userID; ?>">
+              </form>
+
                </div>
              </div>
               </div>
             </div>
           </div>
         </div>
-
-        <div class="col route-card">
-          <div class="card">
-            <div class="card-body">
-              <div class="media">
-                <a class="pull-left" href="#">
-                  <img class="route-img" src="assets/images/map.png" alt="route afbeelding">
-                </a>
-                <div class="media-body">
-                  <h6>Route Hoendiep</h6>
-                  <p>Beschrijving over de speurtocht - 10 km</p>
-                </div>
-              </div>
-              <div class="col">
-                <div class="row row-cols-3 justify-content-center">
-               <div class="col group-buttons">
-               <p><img class="munt-image" src="assets/images/icons/hourglass.svg" alt="route afbeelding">&nbsp; Loop duur</p>
-               </div>
-               <div class="col group-buttons">
-                 <p><img class="munt-image" src="assets/images/icons/location-start.svg" alt="route afbeelding">&nbsp; Start</p>
-               </div>
-               <div class="col group-buttons">
-              <p><img class="munt-image" src="assets/images/icons/coin.png" alt="route afbeelding"> &nbsp; +100 punten</p>
-               </div>
-             </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
+      <?php endforeach; ?>
 
       </div>
     </div>

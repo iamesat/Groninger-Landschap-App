@@ -23,6 +23,11 @@
     // $routes->execute(array(':id' => $current_route));
     $route = $routes->fetch();
 
+    $qrCodes = $db->prepare("SELECT qr_1_links, qr_1_rechts, qr_2_links, qr_2_rechts, qr_3_links, qr_3_rechts, qr_4_links, qr_4_rechts FROM qr_codes WHERE routeID = :current");
+    $qrCodes->execute(array(':current' => $current ));
+    $qrCode = $qrCodes->fetch();
+
+
     ?>
 
     <title>Route Volgen</title>
@@ -98,11 +103,326 @@
                     lat: latitude,
                     lng: longitude
                 };
+                
                 var mapProp = {
                     //            center: new google.maps.LatLng(latitude, longitude), // puts your current location at the centre of the map,
                     zoom: 15,
                       streetViewControl: false,
                     mapTypeId: 'roadmap',
+                    styles: [
+    {
+        "elementType": "labels.text",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "landscape.natural",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "color": "#f5f5f2"
+            },
+            {
+                "visibility": "on"
+            }
+        ]
+    },
+    {
+        "featureType": "administrative",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "transit",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "poi.attraction",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "landscape.man_made",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "color": "#ffffff"
+            },
+            {
+                "visibility": "on"
+            }
+        ]
+    },
+    {
+        "featureType": "poi.business",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "poi.medical",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "poi.place_of_worship",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "poi.school",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "poi.sports_complex",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#ffffff"
+            },
+            {
+                "visibility": "simplified"
+            }
+        ]
+    },
+    {
+        "featureType": "road.arterial",
+        "stylers": [
+            {
+                "visibility": "simplified"
+            },
+            {
+                "color": "#ffffff"
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "labels.icon",
+        "stylers": [
+            {
+                "color": "#ffffff"
+            },
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "labels.icon",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "road.arterial",
+        "stylers": [
+            {
+                "color": "#ffffff"
+            }
+        ]
+    },
+    {
+        "featureType": "road.local",
+        "stylers": [
+            {
+                "color": "#ffffff"
+            }
+        ]
+    },
+    {
+        "featureType": "poi.park",
+        "elementType": "labels.icon",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "poi",
+        "elementType": "labels.icon",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "water",
+        "stylers": [
+            {
+                "color": "#71c8d4"
+            }
+        ]
+    },
+    {
+        "featureType": "landscape",
+        "stylers": [
+            {
+                "color": "#e5e8e7"
+            }
+        ]
+    },
+    {
+        "featureType": "poi.park",
+        "stylers": [
+            {
+                "color": "#8ba129"
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "stylers": [
+            {
+                "color": "#ffffff"
+            }
+        ]
+    },
+    {
+        "featureType": "poi.sports_complex",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#c7c7c7"
+            },
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "water",
+        "stylers": [
+            {
+                "color": "#a0d3d3"
+            }
+        ]
+    },
+    {
+        "featureType": "poi.park",
+        "stylers": [
+            {
+                "color": "#91b65d"
+            }
+        ]
+    },
+    {
+        "featureType": "poi.park",
+        "stylers": [
+            {
+                "gamma": 1.51
+            }
+        ]
+    },
+    {
+        "featureType": "road.local",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "road.local",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "visibility": "on"
+            }
+        ]
+    },
+    {
+        "featureType": "poi.government",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "landscape",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "labels",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "road.arterial",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "visibility": "simplified"
+            }
+        ]
+    },
+    {
+        "featureType": "road.local",
+        "stylers": [
+            {
+                "visibility": "simplified"
+            }
+        ]
+    },
+    {
+        "featureType": "road"
+    },
+    {
+        "featureType": "road"
+    },
+    {},
+    {
+        "featureType": "road.highway"
+    }
+]
 
                 };
 
@@ -123,11 +443,15 @@
                 var marker = new google.maps.Marker({
                     position: myLatLng,
                     map: map,
-                    title: 'My location',
+                    title: 'Mijn Locatie',
                     type: 'info'
                 });
                 var markers = [
                     ['3fe', "<?php Print($route[9]); ?>", "<?php Print($route[10]); ?>"],
+                    ['qr1', "<?php Print($qrCode[0]); ?>", "<?php Print($qrCode[1]); ?>"],
+                    ['qr2', "<?php Print($qrCode[2]); ?>", "<?php Print($qrCode[3]); ?>"],
+                    ['qr3', "<?php Print($qrCode[4]); ?>", "<?php Print($qrCode[5]); ?>"],
+                    ['qr4', "<?php Print($qrCode[6]); ?>", "<?php Print($qrCode[7]); ?>"],
                     ['my current location', latitude, longitude]
                 ];
 
@@ -135,7 +459,7 @@
                 var infoWindowContent = [
                     ['<div class="info_content">' +
                         '<h3>Eindpunt</h3>' +
-                        '<p>Dit is je waar je moet zijn</p>' +
+                        '<p>Dit is je waar je moet zijn, scan de QR-code om de wandeling af te ronden</p>' +
                         '<img src="assets/images/routes/<?php Print($route[3]); ?>" width="200" height="150">' +
                         '</div>'
                     ]
@@ -152,7 +476,7 @@
                     marker = new google.maps.Marker({
                         position: position,
                         map: map,
-                        title: markers[i][0]
+                        title: markers[i][0],
                     });
 
                     // Allow each marker to have an info window

@@ -59,6 +59,7 @@ body
     border-radius: 30px;
     padding: 1rem 1rem;
     width: 100%;
+    margin-bottom: 20px;
 }
 .jumbotron.route {
     background-color: #092B75;
@@ -126,6 +127,20 @@ body
 
 .col.card-button {
     padding-left: 18px;
+    padding-right: 18px;
+    padding-bottom: 18px;
+    text-align: center;
+}
+
+.col.card-button.left{
+    padding-left: 18px;
+    padding-right: 10px;
+    padding-bottom: 18px;
+    text-align: center;
+}
+
+.col.card-button.right{
+    padding-left: 10px;
     padding-right: 18px;
     padding-bottom: 18px;
     text-align: center;

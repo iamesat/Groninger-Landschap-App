@@ -85,7 +85,7 @@
 
     <div class="container home">
       <div class="row row-cols-2">
-        <div class="col card-button">
+        <div class="col card-button left">
           <div class="card">
             <div class="card-body">
               <a href="mijn-routes.php" class="stretched-link" data-transition="slide" rel="external"><img src="assets/images/home-icons/track.png" class="card-img-top" alt="..."></a>
@@ -93,7 +93,7 @@
             </div>
           </div>
         </div>
-        <div class="col card-button">
+        <div class="col card-button right">
           <div class="card">
             <div class="card-body">
             <a href="mijn-score.php" class="stretched-link" data-transition="slide" rel="external"><img src="assets/images/home-icons/podium.png" class="card-img-top" alt="..."></a>
@@ -101,7 +101,7 @@
             </div>
           </div>
         </div>
-        <div class="col card-button">
+        <div class="col card-button left">
           <div class="card">
             <div class="card-body">
               <a href="groep.php" class="stretched-link" data-transition="slide" rel="external"><img src="assets/images/home-icons/team.png" class="card-img-top" alt="..."></a>
@@ -109,7 +109,7 @@
             </div>
           </div>
         </div>
-        <div class="col card-button">
+        <div class="col card-button right">
           <div class="card">
             <div class="card-body">
               <a href="fotorollen.php" class="stretched-link" data-transition="slide" rel="external"><img src="assets/images/home-icons/gallery.png" class="card-img-top" alt="..."></a>

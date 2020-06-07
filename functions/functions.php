@@ -115,5 +115,25 @@ if(isset($_POST["add-group"])) {
 
 	}
 
+	if(isset($_POST["add-qr"])) {
+
+
+		$qrID = $_POST['qrID'];
+
+
+		$addgroup = $db->prepare("INSERT INTO groep (groepsnaam, groepsomschrijving) VALUES (:groepsnaam, :groepsomschrijving)");
+
+		$addgroup->bindValue(':groepsnaam',$naamgroep);
+			$addgroup->bindValue(':groepsomschrijving',$groepbeschrijving);
+
+
+
+		$addgroup->execute();
+
+		header("Location: ../groep");
+
+		}
+
+
 
 ?>

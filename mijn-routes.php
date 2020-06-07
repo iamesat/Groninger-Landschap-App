@@ -10,7 +10,7 @@ $users = $db->prepare("SELECT id, username, naam, achternaam, coins FROM users W
 $users->execute(array(':id' => $id));
 $user = $users->fetch();
 
-$routes = $db->prepare("SELECT userID, routename, routedescr, routeimage, cost, startpunt, eindpunt, kilom, routeID FROM mijnroutes WHERE userID = :id");
+$routes = $db->prepare("SELECT userID, routename, routedescr, routeimage, cost, startpunt, eindpunt, kilom, routeID, voltooid FROM mijnroutes WHERE userID = :id AND voltooid = 0");
 $routes->execute(array(':id' => $userID));
 
 ?>
