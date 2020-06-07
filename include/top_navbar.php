@@ -8,7 +8,7 @@
                 <strong id="paginatitel"></strong>
             </div>
             <div class="col-auto">
-              <a href="shop.php" class="stretched-link" data-transition="slide" rel="external"><img src="assets/images/icons/winkel.svg" class="jumbo-img-top" alt="..."></a>
+              <a href="shop.php" data-transition="slide" rel="external"><img src="assets/images/icons/winkel.svg" class="jumbo-img-top" alt="..."></a>
               <a href="" data-transition="slide" rel="external" data-toggle="modal" data-target="#UpgradeModal"><img src="assets/images/icons/bell.svg" class="jumbo-img-top" alt="..."></a>
             </div>
           </div>
