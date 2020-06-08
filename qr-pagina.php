@@ -1,111 +1,102 @@
-<!doctype html>
-<html lang="en">
 <?php
-      include ($_SERVER['DOCUMENT_ROOT']. "/Groninger-Landschap-App/include/head.php");
-      if (empty($_GET)) {
-            header('Location: route-unlocken');
-        } else {
-            $routeID = $_GET['id'];
-        }
+include ($_SERVER['DOCUMENT_ROOT']. "/Groninger-Landschap-App/include/head.php"); ?>
+<title>QR Scanner</title>
+<?php
+$qrID = $_GET['id'];
+$id = $_SESSION['userID'];?>
 
-        $id = $_SESSION['userID'];
-        $routes = $db->prepare("SELECT id, routename, routedescr, routeimage, cost, startpunt, eindpunt, kilom FROM routes WHERE id = :id");
-        $routes->execute(array(':id' => $routeID));
-        $route = $routes->fetch();
-
- ?>
-<title>Bekijk route</title>
-    <?php include "include/top_navbar.php"; ?>
-  <body>
+<nav class="navbar navbar-top-home fixed-top">
+        <div class="container navtop">
 
 
-    <div class="container my-4">
-        <div class="row row-cols-1">
-            <div class="col route-card">
-                 <div class="card">
-                    <div class="col pt-4">
-                        <h6 class="mx-2"><?php echo ucfirst($route[1]); ?></h6>
-                        <p class="mx-2"><img class="munt-image" src="assets/images/icons/location-start.svg" alt="route afbeelding">&nbsp; Start</p>
-
-                        <div class="row row-cols-3 justify-content-center">
-                            <div class="col group-buttons">
-                                <p>14:00 - 15:30</p>
-                            </div>
-                            <div class="col group-buttons">
-                                <p> Afstand: <?php echo ucfirst($route[6]); ?>km</p>
-                            </div>
-                            <div class="col group-buttons">
-                                <p>1.5 uur</p>
-                            </div>
-                        </div>
-
-                        <a class="pull-left" href="#">
-                            <img class="unlock-img" src="assets/images/unlock.png" alt="route afbeelding">
-                        </a>
-                    <div class="my-4 mx-2">
-                        <p>Route kosten:  <img class="munt-image" src="assets/images/icons/coin.png" alt="route afbeelding"> &nbsp; <?php echo ucfirst($route[4]); ?>&nbsp;punten</p>
-                        <p>Te verdienen:  <img class="munt-image" src="assets/images/icons/coin.png" alt="route afbeelding"> &nbsp; 100 punten</p>
-                    </div>
-
-                    <div class="row my-4">
-                        <div class="col">
-                        <a href="route-unlocken" class="stretched-link" data-transition="slide" rel="external"><button type="button" class="btn btn-group blue" style="font-size:14px">Terug</button></a>
-                        </div>
-                        <div class="col">
-                          <form id="add-route" method="post" action="functions/functions.php" class="add-route" name="add-route">
-                          <input type="hidden" name="routeID" value="<?php echo $routeID; ?>">
-                          <input type="hidden" name="userID" value="<?php echo $id; ?>">
-                          <input type="hidden" name="routename" value="<?php echo $route[1]; ?>">
-                          <input type="hidden" name="routedescr" value="<?php echo $route[2]; ?>">
-                          <input type="hidden" name="routeimage" value="<?php echo $route[3]; ?>">
-                          <input type="hidden" name="cost" value="<?php echo $route[4]; ?>">
-                          <input type="hidden" name="startpunt" value="<?php echo $route[5]; ?>">
-                          <input type="hidden" name="eindpunt" value="<?php echo $route[6]; ?>">
-                          <input type="hidden" name="kilom" value="<?php echo $route[7]; ?>">
-                          <input type="submit" name="add-route" value="Unlocken" class="btn btn-group blue">
-
-                        <!-- <a href="" class="stretched-link pl-4" data-transition="slide" rel="external" data-toggle="modal" data-target="#unlock-modal"><button type="button" class="btn btn-group blue" style="font-size:14px">Unlocken</button></a> -->
-                          </form>
-                        </div>
-                    </div>
-                    </div>
-                </div>
+          <div class="row justify-content-between">
+            <div class="col-auto mr-auto">
+              <a onclick="goBack()">
+                <i class="fas fa-arrow-left"></i></a>
+                <strong id="paginatitel">QR Code Scanner</strong>
             </div>
+            <div class="col-auto">
+              <a href="shop.php" class="stretched-link" data-transition="slide" rel="external"></a>
+              <img src="assets/images/icons/bell.svg" class="jumbo-img-top" alt="...">
+            </div>
+          </div>
         </div>
-    </div>
+    </nav>
+  <div class="app-breaks camera">
 
-
-    <div class="modal fade" id="unlock-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header modal-shop-header">
-                <h5 class="modal-title" id="exampleModalLabel">Route unlocken</h5>
-                <button type="button" class="close close-shop" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <p>
-                Gelukt je hebt de Route:<br>
-                <br>
-                "Route Hoenddiep"<br>
-                <br>
-                met succes ontgrendeld.<br> Je hebt nu nog  <img class="munt-image" src="assets/images/icons/coin.png" alt="route afbeelding"> &nbsp; 20 over
-
-                </p>
-            </div>
-            <div class="modal-footer">
-            <a href="route" class="stretched-link" data-transition="slide" rel="external"><button type="button" class="btn btn-secondary btn-info-shop" data-dismiss="modal">Naar Route</button></a>
-            </div>
-        </div>
-    </div>
+<div id="camera-scann">
+  <video playsinline id="preview">
+  </video>
 </div>
+</div>
+<div class="modal-dialog qr" role="document">
+<div class="modal-content qr">
+  <div class="modal-header qr">
+    <h5 class="modal-title">Gefeliciteerd!</h5>
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <p>Kijk om je heen.<br><br>
+De plek waar je nu staat
+is prachtig!  Het is het oudste
+monument van Groningen.<br><br>
 
+Je hebt 10 punten verdient<br><br>
 
-      </div>
+Met deze punten kan je
+nieuwe routes unlocken <?php echo $id; ?></p>
+
+  </div>
+  <div class="modal-footer qr">
+    <div class="col-md-auto">
+      <form id="add-qr" method="post" action="functions/functions.php" class="add-qr" name="add-qr">
+      <input type="hidden" name="qrID" value="<?php echo $qrID; ?>">
+      <input type="hidden" name="userID" value="<?php echo $id; ?>">
+      <input type="submit" name="add-qr" value="Ga verder" class="btn btn-group blue">
+    <!-- <a href="" class="stretched-link pl-4" data-transition="slide" rel="external" data-toggle="modal" data-target="#unlock-modal"><button type="button" class="btn btn-group blue" style="font-size:14px">Unlocken</button></a> -->
+      </form>
     </div>
   </div>
-    <?php include "include/bottom_navbar.php"; ?>
-    <?php include "include/scripts.php"; ?>
-  </body>
-</html>
+</div>
+</div>
+
+<script src="assets/js/instascan.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <link href="assets/js/bootstrap.bundle.js" rel="stylesheet">
+    <script src="assets/js/bootstrap.min.js"></script>
+
+<script>
+
+let scanner = new Instascan.Scanner({ video: document.getElementById('preview'), mirror: false });
+
+  scanner.addListener('scan', function (content) {
+
+    audio.play();
+
+  });
+
+  Instascan.Camera.getCameras().then(function (cameras) {
+    if (cameras.length > 0) {
+      scanner.start(cameras[0]);
+    } else {
+      console.error('No cameras found.');
+    }
+  }).catch(function (e) {
+    console.error(e);
+  });
+
+  var count = 1;
+function troll() {
+  if (count<10) {
+    count++;
+  }
+  else {
+    window.location = "onzin.html";
+  }
+};
+
+</script>

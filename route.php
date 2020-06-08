@@ -103,7 +103,7 @@
                     lat: latitude,
                     lng: longitude
                 };
-                
+
                 var mapProp = {
                     //            center: new google.maps.LatLng(latitude, longitude), // puts your current location at the centre of the map,
                     zoom: 15,

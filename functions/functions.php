@@ -74,8 +74,6 @@ if(isset($_POST["add-route"])) {
 
 			header("Location: ../mijn-routes");
 
-		} else {
-			header('Location: ../fout');
 		}
 
 		if(isset($_POST["update-route"])) {
@@ -115,22 +113,31 @@ if(isset($_POST["add-group"])) {
 
 	}
 
+	$qrID = $_POST['qrID'];
+	$userID = $_POST['userID'];
+
+	$proggresje = $db->prepare("SELECT routeID, userID, progress FROM mijnroutes WHERE routeID = :routeID AND userID = :userID");
+	$proggresje->execute(array(':userID' => $userID, ':routeID' => $qrID));
+	$progressjes = $proggresje->fetch();
+
+
+
 	if(isset($_POST["add-qr"])) {
 
 
-		$qrID = $_POST['qrID'];
 
+		$progressNow = $progressjes[2];
+		$progressPlus = 30;
 
-		$addgroup = $db->prepare("INSERT INTO groep (groepsnaam, groepsomschrijving) VALUES (:groepsnaam, :groepsomschrijving)");
+		$progressen = $progressNow + $progressPlus;
 
-		$addgroup->bindValue(':groepsnaam',$naamgroep);
-			$addgroup->bindValue(':groepsomschrijving',$groepbeschrijving);
+		$addqr= $db->prepare("UPDATE mijnroutes SET progress = :progress WHERE routeID = :routeID AND userID = :userID");
+		$addqr->bindValue(':progress', $progressen);
+		$addqr->bindValue(':userID', $userID);
+		$addqr->bindValue(':routeID', $qrID);
+		$addqr->execute();
 
-
-
-		$addgroup->execute();
-
-		header("Location: ../groep");
+		header("Location: ../route");
 
 		}
 

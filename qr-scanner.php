@@ -28,7 +28,7 @@ include ($_SERVER['DOCUMENT_ROOT']. "/Groninger-Landschap-App/include/head.php")
 
     </div>
     <div class="col-md-auto">
-        <a class="btn btn-group blue overlaytje">Richt qr op</a>
+        <p class="btn btn-group qr"><img src="assets/images/icons/qr-code.svg" class="jumbo-img-top" alt="...">&nbsp;&nbsp;Richt op de QR-code</a>
     </div>
     <div class="col col-lg-2">
 
@@ -50,15 +50,13 @@ let scanner = new Instascan.Scanner({ video: document.getElementById('preview'),
 
   scanner.addListener('scan', function (content) {
 
-    audio.play();
-
-    window.open("/Groninger-Landschap-App/qr-pagina?id=" + content + ".php" ,"_self");
+    window.open("qr-pagina?id=" + content + ".php" ,"_self");
 
   });
 
   Instascan.Camera.getCameras().then(function (cameras) {
     if (cameras.length > 0) {
-      scanner.start(cameras[0]);
+      scanner.start(cameras[1]);
     } else {
       console.error('No cameras found.');
     }

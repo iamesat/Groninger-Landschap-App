@@ -83,6 +83,19 @@
   color: white;
 }
 
+.btn-group.qr {
+  margin-top: 85%;
+  margin-left: 28%;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-left: 15px;
+  align-items: center;
+  background-color: #00000091;
+  border-color: #00000091;
+  border-radius: 1rem;
+  color: white;
+}
+
 
 /* Login form */
 
@@ -336,4 +349,26 @@ margin-left: 5px;
   position: fixed;
   min-width: 100%;
   min-height: 100%;
+}
+
+.modal-dialog.qr {
+  top: 40px;
+    left: 10%;
+    width: 75%;
+}
+
+.modal-content.qr {
+background-color: #ffffffa8;
+font-size: 0.8rem;
+text-align: center;
+border-radius: 23px;
+border-color: #ffffffa8;;
+}
+
+.modal-header.qr {
+  border-bottom: none;
+}
+
+.modal-footer.qr {
+  border-top: none;
 }
