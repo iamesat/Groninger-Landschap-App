@@ -1,19 +1,9 @@
-<nav class="navbar navbar-top-home fixed-top">
-        <div class="container navtop">
-
-          <div class="row justify-content-between">
-            <div class="col-auto mr-auto">
-              <a onclick="goBack()">
-                <i class="fas fa-arrow-left"></i></a>
-                <strong id="paginatitel"></strong>
+@@ -9,9 +9,35 @@
             </div>
             <div class="col-auto">
-              <a href="shop.php" data-transition="slide" rel="external"><img src="assets/images/icons/winkel.svg" class="jumbo-img-top" alt="..."></a>
-<<<<<<< HEAD
-              <a  data-transition="slide" rel="external" data-toggle="modal" data-target="#UpgradeModal"><img src="assets/images/icons/bell.svg" class="jumbo-img-top" alt="..."></a>
-=======
+              <a href="shop.php" class="stretched-link" data-transition="slide" rel="external"><img src="assets/images/icons/winkel.svg" class="jumbo-img-top" alt="..."></a>
+              <img src="assets/images/icons/bell.svg" class="jumbo-img-top" alt="...">
               <a href="" data-transition="slide" rel="external" data-toggle="modal" data-target="#UpgradeModal"><img src="assets/images/icons/bell.svg" class="jumbo-img-top" alt="..."></a>
->>>>>>> dc5d6272db5c3ac8a60d3c02de55651255de3d46
             </div>
           </div>
         </div>
@@ -23,21 +13,22 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header modal-shop-header">
-                <h5 class="modal-title" id="exampleModalLabel">Meldingen</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Deze foto uploaden?</h5>
                 <button type="button" class="close close-shop" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
                 <p>
-                   <a href="fotowedstrijd" data-transition="slide" rel="external">Je loopt nu in de buurt van het Iwema steenhuis, dat is een fotowedstrijd!</a><br><br>
-                   <a href="qr-scanner" data-transition="slide" rel="external">Kijk goed op je kaart, kijk goed om je heen! Een QR-code bevindt zich in jouw buurt! </a> <br><br>
-                   <a href="foto-overzicht" data-transition="slide" rel="external">Nog geen foto ingezonden voor de foto wedstrijd? Doe het snel en verzamel zoveel mogelijk stemmen! </a> <br><br>
-                   <a href="groep" data-transition="slide" rel="external">Je bent uitgenodigd voor de groep: Ontbijtgranen en melk. Ga snel naar groepen om de uitnodiging te bekijken! </a>  
+                    Locatie: wandelroute Iwema Steenhuis<br><br>
+                    Wil je deze foto inzenden voor de fotowedstrijd? <br><br>
+                    Klik dan op 'JA'. Wil je er nog over nadenken? Klik dan op 'NEE'.
                 </p>
+                <img src="assets/images/fotorollen/wedstrijd.svg">
             </div>
             <div class="modal-footer">
-            <a href="" data-transition="slide" rel="external"><button type="button" class="btn btn-secondary btn-info-shop" data-dismiss="modal">Sluit meldingen</button></a>
+            <a href="foto-upload" class="stretched-link" data-transition="slide" rel="external"><button type="button" class="btn btn-secondary btn-info-shop" data-dismiss="modal">JA</button></a>
+            <button type="button" class="btn btn-secondary btn-info-shop" data-dismiss="modal">NEE</button>
             </div>
         </div>
     </div>
