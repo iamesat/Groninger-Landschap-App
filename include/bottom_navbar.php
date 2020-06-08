@@ -15,7 +15,7 @@ function active($currect_page){
         <div class="container">
             <div class="row row-cols-5">
               <div class="col">
-                <a class="linkje <?php active('home.php');?>" href="home">
+                <a class="linkje <?php active('home');?>" href="home">
                 <img src="assets/images/icons/home.svg" class="navbar-bottom-icons" alt="home" />
                 Home
               </a>
@@ -24,7 +24,7 @@ function active($currect_page){
                 &nbsp;
               </div>
               <div class="col">
-                <a class="linkje <?php active('route.php');?>" href="route">
+                <a class="linkje <?php active('route');?>" href="route">
                 <img src="assets/images/icons/gps.svg" class="navbar-bottom-icons" alt="route" />
                 Route
               </a>
