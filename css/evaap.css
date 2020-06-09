@@ -91,6 +91,7 @@ margin-right: auto;
 .switch-field {
 	display: flex;
 	overflow: hidden;
+  margin-left: 15px;
 }
 
 .switch-field input {
@@ -170,6 +171,13 @@ h2 {
 .groepfont{
   font-size: 15px;
   color: #898A8F;
+}
+
+.progressbeheerder{
+  margin-top: 32px;
+}
+.accepteervoorwaarden{
+  padding-left: 35px;
 }
 
 .routepin{
