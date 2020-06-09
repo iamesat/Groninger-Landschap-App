@@ -151,16 +151,16 @@
 
                     <div class="container">
 
-                      <div class="md-form">
-  <div class="file-field">
-    
-    <div class="btn btn-primary btn-sm float-left">
-      <span>Choose file</span>
-      <input type="file">
-    </div>
-    <div class="file-path-wrapper">
-
-    </div>
+                      <div class="input-group">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
+  </div>
+  <div class="custom-file">
+    <input type="file" class="custom-file-input" id="inputGroupFile01"
+      aria-describedby="inputGroupFileAddon01">
+    <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+  </div>
+</div>
   </div>
 </div>
 
