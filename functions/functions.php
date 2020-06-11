@@ -94,37 +94,38 @@ if(isset($_POST["add-route"])) {
 
 if(isset($_POST["add-group"])) {
 
-
 	$naamgroep = $_POST['naamgroep'];
 	$groepbeschrijving = $_POST['groepbeschrijving'];
-//	$fotogroep = $_POST['fotogroep'];
+	//$fotogroep = $_POST['fotogroep'];
 
-	$addgroup = $db->prepare("INSERT INTO groep (groepsnaam, groepsomschrijving) VALUES (:groepsnaam, :groepsomschrijving)");
+	if(!empty($_FILES["image"]["name"])) {
+
+	$image = $_FILES["image"]["name"];
+
+	move_uploaded_file($_FILES['image']['tmp_name'], "../assets/images/groepsfotos/".$_FILES['image']['name']);
+
+	$addgroup = $db->prepare("INSERT INTO groep (groepsnaam, groepsomschrijving, groepsfoto) VALUES (:groepsnaam, :groepsomschrijving, :groepsfoto)");
 
 	$addgroup->bindValue(':groepsnaam',$naamgroep);
-		$addgroup->bindValue(':groepsomschrijving',$groepbeschrijving);
-	//	$addgroup->bindValue(':groepsfoto',$fotogroep);
-
-
-
+	$addgroup->bindValue(':groepsomschrijving',$groepbeschrijving);
+	$addgroup->bindValue(':groepsfoto',$image);
 	$addgroup->execute();
 
 	header("Location: ../groep");
 
 	}
-
-	$qrID = $_POST['qrID'];
-	$userID = $_POST['userID'];
-
-	$proggresje = $db->prepare("SELECT routeID, userID, progress FROM mijnroutes WHERE routeID = :routeID AND userID = :userID");
-	$proggresje->execute(array(':userID' => $userID, ':routeID' => $qrID));
-	$progressjes = $proggresje->fetch();
-
+}
 
 
 	if(isset($_POST["add-qr"])) {
 
 
+		$qrID = $_POST['qrID'];
+		$userID = $_POST['userID'];
+
+		$proggresje = $db->prepare("SELECT routeID, userID, progress FROM mijnroutes WHERE routeID = :routeID AND userID = :userID");
+		$proggresje->execute(array(':userID' => $userID, ':routeID' => $qrID));
+		$progressjes = $proggresje->fetch();
 
 		$progressNow = $progressjes[2];
 		$progressPlus = 30;

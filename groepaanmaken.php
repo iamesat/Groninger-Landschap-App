@@ -24,7 +24,7 @@
                     <br>
 
                     <div class="container">
-<form method="post" action="functions/functions.php" name="add-group">
+                      <form method="post" action="functions/functions.php" name="add-group" enctype="multipart/form-data">
                       <input type="text" class="form-control"  placeholder="Naam invoeren" name="naamgroep" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
 
 
@@ -51,7 +51,7 @@
                     <br>
 
                     <div class="container">
-  <form method="post" action="functions/functions.php" name="add-group">
+  <form method="post" action="functions/functions.php" name="add-group" enctype="multipart/form-data">
         <input type="text" class="form-control"  placeholder="Beschrijving invoeren" name="groepbeschrijving" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
 
                   </div>
@@ -121,12 +121,12 @@
                     <br>
 
 
-	<div class="switch-field">
-		<input type="radio" id="radio-one"  value="Iedereen" checked/>
-		<label for="radio-one">Iedereen</label>
-		<input type="radio" id="radio-two"  value="Niemand" />
-		<label for="radio-two">Niemand</label>
-	</div>
+                    <div class="switch-field pl-4 py-2">
+                        <input type="radio" id="radio-one" name="switch-one" value="Iedereen" checked/>
+                        <label for="radio-one" style="font-size: 14px;">Iedereen</label>
+                        <input type="radio" id="radio-two" name="switch-one" value="Niemand" />
+                        <label for="radio-two" style="font-size: 14px;">Niemand</label>
+                    </div>
 
 
 
@@ -151,16 +151,16 @@
 
                     <div class="container">
 
-                      <div class="input-group">
-    <div class="input-group-prepend">
-      <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
-    </div>
-    <div class="custom-file">
-      <input type="file" class="custom-file-input" id="inputGroupFile01"
-        aria-describedby="inputGroupFileAddon01">
-      <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
-    </div>
-  </div>
+<form method="post" action="functions/functions.php" name="add-group" enctype="multipart/form-data">
+<div class="file-field">
+<div class="btn btn-primary btn-sm float-left">
+ <span>Choose file</span>
+ <input type="file" name"image" id="image">
+</div>
+<div class="file-path-wrapper">
+
+</div>
+</div>
 
                   </div>
 </div>
@@ -198,7 +198,7 @@
     <!-- <a href="" class="stretched-link" data-transition="slide" rel="external" data-toggle="modal" data-target="#UpgradeModal"><p class="bekijkenbutton">  </p></a> -->
     <input type="submit" name="add-group" value="Groep Aanmaken" class="bekijkenbutton">
   </form>
-
+<br><br>
                 </div>
 
         </div>

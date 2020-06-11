@@ -5,7 +5,7 @@
 <?php
   include('include/db-connect.php');
 
-  $groepnieuw = $db->prepare("SELECT id, groepsnaam, groepsomschrijving FROM groep");
+  $groepnieuw = $db->prepare("SELECT id, groepsnaam, groepsomschrijving, groepsfoto FROM groep");
   $groepnieuw->execute();
 
   ?>

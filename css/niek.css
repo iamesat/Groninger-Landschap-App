@@ -39,3 +39,8 @@
 .heart {
     width: 20%;
 }
+
+a.melding {
+    text-decoration: none;
+    color: black;
+}
