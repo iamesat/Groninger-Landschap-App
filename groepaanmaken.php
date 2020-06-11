@@ -151,7 +151,7 @@
 
                     <div class="container">
 
-<form method="post" action="functions/functions.php" name="add-group" enctype="multipart/form-data">
+
 <div class="file-field">
 <div class="btn btn-primary btn-sm float-left">
  <span>Choose file</span>

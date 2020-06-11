@@ -98,8 +98,6 @@ if(isset($_POST["add-group"])) {
 	$groepbeschrijving = $_POST['groepbeschrijving'];
 	//$fotogroep = $_POST['fotogroep'];
 
-	if(!empty($_FILES["image"]["name"])) {
-
 	$image = $_FILES["image"]["name"];
 
 	move_uploaded_file($_FILES['image']['tmp_name'], "../assets/images/groepsfotos/".$_FILES['image']['name']);
@@ -114,7 +112,7 @@ if(isset($_POST["add-group"])) {
 	header("Location: ../groep");
 
 	}
-}
+// }
 
 
 	if(isset($_POST["add-qr"])) {
