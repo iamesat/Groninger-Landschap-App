@@ -18,5 +18,9 @@ $(document).ready(function(){
     $("#Mijn-Routes-Modal").modal('show');
 });
 
+$(document).ready(function(){
+    $("#Groepen-Aanmaken-Modal").modal('show');
+});
+
 
 </script>

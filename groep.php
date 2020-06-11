@@ -144,7 +144,31 @@
     </div>
 </div> -->
 
+<div class="modal fade" id="Groepen-Aanmaken-Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header modal-shop-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Over Groepen</h5>
+                  <button type="button" class="close close-shop" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
 
+            <div class="modal-body">
+                <p>
+                Welkom bij je Groepen! <br><br>
+                Op deze pagina kan je zien in welke groepen jij zit. 
+                Ook kan je zelf groepen aanmaken en vervolgens je medespelers uitnodigen.
+                Op deze manier kan je samen wandelen en elkaars activiteiten in de gaten houden.
+                </p>
+            </div>
+
+            <div class="modal-footer">
+            <a href="" data-transition="slide" rel="external"><button type="button" class="btn btn-secondary btn-info-shop" data-dismiss="modal">Begrepen</button></a>
+            </div>
+          </div>
+      </div>
+    </div>
 
 
 <?php include "include/bottom_navbar.php"; ?>
