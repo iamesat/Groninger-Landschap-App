@@ -35,7 +35,7 @@
               <div class="jumbotron route mt-3">
                 <div class="row justify-content-between">
                   <div class="col-auto mr-auto">
-                  <a href="#" data-transition="slide" rel="external" data-toggle="modal" data-target="#UpgradeModal"><img src="assets/images/icons/bell.svg" class="jumbo-img-top" alt="..."></a>
+                  <a href="" data-transition="slide" rel="external" data-toggle="modal" data-target="#MeldingenModal"><img src="assets/images/icons/bell.svg" class="jumbo-img-top" alt="..."></a>
                   </div>
                   <div class="col-auto">
                   <a href="shop" data-transition="slide" rel="external"><img src="assets/images/icons/winkel.svg" class="jumbo-img-top" alt="..."></a>
@@ -586,7 +586,7 @@
             </div>
           </nav>
 
-    <div class="modal fade" id="UpgradeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="MeldingenModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog">
           <div class="modal-content">
               <div class="modal-header modal-shop-header">
