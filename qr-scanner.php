@@ -37,6 +37,33 @@ include ($_SERVER['DOCUMENT_ROOT']. "/Groninger-Landschap-App/include/head.php")
 
 </div>
 
+<div class="modal fade" id="QR-Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header modal-shop-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Over Fotorollen</h5>
+                  <button type="button" class="close close-shop" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+
+            <div class="modal-body">
+                <p>
+                Welkom bij je eerste QR-code! <br><br>
+                Misschien heb je wel een melding ontvangen, of misschien ben je er tijdens je route zomaar één tegen het lijf gelopen.
+                Op de routes bevinden zich meerdere QR-codes. Deze codes kan je hier scannen om meer informatie te krijgen over de locatie waar je je op dat moment bevindt!
+                En dat is niet alles. Je wordt er voor beloond, want voor elke QR-code krijg je punten om nieuwe routes te unlocken en om verder te levelen!
+                <br><br>Ga dus goed op zoek en scan zoveel mogelijk QR-codes!
+                </p>
+            </div>
+
+            <div class="modal-footer">
+            <a href="" data-transition="slide" rel="external"><button type="button" class="btn btn-secondary btn-info-shop" data-dismiss="modal">Begrepen</button></a>
+            </div>
+          </div>
+      </div>
+    </div>
+
 <script src="assets/js/instascan.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -74,4 +101,7 @@ function troll() {
   }
 };
 
+$(document).ready(function(){
+        $("#QR-Modal").modal('show');
+    });
 </script>
