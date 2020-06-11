@@ -29,7 +29,7 @@
 
 
     ?>
-
+    
     <title>Route Volgen</title>
     <nav class="navbar navbar-top-route fixed-top">
               <div class="jumbotron route mt-3">
@@ -585,6 +585,7 @@
             </div>
             </div>
           </nav>
+          <?php include "include/bottom_navbar.php"; ?>
     </body>
     </html>
 
