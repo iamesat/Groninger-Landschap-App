@@ -121,12 +121,12 @@
                     <br>
 
 
-	<div class="switch-field">
-		<input type="radio" id="radio-one"  value="Iedereen" checked/>
-		<label for="radio-one">Iedereen</label>
-		<input type="radio" id="radio-two"  value="Niemand" />
-		<label for="radio-two">Niemand</label>
-	</div>
+                    <div class="switch-field pl-4 py-2">
+                        <input type="radio" id="radio-one" name="switch-one" value="Iedereen" checked/>
+                        <label for="radio-one" style="font-size: 14px;">Iedereen</label>
+                        <input type="radio" id="radio-two" name="switch-one" value="Niemand" />
+                        <label for="radio-two" style="font-size: 14px;">Niemand</label>
+                    </div>
 
 
 
@@ -153,12 +153,11 @@
 
                       <div class="input-group">
                         <div class="input-group-prepend">
-                          <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
+                          <!-- <span class="input-group-text" id="fotogroep">Upload</span> -->
                         </div>
                         <div class="custom-file">
-                          <input type="file" class="custom-file-input" name="fotogroep" id="fotogroep"
-                            aria-describedby="inputGroupFileAddon01">
-                          <label class="custom-file-label" for="inputGroupFile01">Kies groeps foto</label>
+                          <input type="file" class="custom-file-input" name="image" id="image">
+                          <!-- <label class="custom-file-label" >Kies groeps foto</label> -->
                         </div>
                       </div>
 
