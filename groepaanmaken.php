@@ -133,9 +133,27 @@
             </div>
         </div>
     </div>
+    <div class="row justify-content-md-center">
+        <div class="col-12">
+            <div class="card groepborder groepborderboven">
+                <div class="card-body">
+
+                  <div class=" accepteervoorwaarden">
+
+  <input type="checkbox" id="vehicle1" value="Bike">
+  <label for="vehicle1"> Ik ga Akkoord met de <br> <a href="wet-regelgeving">Algemene voorwaarden</a></label><br>
+
+
+                </div>
+
+
+
+
 </div>
-
-
+            </div>
+        </div>
+    </div>
+</div>
 
 
 
@@ -151,17 +169,11 @@
 
                     <br>
 
-                    <div class="container accepteervoorwaarden">
 
-    <input type="checkbox" id="vehicle1" value="Bike">
-    <label for="vehicle1"> Ik ga Akkoord met de <br> <a href="wet-regelgeving">Algemene voorwaarden</a></label><br>
-
-
-                  </div>
 <br>
 
 
-                  <div class="container accepteervoorwaarden">
+                  <div class="container groepaanmaakbutton">
 
 
 
