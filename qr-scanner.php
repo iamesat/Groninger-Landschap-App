@@ -41,7 +41,7 @@ include ($_SERVER['DOCUMENT_ROOT']. "/Groninger-Landschap-App/include/head.php")
       <div class="modal-dialog">
           <div class="modal-content">
               <div class="modal-header modal-shop-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Over Fotorollen</h5>
+                  <h5 class="modal-title" id="exampleModalLabel">QR-code scannen</h5>
                   <button type="button" class="close close-shop" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                   </button>

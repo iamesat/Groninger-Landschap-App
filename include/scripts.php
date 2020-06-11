@@ -13,4 +13,10 @@ function goBack() {
 $(document).ready(function(){
         $("#Fotorollen-Modal").modal('show');
     });
+
+$(document).ready(function(){
+    $("#Mijn-Routes-Modal").modal('show');
+});
+
+
 </script>

@@ -103,6 +103,35 @@ $routes->execute(array(':id' => $userID));
       </div>
     </div>
   </div>
+
+  <div class="modal fade" id="Mijn-Routes-Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header modal-shop-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Over Routes</h5>
+                  <button type="button" class="close close-shop" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+
+            <div class="modal-body">
+                <p>
+                Welkom bij je routes! <br><br>
+                Op deze pagina kan je zien welke routes je momenteel aan het lopen bent,
+                welke routes je kan unlocken, en welke routes je voltooid hebt. Zie je niks staan op dit scherm?
+                Grote kans dat je dan eerst een route moet unlocken. Dat doe je bovenaan bij 'Unlocken'.
+                Kies vervolgens een route uit die jij graag wil lopen en ga van start!
+                <br><br>
+                Heel veel succes!
+                </p>
+            </div>
+
+            <div class="modal-footer">
+            <a href="" data-transition="slide" rel="external"><button type="button" class="btn btn-secondary btn-info-shop" data-dismiss="modal">Begrepen</button></a>
+            </div>
+          </div>
+      </div>
+    </div>
     <?php include "include/bottom_navbar.php"; ?>
     <?php include "include/scripts.php"; ?>
   </body>
