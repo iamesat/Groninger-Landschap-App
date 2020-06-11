@@ -28,10 +28,6 @@
 
 }
 
-.switch-field{
-  margin-left: 0px !important;
-}
-
 .bekijkenbutton{
   border-style: solid;
   border-radius: 25px;
@@ -42,16 +38,8 @@
   text-align: center;
   width: 160px;
   font-weight: bold;
-  margin-left: 20%;
-  margin-right: auto;
-}
-
-.bekijkenbutton.groepzoek {
-  margin-left: 25%
-}
-
-.bekijkenbutton.groepmaak {
-  margin-left: 25%;
+margin-left: 25%;
+margin-right: auto;
 }
 
 .groepaantal{
@@ -69,9 +57,6 @@
 .groepsnaaminput{
   font-size: 15px;
   border-style: none;
-}
-.dropdown{
-  margin-left: 7px;
 }
 
 #dropdownkleur{
