@@ -134,6 +134,9 @@ margin-right: auto;
 	border-radius: 0 4px 4px 0;
 }
 
+.switch-field{
+  margin-left: 0px !important;
+}
 /* This is just for CodePen. */
 
 .form {

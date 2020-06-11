@@ -48,7 +48,7 @@
                     <h3 class="card-groep-title"><?php echo $groep[1]; ?></h3>
 
                     <br>
-                    <img class="groepsfoto" src= alt="route afbeelding">
+                    <img class="groepsfoto" src="assets/images/groepsfotos/<?php echo $groep[0]; echo $groep[3];?>" alt="route afbeelding">
                     <br>
                     <div class="container">
                     <div class="row">

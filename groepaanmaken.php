@@ -51,7 +51,6 @@
                     <br>
 
                     <div class="container">
-  <form method="post" action="functions/functions.php" name="add-group" enctype="multipart/form-data">
         <input type="text" class="form-control"  placeholder="Beschrijving invoeren" name="groepbeschrijving" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
 
                   </div>
@@ -139,35 +138,6 @@
 
 
 
-<div class="container groepruimte">
-    <div class="row justify-content-md-center">
-        <div class="col-12">
-            <div class="card groepborder">
-                <div class="card-body">
-
-                    <h3 class="card-groep-title">Groepsafbeelding</h3>
-
-                    <br>
-
-                    <div class="container">
-
-
-<div class="file-field">
-<div class="btn btn-primary btn-sm float-left">
- <span>Choose file</span>
- <input type="file" name"image" id="image">
-</div>
-<div class="file-path-wrapper">
-
-</div>
-</div>
-
-                  </div>
-</div>
-            </div>
-        </div>
-    </div>
-</div>
 
 
 

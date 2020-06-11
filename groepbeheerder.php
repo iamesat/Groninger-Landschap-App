@@ -6,7 +6,7 @@
   include('include/db-connect.php');
 
   $groepID = $_GET['id'];
-  $groepnieuw = $db->prepare("SELECT id, groepsnaam FROM groep WHERE id = :id");
+  $groepnieuw = $db->prepare("SELECT id, groepsnaam, groepsfoto FROM groep WHERE id = :id");
   $groepnieuw->execute(array(':id' => $groepID));
 
 
@@ -56,8 +56,26 @@
                   <br>
                       <img class="routepin" src="assets/images/pin.png" alt="route afbeelding"><p class="groepfont"> Startpunt: Ruiterdiep (Groninger Landschap) </p>
 
-  <img class="routegroep" src="assets/images/map.png" alt="route afbeelding">
+  <img class="routegroep" src="assets/images/groepsfotos/<?php echo $groepID; echo $groep[2]; ?>" alt="route afbeelding">
   <br>
+
+  <div class="input-group">
+  <div class="input-group-prepend">
+    <form class="form-horizontal form-label-left" id="add-avatar" action="functions/functions.php" method="post" enctype="multipart/form-data" name="add-avatar" align="left">
+      <input type="hidden" name="groepID" value="<?php echo $groepID; ?>">
+    <input type="submit" class="input-group-text" name="add-avatar" value="Uploaden">
+    <!-- <span class="input-group-text" id="img">Upload</span> -->
+  </div>
+  <div class="custom-file">
+
+    <input type="file" class="custom-file-input" id="image" name="image" aria-describedby="inputGroupFileAddon01">
+    <label class="custom-file-label" for="inputGroupFile01">Hier uploaden</label>
+  </form>
+  </div>
+</div>
+
+
+
   <br>
   <h6><b>Leden</b></h6>
   <hr>

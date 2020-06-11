@@ -96,23 +96,33 @@ if(isset($_POST["add-group"])) {
 
 	$naamgroep = $_POST['naamgroep'];
 	$groepbeschrijving = $_POST['groepbeschrijving'];
-	//$fotogroep = $_POST['fotogroep'];
 
-	$image = $_FILES["image"]["name"];
-
-	move_uploaded_file($_FILES['image']['tmp_name'], "../assets/images/groepsfotos/".$_FILES['image']['name']);
-
-	$addgroup = $db->prepare("INSERT INTO groep (groepsnaam, groepsomschrijving, groepsfoto) VALUES (:groepsnaam, :groepsomschrijving, :groepsfoto)");
+	$addgroup = $db->prepare("INSERT INTO groep (groepsnaam, groepsomschrijving) VALUES (:groepsnaam, :groepsomschrijving)");
 
 	$addgroup->bindValue(':groepsnaam',$naamgroep);
 	$addgroup->bindValue(':groepsomschrijving',$groepbeschrijving);
-	$addgroup->bindValue(':groepsfoto',$image);
 	$addgroup->execute();
 
 	header("Location: ../groep");
 
 	}
 // }
+
+if(isset($_POST["add-avatar"])) {
+
+	$id = $_POST['groepID'];
+	$image = $_FILES["image"]["name"];
+
+		move_uploaded_file($_FILES['image']['tmp_name'], "../assets/images/groepsfotos/". $id .$_FILES['image']['name']);
+
+	$addgroup = $db->prepare("UPDATE groep SET groepsfoto = :groepsfoto WHERE id=:id ");
+	$addgroup->bindValue(':id',$id);
+	$addgroup->bindValue(':groepsfoto',$image);
+	$addgroup->execute();
+
+	header("Location: ../groep");
+
+	}
 
 
 	if(isset($_POST["add-qr"])) {
