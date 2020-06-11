@@ -102,7 +102,7 @@ if(isset($_POST["add-group"])) {
 
 	$image = $_FILES["image"]["name"];
 
-	move_uploaded_file($_FILES['image']['tmp_name'], "../assets/images/groepsfotos/".$image);
+	move_uploaded_file($_FILES['image']['tmp_name'], "../assets/images/groepsfotos/".$_FILES['image']['name']);
 
 	$addgroup = $db->prepare("INSERT INTO groep (groepsnaam, groepsomschrijving, groepsfoto) VALUES (:groepsnaam, :groepsomschrijving, :groepsfoto)");
 
