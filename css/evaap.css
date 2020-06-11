@@ -38,8 +38,16 @@
   text-align: center;
   width: 160px;
   font-weight: bold;
-margin-left: auto;
-margin-right: auto;
+  margin-left: 20%;
+  margin-right: auto;
+}
+
+.bekijkenbutton.groepzoek {
+  margin-left: 25%
+}
+
+.bekijkenbutton.groepmaak {
+  margin-left: 25%;
 }
 
 .groepaantal{

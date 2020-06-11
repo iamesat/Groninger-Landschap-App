@@ -198,7 +198,7 @@
     <!-- <a href="" class="stretched-link" data-transition="slide" rel="external" data-toggle="modal" data-target="#UpgradeModal"><p class="bekijkenbutton">  </p></a> -->
     <input type="submit" name="add-group" value="Groep Aanmaken" class="bekijkenbutton">
   </form>
-
+<br><br>
                 </div>
 
         </div>
