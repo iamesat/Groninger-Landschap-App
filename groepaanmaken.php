@@ -152,7 +152,7 @@
                     <div class="container">
 
 
-<!-- <div class="file-field">
+<div class="file-field">
 <div class="btn btn-primary btn-sm float-left">
  <span>Choose file</span>
  <input type="file" name"image" id="image">
@@ -160,7 +160,7 @@
 <div class="file-path-wrapper">
 
 </div>
-</div> -->
+</div>
 
                   </div>
 </div>
