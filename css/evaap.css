@@ -175,7 +175,7 @@ h2 {
 
 .routegroep{
   width: 294px;
-  height: 150px;
+  height: auto;
   border-radius: 10%;
 }
 
@@ -261,7 +261,7 @@ h2 {
 }
 
 .groepsfoto{
-  width: 80px;
+  width: 186px;
   height: auto;
   border-radius: 25%;
   display:block;
