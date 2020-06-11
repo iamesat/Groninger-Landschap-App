@@ -97,9 +97,9 @@ if(isset($_POST["add-group"])) {
 	$naamgroep = $_POST['naamgroep'];
 	$groepbeschrijving = $_POST['groepbeschrijving'];
 	// $fotogroep = $_POST['fotogroep'];
-	$fotogroep = $_FILE["fotogroep"]["name"];
+	$fotogroep = $_FILES["fotogroep"]["name"];
 
-	move_upload_file($_FILE['fotogroep']['tmp_name'],"../assets/images/groepsfotos".$_FILE['fotogroep']['name']);
+	move_uploaded_file($_FILES['fotogroep']['tmp_name'],"../assets/images/groepsfotos".$_FILE['fotogroep']['name']);
 
 	$addgroup = $db->prepare("INSERT INTO groep (groepsnaam, groepsomschrijving, groepsfoto) VALUES (:groepsnaam, :groepsomschrijving, :groepsfoto)");
 
