@@ -58,7 +58,7 @@
 
   <img class="routegroep" src="assets/images/groepsfotos/<?php echo $groepID; echo $groep[2]; ?>" alt="route afbeelding">
   <br>
-
+<br>
   <div class="input-group">
   <div class="input-group-prepend">
     <form class="form-horizontal form-label-left" id="add-avatar" action="functions/functions.php" method="post" enctype="multipart/form-data" name="add-avatar" align="left">
