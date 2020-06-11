@@ -24,7 +24,7 @@
                     <br>
 
                     <div class="container">
-                      <form method="post" action="functions/functions.php" name="add-group">
+                      <form method="post" action="functions/functions.php" name="add-group" enctype="multipart/form-data">
                       <input type="text" class="form-control"  placeholder="Naam invoeren" name="naamgroep" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
 
 
@@ -51,7 +51,7 @@
                     <br>
 
                     <div class="container">
-  <form method="post" action="functions/functions.php" name="add-group">
+  <form method="post" action="functions/functions.php" name="add-group" enctype="multipart/form-data">
         <input type="text" class="form-control"  placeholder="Beschrijving invoeren" name="groepbeschrijving" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
 
                   </div>
@@ -151,15 +151,16 @@
 
                     <div class="container">
 
-                      <div class="input-group">
-                        <div class="input-group-prepend">
-                          <!-- <span class="input-group-text" id="fotogroep">Upload</span> -->
-                        </div>
-                        <div class="custom-file">
-                          <input type="file" class="custom-file-input" name="image" id="image">
-                          <!-- <label class="custom-file-label" >Kies groeps foto</label> -->
-                        </div>
-                      </div>
+<form method="post" action="functions/functions.php" name="add-group" enctype="multipart/form-data">
+<div class="file-field">
+<div class="btn btn-primary btn-sm float-left">
+ <span>Choose file</span>
+ <input type="file" name"image" id="image">
+</div>
+<div class="file-path-wrapper">
+
+</div>
+</div>
 
                   </div>
 </div>

@@ -96,8 +96,11 @@ if(isset($_POST["add-group"])) {
 
 	$naamgroep = $_POST['naamgroep'];
 	$groepbeschrijving = $_POST['groepbeschrijving'];
-	// $fotogroep = $_POST['fotogroep'];
-	$image = basename($_FILES["image"]["name"]);
+	//$fotogroep = $_POST['fotogroep'];
+
+	if(!empty($_FILES["image"]["name"])) {
+
+	$image = $_FILES["image"]["name"];
 
 	move_uploaded_file($_FILES['image']['tmp_name'], "../assets/images/groepsfotos/".$image);
 
@@ -111,19 +114,18 @@ if(isset($_POST["add-group"])) {
 	header("Location: ../groep");
 
 	}
-
-	$qrID = $_POST['qrID'];
-	$userID = $_POST['userID'];
-
-	$proggresje = $db->prepare("SELECT routeID, userID, progress FROM mijnroutes WHERE routeID = :routeID AND userID = :userID");
-	$proggresje->execute(array(':userID' => $userID, ':routeID' => $qrID));
-	$progressjes = $proggresje->fetch();
-
+}
 
 
 	if(isset($_POST["add-qr"])) {
 
 
+		$qrID = $_POST['qrID'];
+		$userID = $_POST['userID'];
+
+		$proggresje = $db->prepare("SELECT routeID, userID, progress FROM mijnroutes WHERE routeID = :routeID AND userID = :userID");
+		$proggresje->execute(array(':userID' => $userID, ':routeID' => $qrID));
+		$progressjes = $proggresje->fetch();
 
 		$progressNow = $progressjes[2];
 		$progressPlus = 30;
