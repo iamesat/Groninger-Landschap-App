@@ -184,7 +184,7 @@
                     <div class="container accepteervoorwaarden">
 
     <input type="checkbox" id="vehicle1" value="Bike">
-    <label for="vehicle1"> Ik ga Akkoord met de <br> Algemene voorwaarden</label><br>
+    <label for="vehicle1"> Ik ga Akkoord met de <br> <a href="wet-regelgeving">Algemene voorwaarden</a></label><br>
 
 
                   </div>
@@ -244,7 +244,7 @@
                         </p>
 
 <div class="uitnodigenbutton">
-<a href="groepbeheerder.php"  <button type="button" class="btn btn-group blue">Verder</button></a>
+<a href="groepbeheerder.php" button type="button" class="btn btn-group blue">Verder</button></a>
   <br>
 
 
