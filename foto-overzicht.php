@@ -22,23 +22,23 @@
             <div class="card">
                 <div class="card-body text-center">
                     <div class="row justify-content-center">
-                    <a href="" data-transition="slide" rel="external" data-toggle="modal" data-target="#UpgradeModal"><img src="assets/images/fotorollen/iwemasteenhuis.jpg" class="recente-foto" alt="..."></a>
-                    <a href="" data-transition="slide" rel="external" data-toggle="modal" data-target="#UpgradeModal"><img src="assets/images/fotorollen/huis.png" class="recente-foto" alt="..."></a>
+                    <a href="" data-transition="slide" rel="external" data-toggle="modal" data-target="#UploadModal"><img src="assets/images/fotorollen/iwemasteenhuis.jpg" class="recente-foto" alt="..."></a>
+                    <a href="" data-transition="slide" rel="external" data-toggle="modal" data-target="#UploadModal"><img src="assets/images/fotorollen/huis.png" class="recente-foto" alt="..."></a>
                     </div>
                     <div class="row justify-content-center">
-                    <a href=""  data-transition="slide" rel="external" data-toggle="modal" data-target="#UpgradeModal"><img src="assets/images/fotorollen/beekje.png" class="recente-foto" alt="..."></a>
+                    <a href=""  data-transition="slide" rel="external" data-toggle="modal" data-target="#UploadModal"><img src="assets/images/fotorollen/beekje.png" class="recente-foto" alt="..."></a>
+                    <a href="" data-transition="slide" rel="external" data-toggle="modal" data-target="#UploadModal"><img src="assets/images/fotorollen/huis2.png" class="recente-foto" alt="..."></a>
+                    </div>
+                    <div class="row justify-content-center">
+                    <a href="" data-transition="slide" rel="external" data-toggle="modal" data-target="#UploadModal"><img src="assets/images/fotorollen/molen.png" class="recente-foto" alt="..."></a>
+                    <a href="" data-transition="slide" rel="external" data-toggle="modal" data-target="#UploadModal"><img src="assets/images/fotorollen/huis.png" class="recente-foto" alt="..."></a>
+                    </div>
+                    <div class="row justify-content-center">
+                    <a href=""  data-transition="slide" rel="external" data-toggle="modal" data-target="#UploadModal"><img src="assets/images/fotorollen/beekje.png" class="recente-foto" alt="..."></a>
                     <a href="" data-transition="slide" rel="external" data-toggle="modal" data-target="#UpgradeModal"><img src="assets/images/fotorollen/huis2.png" class="recente-foto" alt="..."></a>
                     </div>
                     <div class="row justify-content-center">
-                    <a href="" data-transition="slide" rel="external" data-toggle="modal" data-target="#UpgradeModal"><img src="assets/images/fotorollen/molen.png" class="recente-foto" alt="..."></a>
-                    <a href="" data-transition="slide" rel="external" data-toggle="modal" data-target="#UpgradeModal"><img src="assets/images/fotorollen/huis.png" class="recente-foto" alt="..."></a>
-                    </div>
-                    <div class="row justify-content-center">
-                    <a href=""  data-transition="slide" rel="external" data-toggle="modal" data-target="#UpgradeModal"><img src="assets/images/fotorollen/beekje.png" class="recente-foto" alt="..."></a>
-                    <a href="" data-transition="slide" rel="external" data-toggle="modal" data-target="#UpgradeModal"><img src="assets/images/fotorollen/huis2.png" class="recente-foto" alt="..."></a>
-                    </div>
-                    <div class="row justify-content-center">
-                    <a href="" data-transition="slide" rel="external" data-toggle="modal" data-target="#UpgradeModal"><img src="assets/images/fotorollen/molen.png" class="recente-foto" alt="..."></a>
+                    <a href="" data-transition="slide" rel="external" data-toggle="modal" data-target="#UploadModal"><img src="assets/images/fotorollen/molen.png" class="recente-foto" alt="..."></a>
                     <a href="" data-transition="slide" rel="external" data-toggle="modal" data-target="#UpgradeModal"><img src="assets/images/fotorollen/huis.png" class="recente-foto" alt="..."></a>
                     </div>
                     <div class="row justify-content-center">
@@ -51,7 +51,7 @@
     </div>
 </div>
 
-<div class="modal fade" id="UpgradeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="UploadModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header modal-shop-header">
